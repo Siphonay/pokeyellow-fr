@@ -1,24 +1,21 @@
-roms := \
-	pokeyellow.gbc \
-	pokeyellow_debug.gbc
-patches := \
-	pokeyellow.patch
+roms    := pokeyellow.gbc
+patches := pokeyellow.patch
 
 rom_obj := \
-	audio.o \
 	home.o \
-	main.o \
-	maps.o \
 	ram.o \
-	text.o \
-	gfx/pics.o \
-	gfx/pikachu.o \
-	gfx/sprites.o \
-	gfx/surfing_pikachu.o \
-	gfx/tilesets.o
+	wip.o
+# 	audio.o \
+# 	main.o \
+# 	maps.o \
+# 	text.o \
+# 	gfx/pics.o \
+# 	gfx/pikachu.o \
+# 	gfx/sprites.o \
+# 	gfx/surfing_pikachu.o \
+# 	gfx/tilesets.o
 
 pokeyellow_obj       := $(rom_obj)
-pokeyellow_debug_obj := $(rom_obj:.o=_debug.o)
 pokeyellow_vc_obj    := $(rom_obj:.o=_vc.o)
 
 
@@ -51,7 +48,6 @@ RGBGFXFLAGS  ?= -Weverything
 .PHONY: \
 	all \
 	yellow \
-	yellow_debug \
 	yellow_vc \
 	clean \
 	tidy \
@@ -60,7 +56,6 @@ RGBGFXFLAGS  ?= -Weverything
 
 all: $(roms)
 yellow:       pokeyellow.gbc
-yellow_debug: pokeyellow_debug.gbc
 yellow_vc:    pokeyellow.patch
 
 clean: tidy
@@ -84,11 +79,10 @@ tidy:
 	      $(patches:%.patch=vc/%.constants.sym) \
 	      $(pokeyellow_obj) \
 	      $(pokeyellow_vc_obj) \
-	      $(pokeyellow_debug_obj) \
 	      rgbdscheck.o
 	$(MAKE) clean -C tools/
 
-compare: $(roms) $(patches)
+compare: $(roms)
 	@$(SHA1) -c roms.sha1
 
 tools:
@@ -101,8 +95,7 @@ ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(pokeyellow_debug_obj): RGBASMFLAGS += -D _DEBUG
-$(pokeyellow_vc_obj):    RGBASMFLAGS += -D _YELLOW_VC
+$(pokeyellow_vc_obj): RGBASMFLAGS += -D _YELLOW_VC
 
 %.patch: %_vc.gbc %.gbc vc/%.patch.template
 	tools/make_patch $*_vc.sym $^ $@
@@ -127,24 +120,14 @@ endef
 
 # Dependencies for objects
 $(foreach obj, $(pokeyellow_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
-$(foreach obj, $(pokeyellow_debug_obj), $(eval $(call DEP,$(obj),$(obj:_debug.o=.asm))))
 $(foreach obj, $(pokeyellow_vc_obj), $(eval $(call DEP,$(obj),$(obj:_vc.o=.asm))))
 
 endif
 
-
-RGBLINKFLAGS += -d
-pokeyellow.gbc:       RGBLINKFLAGS += -p 0x00
-pokeyellow_debug.gbc: RGBLINKFLAGS += -p 0xff
-pokeyellow_vc.gbc:    RGBLINKFLAGS += -p 0x00
-
-RGBFIXFLAGS += -cjsv -k 01 -l 0x33 -m MBC5+RAM+BATTERY -r 03 -t "POKEMON YELLOW"
-pokeyellow.gbc:       RGBFIXFLAGS += -p 0x00
-pokeyellow_debug.gbc: RGBFIXFLAGS += -p 0xff
-pokeyellow_vc.gbc:    RGBFIXFLAGS += -p 0x00
+RGBFIXFLAGS += -cjsv -i APSF -k 01 -l 0x33 -m MBC5+RAM+BATTERY -p 0 -r 3 -t "POKEMON YEL"
 
 %.gbc: $$(%_obj) layout.link
-	$(RGBLINK) $(RGBLINKFLAGS) -l layout.link -m $*.map -n $*.sym -o $@ $(filter %.o,$^)
+	$(RGBLINK) $(RGBLINKFLAGS) -l layout.link -m $*.map -n $*.sym -O baserom.bin -o $@ $(filter %.o,$^)
 	$(RGBFIX) $(RGBFIXFLAGS) $@
 
 
