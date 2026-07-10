@@ -28,11 +28,11 @@ ROM0
 	org $0060
 	"joypad"
 	; $0061
-;	"High Home"
+	"High Home"
 	org $100
 	"Header"
-; 	org $150
-; 	"Home"
+	org $150
+	"Home"
 ; ROMX $1
 ; 	"bank1"
 ; ROMX $2
@@ -68,19 +68,19 @@ ROM0
 ; 	"Bill's PC"
 ; 	"Audio Engine 2"
 ; 	"Music 2"
-; ROMX $9
-; 	"Pics 1"
+ROMX $9
+	"Pics 1"
 ; 	"Battle Engine 3"
-; ROMX $A
-; 	"Pics 2"
+ROMX $A
+	"Pics 2"
 ; 	"Battle Engine 4"
-; ROMX $B
-; 	"Pics 3"
+ROMX $B
+	"Pics 3"
 ; 	"Battle Engine 5"
-; ROMX $C
-; 	"Pics 4"
-; ROMX $D
-; 	"Pics 5"
+ROMX $C
+	"Pics 4"
+ROMX $D
+	"Pics 5"
 ; 	"Slot Machines"
 ; ROMX $E
 ; 	"Battle Engine 6"
@@ -96,8 +96,8 @@ ROM0
 ; ROMX $12
 ; 	"Maps 7"
 ; 	"Maps 8"
-; ROMX $13
-; 	"Trainer Pics"
+ROMX $13
+	"Trainer Pics"
 ; 	"Maps 9"
 ; ROMX $14
 ; 	"Maps 10"
@@ -218,40 +218,42 @@ ROM0
 ; 	"Credits"
 ; 	"Maps 22"
 ; 	"Hidden Events Core"
-; ROMX $3D
+ROMX $3D
 ; 	"Battle Engine 8"
-; 	"Pics 7"
+	org $43bd
+	"Pics 7"
 ; 	"Battle Engine 9"
 ; ROMX $3E
 ; 	"Surfing Minigame"
 ; ROMX $3F
 ; 	"Overworld Pikachu"
 ; 	"NPC Sprites 3"
-; WRAM0
-; 	"Audio RAM"
-; 	org $c100
-; 	"Sprite State Data"
-; 	org $c300
-; 	"OAM Buffer"
-; 	"Tilemap"
-; 	"Overworld Map"
-; 	"WRAM"
-; 	"Party Data"
-; 	"Main Data"
-; 	"Current Box Data"
-; 	"CGB Palette Data"
-; 	org $df15
-; 	"Stack"
+WRAM0
+	"Audio RAM"
+	org $c100
+	"Sprite State Data"
+	org $c300
+	"OAM Buffer"
+	"Tilemap"
+	"Overworld Map"
+	"WRAM"
+	"Party Data"
+	"Main Data"
+	"Current Box Data"
+	"CGB Palette Data"
+	org $df1a
+	"Stack"
 VRAM $0
 	"VRAM"
-; SRAM $0
-; 	"Sprite Buffers"
-; SRAM $1
-; 	"Save Data"
-; SRAM $2
-; 	"Saved Boxes 1"
-; SRAM $3
-; 	"Saved Boxes 2"
-; HRAM
+SRAM $0
+	"Sprite Buffers"
+SRAM $1
+	"Save Data"
+SRAM $2
+	"Saved Boxes 1"
+SRAM $3
+	"Saved Boxes 2"
+HRAM
 ; 	"OAM DMA"
-; 	"HRAM"
+	org $ff8a
+	"HRAM"

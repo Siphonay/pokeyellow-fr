@@ -4,12 +4,12 @@ patches := pokeyellow.patch
 rom_obj := \
 	home.o \
 	ram.o \
-	wip.o
+	wip.o \
+	gfx/pics.o
 # 	audio.o \
 # 	main.o \
 # 	maps.o \
 # 	text.o \
-# 	gfx/pics.o \
 # 	gfx/pikachu.o \
 # 	gfx/sprites.o \
 # 	gfx/surfing_pikachu.o \
@@ -123,6 +123,9 @@ $(foreach obj, $(pokeyellow_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
 $(foreach obj, $(pokeyellow_vc_obj), $(eval $(call DEP,$(obj),$(obj:_vc.o=.asm))))
 
 endif
+
+
+RGBLINKFLAGS += -d -p 0x00
 
 RGBFIXFLAGS += -cjsv -i APSF -k 01 -l 0x33 -m MBC5+RAM+BATTERY -p 0 -r 3 -t "POKEMON YEL"
 

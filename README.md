@@ -13,6 +13,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
 - The whole repository structure, most ASM files, tools and build scripts originate from pret [**pokeyellow**][pokeyellow].
 - [**Emulicious**][emulicious] debugger features have been invaluable, navigating the ROM to look for differences with the US release.
+- Brianum's [**pokeyellow-de**][pokeyellow-de] made this considerably easier, having documented every place where a code/data translation change is likely to occur, and providing the final WRAM layout.
 
 ## Note
 
@@ -22,5 +23,6 @@ A base ROM is required to build, it should be placed at the top-level directory:
 
 - **Wiki** (WIP)
 
-[pokeyellow]: https://github.com/pret/pokeyellow
 [emulicious]: https://www.emulicious.net
+[pokeyellow]: https://github.com/pret/pokeyellow
+[pokeyellow-de]: https://github.com/Brianum/pokeyellow-de

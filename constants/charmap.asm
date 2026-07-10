@@ -150,12 +150,38 @@
 	charmap "y",         $b8
 	charmap "z",         $b9
 
-	charmap "é",         $ba
-	charmap "'d",        $bb
-	charmap "'l",        $bc
-	charmap "'s",        $bd
-	charmap "'t",        $be
-	charmap "'v",        $bf
+	charmap "à",         $ba
+	charmap "è",         $bb
+	charmap "é",         $bc
+	charmap "ù",         $bd
+	charmap "ß",         $be
+	charmap "ç",         $bf
+	charmap "Ä",         $c0
+	charmap "Ö",         $c1
+	charmap "Ü",         $c2
+	charmap "ä",         $c3
+	charmap "ö",         $c4
+	charmap "ü",         $c5
+	charmap "ë",         $c6
+	charmap "ï",         $c7
+	charmap "â",         $c8
+	charmap "ô",         $c9
+	charmap "û",         $ca
+	charmap "ê",         $cb
+	charmap "î",         $cc
+
+	charmap "c'",         $d4
+	charmap "d'",         $d5
+	charmap "j'",         $d6
+	charmap "l'",         $d7
+	charmap "m'",         $d8
+	charmap "n'",         $d9
+	charmap "p'",         $da
+	charmap "s'",         $db
+	charmap "'s",         $dc
+	charmap "t'",         $dd
+	charmap "u'",         $de
+	charmap "y'",         $df
 
 	charmap "'",         $e0
 	charmap "<PK>",      $e1

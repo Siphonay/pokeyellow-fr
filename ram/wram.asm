@@ -1153,6 +1153,8 @@ wAIItem:: db
 wUsedItemOnWhichPokemon:: db
 ENDU
 
+	ds 5
+
 ; sound ID during battle animations
 wAnimSoundID:: db
 
@@ -2523,7 +2525,7 @@ wBGPPalsBuffer:: ds NUM_ACTIVE_PALS * PAL_SIZE
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $eb - 1
+	ds $eb - 6
 wStack:: db
 
 ENDSECTION

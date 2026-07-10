@@ -161,11 +161,11 @@ PlaceMoveUsersName::
 	jr PlaceCommandCharacter
 
 .enemy
-	ld de, EnemyText
+	ld de, wEnemyMonNick
 	call PlaceString
 	ld h, b
 	ld l, c
-	ld de, wEnemyMonNick
+	ld de, EnemyText
 	; fallthrough
 
 PlaceCommandCharacter::
@@ -176,14 +176,14 @@ PlaceCommandCharacter::
 	inc de
 	jp PlaceNextChar
 
-TMCharText::      db "TM@"
-TrainerCharText:: db "TRAINER@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"
-PlacePOKeText::   db "POKé@"
 SixDotsCharText:: db "……@"
-EnemyText::       db "Enemy @"
 PlacePKMNText::   db "<PK><MN>@"
+TMCharText::      db "CT@"
+TrainerCharText:: db "DRES.@"
+PlacePOKeText::   db "POKé@"
+EnemyText::       db " ennemi@"
 
 ContText::
 	push de
@@ -633,11 +633,7 @@ TextCommandJumpTable::
 	dw TextCommand_BOX           ; TX_BOX
 	dw TextCommand_LOW           ; TX_LOW
 	dw TextCommand_PROMPT_BUTTON ; TX_PROMPT_BUTTON
-IF DEF(_DEBUG)
-	dw _ContTextNoPause          ; TX_SCROLL
-ELSE
 	dw TextCommand_SCROLL        ; TX_SCROLL
-ENDC
 	dw TextCommand_START_ASM     ; TX_START_ASM
 	dw TextCommand_NUM           ; TX_NUM
 	dw TextCommand_PAUSE         ; TX_PAUSE
