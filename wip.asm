@@ -334,61 +334,8 @@ SECTION "rom29", ROMX[$4000], BANK[29]
 ; ROM $20 : $80000 - $83FFF
 
 
-SECTION "rom38", ROMX[$4000], BANK[38]
-; ROM $26 : $98000 - $9BFFF
-
-	dr _TrainerNameText, $404d
-	dr _ExclamationText, $409c
-	dr _GroundRoseText, $409f
-	dr _BoulderText, $40bf
-	dr _MartSignText, $40df
-	dr _PokeCenterSignText, $4107
-
-
-;SECTION "rom39", ROMX[$4000], BANK[39]
-; ROM $27 : $9C000 - $9FFFF
-
-
-SECTION "rom40", ROMX[$4000], BANK[40]
-; ROM $28 : $A0000 - $A3FFF
-
-	dr _SleepingPikachuText1, $411c
-	dr _TextIDErrorText, $4d74
-	dr _ContCharText, $4d82
-
-
-;SECTION "rom41", ROMX[$4000], BANK[41]
-; ROM $29 : $A4000 - $A7FFF
-
-
-;SECTION "rom42", ROMX[$4000], BANK[42]
-; ROM $2a : $A8000 - $ABFFF
-
-
-;SECTION "rom43", ROMX[$4000], BANK[43]
-; ROM $2b : $AC000 - $AFFFF
-
-
-;SECTION "rom44", ROMX[$4000], BANK[44]
-; ROM $2c : $B0000 - $B3FFF
-
-
-;SECTION "rom45", ROMX[$4000], BANK[45]
-; ROM $2d : $B4000 - $B7FFF
-
-
-;SECTION "rom46", ROMX[$4000], BANK[46]
-; ROM $2e : $B8000 - $BBFFF
-
-
-SECTION "rom47", ROMX[$4000], BANK[47]
+;SECTION "rom47", ROMX[$4000], BANK[47]
 ; ROM $2f : $BC000 - $BFFFF
-
-	dr MoveNames, $4000
-
-
-;SECTION "rom48", ROMX[$4000], BANK[48]
-; ROM $30 : $C0000 - $C3FFF
 
 
 ;SECTION "rom57", ROMX[$4000], BANK[57]
@@ -401,16 +348,6 @@ SECTION "rom58", ROMX[$4000], BANK[58]
 	dr MonsterNames, $4000
 	dr PrinterSerial_, $4a5e
 	dr SetEnemyTrainerToStayAndFaceAnyDirection, $69d5
-
-
-SECTION "rom59", ROMX[$4000], BANK[59]
-; ROM $3b : $EC000 - $EFFFF
-
-	dr _PokemonText, $6b1b
-	dr _PokemartGreetingText, $6b22
-	dr _PokemonFaintedText, $6b3a
-	dr _PlayerBlackedOutText, $6b49
-	dr _RepelWoreOffText, $6b6d
 
 
 SECTION "rom60", ROMX[$4000], BANK[60]

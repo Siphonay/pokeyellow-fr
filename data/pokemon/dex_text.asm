@@ -1,1508 +1,1501 @@
 _BulbasaurDexEntry::
-	text "It can go for days"
-	next "without eating a"
-	next "single morsel."
+	text "Il peut survivre"
+	next "plusieurs jours"
+	next "sans manger."
 
-	page "In the bulb on"
-	next "its back, it"
-	next "stores energy"
-	dex
+	page "Le bulbe sur son"
+	next "dos emmagasine de"
+	next "l'énergie.@"
+	text_end
 
 _IvysaurDexEntry::
-	text "The bulb on its"
-	next "back grows by"
-	next "drawing energy."
+	text "En emmagasinant"
+	next "de l'énergie, son"
+	next "bulbe grossit."
 
-	page "It gives off an"
-	next "aroma when it is"
-	next "ready to bloom"
-	dex
+	page "Il en émane un"
+	next "arôme quand il va"
+	next "éclore.@"
+	text_end
 
 _VenusaurDexEntry::
-	text "The flower on its"
-	next "back catches the"
-	next "sun's rays."
+	text "Les pétales de"
+	next "sa fleur dorsale"
+	next "absorbent les"
 
-	page "The sunlight is"
-	next "then absorbed and"
-	next "used for energy"
-	dex
+	page "rayons du soleil"
+	next "pour en faire de"
+	next "l'énergie.@"
+	text_end
 
 _CharmanderDexEntry::
-	text "The flame at the"
-	next "tip of its tail"
-	next "makes a sound as"
+	text "La flammèche au"
+	next "bout de sa queue"
+	next "émet un son"
 
-	page "it burns. You can"
-	next "only hear it in"
-	next "quiet places"
-	dex
+	page "crépitant audible"
+	next "seulement dans"
+	next "un endroit calme.@"
+	text_end
 
 _CharmeleonDexEntry::
-	text "Tough fights could"
-	next "excite this"
-	next "#MON. When"
+	text "Ce #MON est"
+	next "violent. Dans la"
+	next "furie d'un combat"
 
-	page "excited, it may"
-	next "blow out bluish-"
-	next "white flames"
-	dex
+	page "son aura brille"
+	next "d'une flamme"
+	next "bleutée.@"
+	text_end
 
 _CharizardDexEntry::
-	text "When expelling a"
-	next "blast of super"
-	next "hot fire, the red"
+	text "Quand il crache"
+	next "son souffle"
+	next "brûlant, la"
 
-	page "flame at the tip"
-	next "of its tail burns"
-	next "more intensely"
-	dex
+	page "flamme au bout de"
+	next "sa queue"
+	next "s'embrase.@"
+	text_end
 
 _SquirtleDexEntry::
-	text "Shoots water at"
-	next "prey while in the"
-	next "water."
+	text "Caché sous l'eau,"
+	next "il crache un jet"
+	next "d'eau sur sa"
 
-	page "Withdraws into"
-	next "its shell when in"
-	next "danger"
-	dex
+	page "proie et se cache"
+	next "à l'intérieur de"
+	next "sa coquille.@"
+	text_end
 
 _WartortleDexEntry::
-	text "When tapped, this"
-	next "#MON will pull"
-	next "in its head, but"
+	text "Attaqué, il"
+	next "cache sa tête"
+	next "dans sa carapace,"
 
-	page "its tail will"
-	next "still stick out a"
-	next "little bit"
-	dex
+	page "mais son corps"
+	next "trop gros ne peut"
+	next "y tenir en entier.@"
+	text_end
 
 _BlastoiseDexEntry::
-	text "Once it takes aim"
-	next "at its enemy, it"
-	next "blasts out water"
+	text "Une fois sa cible"
+	next "alignée, il"
+	next "projette des jets"
 
-	page "with even more"
-	next "force than a fire"
-	next "hose"
-	dex
+	page "d'eau plus"
+	next "puissants qu'une"
+	next "lance à incendie.@"
+	text_end
 
 _CaterpieDexEntry::
-	text "If you touch the"
-	next "feeler on top of"
-	next "its head, it will"
+	text "Quand on touche"
+	next "l'appendice sur"
+	next "son front, il"
 
-	page "release a horrible"
-	next "stink to protect"
-	next "itself"
-	dex
+	page "sécrète un gaz"
+	next "puant pour se"
+	next "protéger.@"
+	text_end
 
 _MetapodDexEntry::
-	text "Hardens its shell"
-	next "to protect itself."
-	next "However, a large"
+	text "Il renforce sa"
+	next "carapace pour se"
+	next "protéger. Mais"
 
-	page "impact may cause"
-	next "it to pop out of"
-	next "its shell"
-	dex
+	page "un coup puissant"
+	next "peut le déloger"
+	next "de son armure.@"
+	text_end
 
 _ButterfreeDexEntry::
-	text "Its wings, covered"
-	next "with poisonous"
-	next "powders, repel"
+	text "Ses ailes sont"
+	next "enduites d'une"
+	next "poudre toxique"
 
-	page "water. This"
-	next "allows it to fly"
-	next "in the rain"
-	dex
+	page "imperméable."
+	next "Il peut voler"
+	next "sous la pluie.@"
+	text_end
 
 _WeedleDexEntry::
-	text "Beware of the"
-	next "sharp stinger on"
-	next "its head. It"
+	text "Prenez garde à la"
+	next "pique empoisonnée"
+	next "sur son front."
 
-	page "hides in grass"
-	next "and bushes where"
-	next "it eats leaves"
-	dex
+	page "Il se cache dans"
+	next "les buissons et"
+	next "les hautes herbes.@"
+	text_end
 
 _KakunaDexEntry::
-	text "Able to move only"
-	next "slightly. When"
-	next "endangered, it"
+	text "Il se déplace"
+	next "très lentement."
+	next "Menacé, il sort"
 
-	page "may stick out its"
-	next "stinger and poison"
-	next "its enemy"
-	dex
+	page "son aiguillon"
+	next "et empoisonne ses"
+	next "ennemis.@"
+	text_end
 
 _BeedrillDexEntry::
-	text "It has 3 poisonous"
-	next "stingers on its"
-	next "forelegs and its"
+	text "Il se sert de ses"
+	next "trois aiguillons"
+	next "empoisonnés pour"
 
-	page "tail. They are"
-	next "used to jab its"
-	next "enemy repeatedly"
-	dex
+	page "attaquer sans"
+	next "relâche ses"
+	next "adversaires.@"
+	text_end
 
 _PidgeyDexEntry::
-	text "Very docile. If"
-	next "attacked, it will"
-	next "often kick up"
+	text "De nature très"
+	next "docile, il"
+	next "préfère jeter du"
 
-	page "sand to protect"
-	next "itself rather"
-	next "than fight back"
-	dex
+	page "sable pour se"
+	next "défendre plutôt"
+	next "qu'attaquer.@"
+	text_end
 
 _PidgeottoDexEntry::
-	text "This #MON is"
-	next "full of vitality."
-	next "It constantly"
+	text "Ce #MON est"
+	next "très vivace."
+	next "Il survole en"
 
-	page "flies around its"
-	next "large territory in"
-	next "search of prey"
-	dex
+	page "permanence son"
+	next "territoire pour"
+	next "chasser.@"
+	text_end
 
 _PidgeotDexEntry::
-	text "This #MON flies"
-	next "at Mach 2 speed,"
-	next "seeking prey."
+	text "Ce #MON vole"
+	next "à Mach 2 quand il"
+	next "chasse. Ses"
 
-	page "Its large talons"
-	next "are feared as"
-	next "wicked weapons"
-	dex
+	page "grandes griffes"
+	next "sont des armes"
+	next "redoutables.@"
+	text_end
 
 _RattataDexEntry::
-	text "Will chew on any-"
-	next "thing with its"
-	next "fangs. If you see"
+	text "Il peut ronger"
+	next "n'importe quoi."
+	next "Quand on en voit"
 
-	page "one, it is certain"
-	next "that 40 more live"
-	next "in the area"
-	dex
+	page "un , il y en a"
+	next "certainement 40"
+	next "dans le coin.@"
+	text_end
 
 _RaticateDexEntry::
-	text "Its hind feet are"
-	next "webbed. They act"
-	next "as flippers, so"
+	text "Ses pattes sont"
+	next "palmées. Il peut"
+	next "poursuivre sa"
 
-	page "it can swim in"
-	next "rivers and hunt"
-	next "for prey"
-	dex
+	page "proie à travers"
+	next "les cours d'eau"
+	next "et les rivières.@"
+	text_end
 
 _SpearowDexEntry::
-	text "Inept at flying"
-	next "high. However, it"
-	next "can fly around"
+	text "Incapable de"
+	next "voler à haute"
+	next "altitude, il se"
 
-	page "very fast to"
-	next "protect its ter-"
-	next "ritory"
-	dex
+	page "déplace très vite"
+	next "pour protéger son"
+	next "territoire.@"
+	text_end
 
 _FearowDexEntry::
-	text "A #MON that"
-	next "dates back many"
-	next "years. If it"
+	text "Un #MON à qui"
+	next "on ne la fait pas."
+	next "S'il sent du"
 
-	page "senses danger, it"
-	next "flies high and"
-	next "away, instantly"
-	dex
+	page "danger, il fuit"
+	next "instantanément et"
+	next "à toute vitesse.@"
+	text_end
 
 _EkansDexEntry::
-	text "The older it gets,"
-	next "the longer it"
-	next "grows. At night,"
+	text "Plus il est âgé,"
+	next "plus son corps"
+	next "est long. Il se"
 
-	page "it wraps its long"
-	next "body around tree"
-	next "branches to rest"
-	dex
+	page "love autour des"
+	next "arbres pour se"
+	next "reposer.@"
+	text_end
 
 _ArbokDexEntry::
-	text "The frightening"
-	next "patterns on its"
-	next "belly have been"
+	text "Des études menées"
+	next "sur les motifs"
+	next "effrayants de son"
 
-	page "studied. Six"
-	next "variations have"
-	next "been confirmed"
-	dex
+	page "corps ont révélé"
+	next "six variations"
+	next "différentes.@"
+	text_end
 
 _PikachuDexEntry::
-	text "It keeps its tail"
-	next "raised to monitor"
-	next "its surroundings."
+	text "Sa queue est"
+	next "dressée quand il"
+	next "est aux aguets."
 
-	page "If you yank its"
-	next "tail, it will try"
-	next "to bite you"
-	dex
+	page "Si vous tirez"
+	next "dessus, il"
+	next "vous mordra.@"
+	text_end
 
 _RaichuDexEntry::
-	text "When electricity"
-	next "builds up inside"
-	next "its body, it"
+	text "Il devient tout"
+	next "excité quand il"
+	next "emmagasine de"
 
-	page "becomes feisty."
-	next "It also glows in"
-	next "the dark"
-	dex
+	page "l'électricité."
+	next "Il brille alors"
+	next "dans le noir.@"
+	text_end
 
 _SandshrewDexEntry::
-	text "Its body is dry."
-	next "When it gets cold"
-	next "at night, its"
+	text "Son corps est sec."
+	next "Quand la nuit"
+	next "déploie ses ailes"
 
-	page "hide is said to"
-	next "become coated with"
-	next "a fine dew"
-	dex
+	page "de fraîcheur, son"
+	next "épiderme se"
+	next "couvre de rosée.@"
+	text_end
 
 _SandslashDexEntry::
-	text "It is skilled at"
-	next "slashing enemies"
-	next "with its claws."
+	text "Ses griffes sont"
+	next "redoutables."
+	next "Si une d'elles se"
 
-	page "If broken, they"
-	next "start to grow back"
-	next "in a day"
-	dex
+	page "casse, elle"
+	next "repoussera en"
+	next "un jour.@"
+	text_end
 
 _NidoranFDexEntry::
-	text "A mild-mannered"
-	next "#MON that does"
-	next "not like to"
+	text "Un #MON"
+	next "paisible qui"
+	next "n'aime pas se"
 
-	page "fight. Beware, its"
-	next "small horns"
-	next "secrete venom"
-	dex
+	page "battre. Ses"
+	next "petites cornes"
+	next "sont empoisonnées.@"
+	text_end
 
 _NidorinaDexEntry::
-	text "When resting deep"
-	next "in its burrow, its"
-	next "thorns always"
+	text "Caché au fond de"
+	next "son terrier, ses"
+	next "cornes se"
 
-	page "retract."
-	next "This is proof that"
-	next "it is relaxed"
-	dex
+	page "rétractent. C'est"
+	next "la preuve qu'il"
+	next "est au repos.@"
+	text_end
 
 _NidoqueenDexEntry::
-	text "Tough scales cover"
-	next "the sturdy body"
-	next "of this #MON."
+	text "Son corps musclé"
+	next "est recouvert de"
+	next "lourdes écailles"
 
-	page "It appears that"
-	next "the scales grow"
-	next "in cycles"
-	dex
+	page "Elles poussent"
+	next "selon un cycle et"
+	next "un ordre précis.@"
+	text_end
 
 _NidoranMDexEntry::
-	text "Its large ears"
-	next "are always kept"
-	next "upright. If it"
+	text "Ses grandes"
+	next "oreilles sont"
+	next "toujours dressées."
 
-	page "senses danger, it"
-	next "will attack with a"
-	next "poisonous sting"
-	dex
+	page "S'il est menacé,"
+	next "il se défend avec"
+	next "un dard venimeux.@"
+	text_end
 
 _NidorinoDexEntry::
-	text "Its horns contain"
-	next "venom. If they"
-	next "are stabbed into"
+	text "Ses cornes sont"
+	next "venimeuses. Si"
+	next "elles touchent un"
 
-	page "an enemy, the"
-	next "impact makes the"
-	next "poison leak out"
-	dex
+	page "ennemi, elles lui"
+	next "injectent un"
+	next "poison violent.@"
+	text_end
 
 _NidokingDexEntry::
-	text "Its steel-like"
-	next "hide adds to its"
-	next "powerful tackle."
+	text "Ses charges sont"
+	next "dévastatrices"
+	next "grâce à sa peau"
 
-	page "Its horns are so"
-	next "hard, they can"
-	next "pierce a diamond"
-	dex
+	page "d'acier. Ses"
+	next "cornes percent"
+	next "même le diamant.@"
+	text_end
 
 _ClefairyDexEntry::
-	text "Adored for their"
-	next "cute looks and"
-	next "playfulness. They"
+	text "Adoré pour son"
+	next "aspect mignon et"
+	next "joyeux, il est"
 
-	page "are thought to be"
-	next "rare, as they do"
-	next "not appear often"
-	dex
+	page "considéré comme"
+	next "rare. On en"
+	next "voit très peu.@"
+	text_end
 
 _ClefableDexEntry::
-	text "They appear to be"
-	next "very protective of"
-	next "their own world."
+	text "Il défend son"
+	next "habitat avec"
+	next "courage. C'est"
 
-	page "It is a kind of"
-	next "fairy, rarely seen"
-	next "by people"
-	dex
+	page "une sorte de fée"
+	next "qui ne se montre"
+	next "que rarement.@"
+	text_end
 
 _VulpixDexEntry::
-	text "Both its fur and"
-	next "its tails are"
-	next "beautiful. As it"
+	text "Sa fourrure et sa"
+	next "queue sont"
+	next "magnifiques. En"
 
-	page "grows, the tails"
-	next "split and form"
-	next "more tails"
-	dex
+	page "grandissant sa"
+	next "queue se divise"
+	next "en six.@"
+	text_end
 
 _NinetalesDexEntry::
-	text "According to an"
-	next "enduring legend,"
-	next "9 noble saints"
+	text "Selon la légende,"
+	next "9 esprits se sont"
+	next "unis et incarnés"
 
-	page "were united and"
-	next "reincarnated as"
-	next "this #MON"
-	dex
+	page "dans ce #MON"
+	next "mystérieux et"
+	next "magique.@"
+	text_end
 
 _JigglypuffDexEntry::
-	text "Uses its alluring"
-	next "eyes to enrapture"
-	next "its foe. It then"
+	text "Son regard"
+	next "déstabilise ses"
+	next "adversaires. Il"
 
-	page "sings a pleasing"
-	next "melody that lulls"
-	next "the foe to sleep"
-	dex
+	page "chante ensuite"
+	next "une berceuse qui"
+	next "les endort.@"
+	text_end
 
 _WigglytuffDexEntry::
-	text "Its body is full"
-	next "of elasticity. By"
-	next "inhaling deeply,"
+	text "Son corps est"
+	next "malléable. En"
+	next "aspirant de l'air"
 
-	page "it can continue"
-	next "to inflate itself"
-	next "without limit"
-	dex
+	page "il se gonfle dans"
+	next "des proportions"
+	next "gigantesques.@"
+	text_end
 
 _ZubatDexEntry::
-	text "Emits ultrasonic"
-	next "cries while it"
-	next "flies. They act"
+	text "Il se dirige avec"
+	next "des ultrasons qui"
+	next "lui servent de"
 
-	page "as a sonar used"
-	next "to check for ob-"
-	next "jects in its way"
-	dex
+	page "sonar pour éviter"
+	next "les obstacles sur"
+	next "son trajet.@"
+	text_end
 
 _GolbatDexEntry::
-	text "It attacks in a"
-	next "stealthy manner,"
-	next "without warning."
+	text "Il attaque par"
+	next "surprise et sans"
+	next "crier gare."
 
-	page "Its sharp fangs"
-	next "are used to bite"
-	next "and suck blood"
-	dex
+	page "Ses longues dents"
+	next "lui servent à"
+	next "sucer le sang.@"
+	text_end
 
 _OddishDexEntry::
-	text "It may be mistaken"
-	next "for a clump of"
-	next "weeds. If you try"
+	text "Il est souvent"
+	next "confondu avec un"
+	next "radis noir."
 
-	page "to yank it out of"
-	next "the ground, it"
-	next "shrieks horribly"
-	dex
+	page "Si on essaye de"
+	next "le soulever du"
+	next "sol, il hurle.@"
+	text_end
 
 _GloomDexEntry::
-	text "Smells incredibly"
-	next "foul! However,"
-	next "around 1 out of"
+	text "Il sent très"
+	next "mauvais! Mais"
+	next "1 personne sur"
 
-	page "1,000 people enjoy"
-	next "sniffing its nose-"
-	next "bending stink"
-	dex
+	page "1000 aime la"
+	next "puanteur de son"
+	next "corps nauséabond.@"
+	text_end
 
 _VileplumeDexEntry::
-	text "Flaps its broad"
-	next "flower petals to"
-	next "scatter its"
+	text "Il fait un bruit"
+	next "sourd quand il"
+	next "secoue ses"
 
-	page "poisonous pollen."
-	next "The flapping sound"
-	next "is very loud"
-	dex
+	page "pétales pour"
+	next "disperser son"
+	next "pollen empoisonné.@"
+	text_end
 
 _ParasDexEntry::
-	text "Burrows under the"
-	next "ground to gnaw on"
-	next "tree roots. The"
+	text "Il s'enfouit sous"
+	next "terre pour ronger"
+	next "des racines afin"
 
-	page "mushrooms on its"
-	next "back absorb most"
-	next "of the nutrition"
-	dex
+	page "de nourrir le"
+	next "champignon sur"
+	next "son dos.@"
+	text_end
 
 _ParasectDexEntry::
-	text "The bug host is"
-	next "drained of energy"
-	next "by the mushrooms"
+	text "Le champignon"
+	next "absorbe son hôte"
+	next "insectoïde. Il"
 
-	page "on its back. They"
-	next "appear to do all"
-	next "the thinking"
-	dex
+	page "semble doué de"
+	next "facultés"
+	next "intellectuelles.@"
+	text_end
 
 _VenonatDexEntry::
-	text "Its large eyes act"
-	next "as radars. In a"
-	next "bright place, you"
+	text "Ses grands yeux"
+	next "lui servent de"
+	next "radar. En pleine"
 
-	page "can see that they"
-	next "are clusters of"
-	next "many tiny eyes"
-	dex
+	page "lumière on peut y"
+	next "distinguer des"
+	next "facettes.@"
+	text_end
 
 _VenomothDexEntry::
-	text "The powdery scales"
-	next "on its wings are"
-	next "hard to remove."
+	text "Les écailles de"
+	next "ses ailes sont"
+	next "inamovibles."
 
-	page "They also contain"
-	next "poison that leaks"
-	next "out on contact"
-	dex
+	page "Elles libèrent un"
+	next "poison violent au"
+	next "contact.@"
+	text_end
 
 _DiglettDexEntry::
-	text "It prefers dark"
-	next "places. It spends"
-	next "most of its time"
+	text "Il aime les lieux"
+	next "sombres. Il"
+	next "passe la majeure"
 
-	page "underground,"
-	next "though it may pop"
-	next "up in caves"
-	dex
+	page "partie du temps"
+	next "sous terre ou"
+	next "dans des cavernes.@"
+	text_end
 
 _DugtrioDexEntry::
-	text "A team of triplets"
-	next "that can burrow"
-	next "over 60 MPH."
+	text "Quand un de ces"
+	next "triplets creuse à"
+	next "plus de 90 Km/h,"
 
-	page "Due to this, some"
-	next "people think it's"
-	next "an earthquake"
-	dex
+	page "il provoque des"
+	next "tremblements de"
+	next "terre.@"
+	text_end
 
 _MeowthDexEntry::
-	text "Appears to be more"
-	next "active at night."
-	next "It loves round"
+	text "Il est surtout"
+	next "actif la nuit."
+	next "Il aime chaparder"
 
-	page "and shiny things."
-	next "It can't stop from"
-	next "picking them up"
-	dex
+	page "les objets ronds"
+	next "et brillants.@"
+	text_end
 
 _PersianDexEntry::
-	text "The gem in its"
-	next "forehead glows on"
-	next "its own! It walks"
+	text "Sa démarche est"
+	next "souple et"
+	next "majestueuse."
 
-	page "with all the grace"
-	next "and elegance of a"
-	next "proud queen"
-	dex
+	page "La pierre sur son"
+	next "front brille de"
+	next "mille feux.@"
+	text_end
 
 _PsyduckDexEntry::
-	text "Always tormented"
-	next "by headaches."
-	next "It uses psychic"
+	text "Il est victime"
+	next "de violents maux"
+	next "de tête. Il"
 
-	page "powers, but it is"
-	next "not known if it"
-	next "intends to do so"
-	dex
+	page "utilise ses"
+	next "pouvoirs psy de"
+	next "façon discrète.@"
+	text_end
 
 _GolduckDexEntry::
-	text "Its slim and long"
-	next "limbs end in broad"
-	next "flippers. They"
+	text "Ses membres fins"
+	next "et longs sont"
+	next "terminés par des"
 
-	page "are used for swim-"
-	next "ming gracefully"
-	next "in lakes"
-	dex
+	page "nageoires qui lui"
+	next "permettent de"
+	next "nager élégamment.@"
+	text_end
 
 _MankeyDexEntry::
-	text "An agile #MON"
-	next "that lives in"
-	next "trees. It angers"
+	text "Agile et rapide,"
+	next "ce #MON vit"
+	next "dans les arbres."
 
-	page "easily and will"
-	next "not hesitate to"
-	next "attack anything"
-	dex
+	page "Il est féroce et"
+	next "ne refuse jamais"
+	next "un combat.@"
+	text_end
 
 _PrimeapeDexEntry::
-	text "It stops being"
-	next "angry only when"
-	next "nobody else is"
+	text "Sa fureur prend"
+	next "fin quand il n'a"
+	next "plus personne à"
 
-	page "around. To view"
-	next "this moment is"
-	next "very difficult"
-	dex
+	page "frapper. Il est"
+	next "difficile d'en"
+	next "être témoin.@"
+	text_end
 
 _GrowlitheDexEntry::
-	text "A #MON with a"
-	next "friendly nature."
-	next "However, it will"
+	text "Ce #MON est"
+	next "de nature amicale."
+	next "Mais il devient"
 
-	page "bark fiercely at"
-	next "anything invading"
-	next "its territory"
-	dex
+	page "hargneux quand"
+	next "son territoire"
+	next "est menacé.@"
+	text_end
 
 _ArcanineDexEntry::
-	text "A legendary #-"
-	next "MON in China."
-	next "Many people are"
+	text "Un #MON légend-"
+	next "aire en Chine. Il"
+	next "est admiré pour"
 
-	page "charmed by its"
-	next "grace and beauty"
-	next "while running"
-	dex
+	page "la grâce et la"
+	next "beauté de sa"
+	next "course.@"
+	text_end
 
 _PoliwagDexEntry::
-	text "The direction of"
-	next "the spiral on the"
-	next "belly differs by"
+	text "Le sens de la"
+	next "spirale sur son"
+	next "ventre diffère"
 
-	page "area. It is more"
-	next "adept at swimming"
-	next "than walking"
-	dex
+	page "selon son origine."
+	next "Il préfère la"
+	next "nage à la marche.@"
+	text_end
 
 _PoliwhirlDexEntry::
-	text "Under attack, it"
-	next "uses its belly "
-	next "spiral to put the"
+	text "Attaqué, il se"
+	next "sert de sa"
+	next "spirale pour"
 
-	page "foe to sleep. It"
-	next "then makes its"
-	next "escape"
-	dex
+	page "endormir sa proie."
+	next "Il peut ainsi"
+	next "s'enfuir.@"
+	text_end
 
 _PoliwrathDexEntry::
-	text "Swims powerfully"
-	next "using all the"
-	next "muscles in its"
+	text "Son corps très"
+	next "musclé lui permet"
+	next "de nager plus"
 
-	page "body. It can even"
-	next "overtake champion"
-	next "swimmers"
-	dex
+	page "rapidement qu'un"
+	next "champion"
+	next "olympique.@"
+	text_end
 
 _AbraDexEntry::
-	text "Sleeps 18 hours a"
-	next "day. If it senses"
-	next "danger, it will"
+	text "Il dort 18 heures"
+	next "par jour. En cas"
+	next "de danger, il se"
 
-	page "teleport itself to"
-	next "safety even as it"
-	next "sleeps"
-	dex
+	page "téléporte vers un"
+	next "lieu sûr, même"
+	next "s'il est assoupi.@"
+	text_end
 
 _KadabraDexEntry::
-	text "Many odd things"
-	next "happen if this"
-	next "#MON is close"
+	text "Sa présence cause"
+	next "des événements"
+	next "étranges, comme"
 
-	page "by. For example,"
-	next "it makes clocks"
-	next "run backwards"
-	dex
+	page "des pendules"
+	next "marchant à"
+	next "l'envers.@"
+	text_end
 
 _AlakazamDexEntry::
-	text "A #MON that can"
-	next "memorize anything."
-	next "It never forgets"
+	text "Ce #MON est"
+	next "très intelligent."
+	next "Sa mémoire est"
 
-	page "what it learns--"
-	next "that's why this"
-	next "#MON is smart"
-	dex
+	page "immense, il"
+	next "retient tout ce"
+	next "qu'il apprend.@"
+	text_end
 
 _MachopDexEntry::
-	text "Very powerful in"
-	next "spite of its small"
-	next "size. Its mastery"
+	text "Très puissant"
+	next "malgré sa petite"
+	next "taille, il est"
 
-	page "of many types of"
-	next "martial arts makes"
-	next "it very tough"
-	dex
+	page "passé maître en"
+	next "plusieurs types"
+	next "d'arts martiaux.@"
+	text_end
 
 _MachokeDexEntry::
-	text "The belt around"
-	next "its waist holds"
-	next "back its energy."
+	text "Sa ceinture sert"
+	next "à retenir son"
+	next "énergie. Sans"
 
-	page "Without it, this"
-	next "#MON would be"
-	next "unstoppable"
-	dex
+	page "elle, il serait"
+	next "invincible et"
+	next "incontrôlable.@"
+	text_end
 
 _MachampDexEntry::
-	text "One arm alone can"
-	next "move mountains."
-	next "Using all four"
+	text "Un seul de ses"
+	next "bras peut bouger"
+	next "une montagne."
 
-	page "arms, this #MON"
-	next "fires off awesome"
-	next "punches"
-	dex
+	page "Rien ne résiste"
+	next "aux quatre bras"
+	next "en même temps.@"
+	text_end
 
 _BellsproutDexEntry::
-	text "Prefers hot and"
-	next "humid places."
-	next "It ensnares tiny"
+	text "Il préfère les"
+	next "endroits chauds"
+	next "et humides. Il"
 
-	page "insects with its"
-	next "vines and devours"
-	next "them"
-	dex
+	page "capture sa proie"
+	next "avec ses lianes"
+	next "pour la dévorer.@"
+	text_end
 
 _WeepinbellDexEntry::
-	text "When hungry, it"
-	next "swallows anything"
-	next "that moves. Its"
+	text "Il peut avaler"
+	next "et digérer"
+	next "n'importe quoi"
 
-	page "hapless prey is"
-	next "melted inside by"
-	next "strong acids"
-	dex
+	page "grâce à l'hyper-"
+	next "acidité de son"
+	next "estomac vorace.@"
+	text_end
 
 _VictreebelDexEntry::
-	text "Lures prey with"
-	next "the sweet aroma of"
-	next "honey. Swallowed"
+	text "Il attire sa"
+	next "proie avec une"
+	next "odeur de miel et"
 
-	page "whole, the prey is"
-	next "melted in a day,"
-	next "bones and all"
-	dex
+	page "l'avale en entier."
+	next "Il la digère en"
+	next "un seul jour.@"
+	text_end
 
 _TentacoolDexEntry::
-	text "It can sometimes"
-	next "be found all dry"
-	next "and shriveled up"
+	text "Certains échouent"
+	next "sur la plage et"
+	next "sèchent sur le"
 
-	page "on a beach. Toss"
-	next "it back into the"
-	next "sea to revive it"
-	dex
+	page "sable. Poussez"
+	next "-les dans l'eau"
+	next "et ils revivent.@"
+	text_end
 
 _TentacruelDexEntry::
-	text "Its 80 tentacles"
-	next "can stretch and"
-	next "contract freely."
+	text "Ses 80 tentacules"
+	next "sont extensibles"
+	next "et autonomes."
 
-	page "They wrap around"
-	next "prey and weaken"
-	next "it with poison"
-	dex
+	page "Ils innoculent"
+	next "un poison au"
+	next "contact.@"
+	text_end
 
 _GeodudeDexEntry::
-	text "Commonly found"
-	next "near mountain"
-	next "trails, etc."
+	text "On en trouve près"
+	next "des sentiers de"
+	next "montagne. Si vous"
 
-	page "If you step on"
-	next "one by accident,"
-	next "it gets angry"
-	dex
+	page "marchez dessus,"
+	next "ils s'énervent et"
+	next "attaquent.@"
+	text_end
 
 _GravelerDexEntry::
-	text "Often seen rolling"
-	next "down mountain"
-	next "trails. Obstacles"
+	text "Il dévale les"
+	next "pentes le long"
+	next "des montagnes, et"
 
-	page "are just things to"
-	next "roll straight"
-	next "over, not avoid"
-	dex
+	page "traverse les"
+	next "obstacles en les"
+	next "pulvérisant.@"
+	text_end
 
 _GolemDexEntry::
-	text "Once it sheds its"
-	next "skin, its body"
-	next "turns tender and"
+	text "Son corps est"
+	next "blanc et tendre."
+	next "Au contact de"
 
-	page "whitish. Its hide"
-	next "hardens when it's"
-	next "exposed to air"
-	dex
+	page "l'air sa peau"
+	next "se solidifie en"
+	next "une armure.@"
+	text_end
 
 _PonytaDexEntry::
-	text "Capable of jumping"
-	next "incredibly high."
-	next "Its hooves and"
+	text "Capable de sauter"
+	next "très haut, ses"
+	next "sabots et ses"
 
-	page "sturdy legs absorb"
-	next "the impact of a"
-	next "hard landing"
-	dex
+	page "pattes peuvent"
+	next "absorber l'impact"
+	next "de l'atterissage.@"
+	text_end
 
 _RapidashDexEntry::
-	text "Just loves to run."
-	next "If it sees some-"
-	next "thing faster than"
+	text "Il aime la course."
+	next "Il poursuit tout"
+	next "ce qui va plus"
 
-	page "itself, it will"
-	next "give chase at top"
-	next "speed"
-	dex
+	page "vite que lui."
+	next "Question"
+	next "d'honneur.@"
+	text_end
 
 _SlowpokeDexEntry::
-	text "Incredibly slow"
-	next "and sluggish. It"
-	next "is quite content"
+	text "Lent et stupide,"
+	next "il aime se la"
+	next "couler douce en"
 
-	page "to loll about"
-	next "without worrying"
-	next "about the time"
-	dex
+	page "observant"
+	next "l'activité autour"
+	next "de lui.@"
+	text_end
 
 _SlowbroDexEntry::
-	text "Lives lazily by"
-	next "the sea. If the"
-	next "SHELLDER on its"
+	text "Il se prélasse au"
+	next "soleil. Si le"
+	next "KOKIYAS, accroché"
 
-	page "tail comes off,"
-	next "it becomes a"
-	next "SLOWPOKE again"
-	dex
+	page "à sa queue s'en"
+	next "va, il redevient"
+	next "un RAMOLOSS.@"
+	text_end
 
 _MagnemiteDexEntry::
-	text "It is born with"
-	next "the ability to"
-	next "defy gravity. It"
+	text "Sa nature défie"
+	next "les lois de la"
+	next "gravité. Il"
 
-	page "floats in air on"
-	next "powerful electro-"
-	next "magnetic waves"
-	dex
+	page "flotte grâce à un"
+	next "champ électro-"
+	next "magnétique.@"
+	text_end
 
 _MagnetonDexEntry::
-	text "Generates strange"
-	next "radio signals. It"
-	next "raises the tem-"
+	text "Il émet un signal"
+	next "radio étrange. Sa"
+	next "présence augmente"
 
-	page "perature by 3.6F"
-	next "degrees within"
-	next "3,300 feet"
-	dex
+	page "la température de"
+	next "1 degré dans un"
+	next "rayon de 1000 m.@"
+	text_end
 
 _FarfetchdDexEntry::
-	text "Lives where reedy"
-	next "plants grow. They"
-	next "are rarely seen,"
+	text "Ils vivent près"
+	next "des roseaux."
+	next "On en voit peu,"
 
-	page "so it's thought"
-	next "their numbers are"
-	next "decreasing"
-	dex
+	page "ils sont peut-"
+	next "être en voie"
+	next "d'extinction.@"
+	text_end
 
 _DoduoDexEntry::
-	text "Its short wings"
-	next "make flying dif-"
-	next "ficult. Instead,"
+	text "Ses petites ailes"
+	next "ne lui permettent"
+	next "pas de voler,"
 
-	page "this #MON runs"
-	next "at high speed on"
-	next "developed legs"
-	dex
+	page "mais il peut"
+	next "courir très"
+	next "rapidement.@"
+	text_end
 
 _DodrioDexEntry::
-	text "One of DODUO's 2"
-	next "heads splits to"
-	next "form a unique"
+	text "Quand une des 2"
+	next "têtes d'un DODUO"
+	next "se divise, il"
 
-	page "species. It runs"
-	next "close to 40 MPH"
-	next "in prairies"
-	dex
+	page "devient un DODRIO"
+	next "capable de courir"
+	next "à 60 Km/h.@"
+	text_end
 
 _SeelDexEntry::
-	text "Loves freezing"
-	next "cold conditions."
-	next "Relishes swimming"
+	text "Il est à l'aise"
+	next "dans les endroits"
+	next "froids et gelés."
 
-	page "in a frigid cli-"
-	next "mate of around 14F"
-	next "degrees"
-	dex
+	page "Il peut nager"
+	next "dans de l'eau à"
+	next "0 degré.@"
+	text_end
 
 _DewgongDexEntry::
-	text "Its entire body is"
-	next "a snowy-white."
-	next "Unharmed by even"
+	text "Son corps entier"
+	next "est d'une couleur"
+	next "blanc neige. Il"
 
-	page "intense cold, it"
-	next "swims powerfully"
-	next "in icy waters"
-	dex
+	page "peut nager au"
+	next "milieu des"
+	next "icebergs.@"
+	text_end
 
 _GrimerDexEntry::
-	text "Made of hardened"
-	next "sludge. It smells"
-	next "too putrid to"
+	text "Ce tas d'ordures"
+	next "concentrées sent"
+	next "très mauvais."
 
-	page "touch."
-	next "Even weeds won't"
-	next "grow in its path"
-	dex
+	page "Rien ne peut"
+	next "pousser dans son"
+	next "sillage putride.@"
+	text_end
 
 _MukDexEntry::
-	text "Smells so awful,"
-	next "it can cause"
-	next "fainting. Through"
+	text "Son odeur immonde"
+	next "provoque des"
+	next "évanouissements."
 
-	page "degeneration, it"
-	next "lost its sense of"
-	next "smell"
-	dex
+	page "Son odorat s'est"
+	next "atrophié par sa"
+	next "propre puanteur.@"
+	text_end
 
 _ShellderDexEntry::
-	text "The shell can"
-	next "withstand any"
-	next "attack. However,"
+	text "Sa coquille le"
+	next "protège de toute"
+	next "attaque. Si elle"
 
-	page "when it is open,"
-	next "the tender body"
-	next "is exposed"
-	dex
+	page "s'ouvre son corps"
+	next "fragile devient"
+	next "vulnérable.@"
+	text_end
 
 _CloysterDexEntry::
-	text "For protection, it"
-	next "uses its harder-"
-	next "than-diamonds"
+	text "Sa coquille plus"
+	next "dure que le"
+	next "diamant le"
 
-	page "shell. It also"
-	next "shoots spikes from"
-	next "the shell"
-	dex
+	page "protège. Il peut"
+	next "envoyer des"
+	next "volées de dards.@"
+	text_end
 
 _GastlyDexEntry::
-	text "Said to appear in"
-	next "decrepit, deserted"
-	next "buildings. It has"
+	text "On en trouve dans"
+	next "les maisons en"
+	next "ruine. Il n'a"
 
-	page "no real shape as"
-	next "it appears to be"
-	next "made of a gas"
-	dex
+	page "pas de forme bien"
+	next "définie car il"
+	next "est fait de gaz.@"
+	text_end
 
 _HaunterDexEntry::
-	text "By licking, it"
-	next "saps the victim's"
-	next "life. It causes"
+	text "Les tremblements"
+	next "provoqués par le"
+	next "contact de sa"
 
-	page "shaking that won't"
-	next "stop until the"
-	next "victim's demise"
-	dex
+	page "langue éthérée ne"
+	next "s'arrêtent qu'à"
+	next "l'évanouissement.@"
+	text_end
 
 _GengarDexEntry::
-	text "A GENGAR is close"
-	next "by if you feel a"
-	next "sudden chill."
+	text "Quand il lance"
+	next "une malédiction,"
+	next "il émet une aura"
 
-	page "It may be trying"
-	next "to lay a curse"
-	next "on you"
-	dex
+	page "malveillante qui"
+	next "provoque des"
+	next "frissons.@"
+	text_end
 
 _OnixDexEntry::
-	text "Burrows at high"
-	next "speed in search"
-	next "of food. The"
+	text "Il creuse sous"
+	next "terre en quête"
+	next "de nourriture."
 
-	page "tunnels it leaves"
-	next "are used as homes"
-	next "by DIGLETTs"
-	dex
+	page "Ses tunnels"
+	next "servent de maison"
+	next "aux TAUPIQUEUR.@"
+	text_end
 
 _DrowzeeDexEntry::
-	text "If you sleep by"
-	next "it all the time,"
-	next "it will sometimes"
+	text "Si vous dormez"
+	next "près de lui, il"
+	next "influencera vos"
 
-	page "show you dreams"
-	next "it has eaten in"
-	next "the past"
-	dex
+	page "rêves avec les"
+	next "songes qu'il a"
+	next "dévorés.@"
+	text_end
 
 _HypnoDexEntry::
-	text "Avoid eye contact"
-	next "if you come across"
-	next "one. It will try"
+	text "Evitez son regard"
+	next "quand vous en"
+	next "croisez un, ou il"
 
-	page "to put you to"
-	next "sleep by using"
-	next "its pendulum"
-	dex
+	page "essayera de vous"
+	next "hypnotiser avec"
+	next "son pendule.@"
+	text_end
 
 _KrabbyDexEntry::
-	text "Its pincers are"
-	next "superb weapons."
-	next "They sometimes"
+	text "Ses pinces sont"
+	next "de puissantes"
+	next "armes. Si une"
 
-	page "break off during"
-	next "battle, but they"
-	next "grow back fast"
-	dex
+	page "se casse durant"
+	next "un combat,elle"
+	next "repoussera vite.@"
+	text_end
 
 _KinglerDexEntry::
-	text "One claw grew"
-	next "massively and as"
-	next "hard as steel."
+	text "Sa pince, grosse"
+	next "et dure comme de"
+	next "l'acier, peut"
 
-	page "It has 10,000-HP"
-	next "strength. However,"
-	next "it is too heavy"
-	dex
+	page "déployer une"
+	next "pression de"
+	next "100 tonnes.@"
+	text_end
 
 _VoltorbDexEntry::
-	text "It is said to"
-	next "camouflage itself"
-	next "as a # BALL. It"
+	text "On dit qu'il se"
+	next "déguise en"
+	next "# BALL. Il"
 
-	page "will self-destruct"
-	next "with very little"
-	next "stimulus"
-	dex
+	page "s'autodétruira"
+	next "à la moindre"
+	next "stimulation.@"
+	text_end
 
 _ElectrodeDexEntry::
-	text "Stores electrical"
-	next "energy inside its"
-	next "body. Even the"
+	text "Il stocke de"
+	next "l'énergie"
+	next "électrique dans"
 
-	page "slightest shock"
-	next "could trigger a"
-	next "huge explosion"
-	dex
+	page "son corps, ce qui"
+	next "le rend instable"
+	next "et explosif.@"
+	text_end
 
 _ExeggcuteDexEntry::
-	text "The heads attract"
-	next "each other and"
-	next "spin around."
+	text "Les têtes sont"
+	next "attirées les unes"
+	next "vers les autres."
 
-	page "There must be 6"
-	next "heads for it to"
-	next "maintain balance"
-	dex
+	page "Il en faut 6 pour"
+	next "qu'il établisse"
+	next "son équilibre.@"
+	text_end
 
 _ExeggutorDexEntry::
-	text "Its cries are very"
-	next "noisy. This is"
-	next "because each of"
+	text "Son hurlement est"
+	next "strident car ses"
+	next "3 têtes se"
 
-	page "the 3 heads thinks"
-	next "about whatever it"
-	next "likes"
-	dex
+	page "chamaillent tout"
+	next "le temps.@"
+	text_end
 
 _CuboneDexEntry::
-	text "Wears the skull"
-	next "of its deceased"
-	next "mother. Its cries"
+	text "Il porte le crâne"
+	next "de sa défunte"
+	next "mère. Ses pleurs"
 
-	page "echo inside the"
-	next "skull and come out"
-	next "as a sad melody"
-	dex
+	page "résonnent dans"
+	next "son casque en une"
+	next "triste mélodie.@"
+	text_end
 
 _MarowakDexEntry::
-	text "Small and weak,"
-	next "this #MON is"
-	next "adept with its"
+	text "Petit et faible,"
+	next "ce #MON est"
+	next "habile avec sa"
 
-	page "bone club. It has"
-	next "grown more vicious"
-	next "over the ages"
-	dex
+	page "masse en os. Il"
+	next "devient vicieux"
+	next "avec l'âge.@"
+	text_end
 
 _HitmonleeDexEntry::
-	text "When kicking, the"
-	next "sole of its foot"
-	next "turns as hard as"
+	text "Quand il donne"
+	next "des coups de"
+	next "pied, ceux-ci"
 
-	page "a diamond on im-"
-	next "pact and destroys"
-	next "its enemy"
-	dex
+	page "deviennent durs"
+	next "comme le diamant.@"
+	text_end
 
 _HitmonchanDexEntry::
-	text "Punches in cork-"
-	next "screw fashion. It"
-	next "can punch its way"
+	text "Ses coups de"
+	next "poings rotatifs"
+	next "sont si puissants"
 
-	page "through a concrete"
-	next "wall in the same"
-	next "way as a drill"
-	dex
+	page "qu'il peut forer"
+	next "le béton comme un"
+	next "marteau-piqueur.@"
+	text_end
 
 _LickitungDexEntry::
-	text "Its tongue spans"
-	next "almost 7 feet and"
-	next "moves more freely"
+	text "Sa langue mesure"
+	next "2m et elle est"
+	next "plus maniable que"
 
-	page "than its forelegs."
-	next "Its licks can"
-	next "cause paralysis"
-	dex
+	page "ses pattes. Son"
+	next "contact provoque"
+	next "la paralysie.@"
+	text_end
 
 _KoffingDexEntry::
-	text "In hot places, its"
-	next "internal gases"
-	next "could expand and"
+	text "Dans des endroits"
+	next "chauds, son corps"
+	next "fait de gaz"
 
-	page "explode without"
-	next "any warning. Be"
-	next "very careful!@@"
+	page "devient instable"
+	next "et peut exploser."
+	next "Attention!@"
+	text_end
 
 _WeezingDexEntry::
-	text "It lives and grows"
-	next "by absorbing dust,"
-	next "germs and poison"
+	text "Ce #MON se"
+	next "nourrit de gaz,"
+	next "de poisons, et de"
 
-	page "gases that are"
-	next "contained in toxic"
-	next "waste and garbage"
-	dex
+	page "germes que l'on"
+	next "peut trouver dans"
+	next "des tas d'ordures.@"
+	text_end
 
 _RhyhornDexEntry::
-	text "A #MON with a"
-	next "one-track mind."
-	next "Once it charges, "
+	text "Un #MON qui a"
+	next "des oeillères."
+	next "S'il se met à"
 
-	page "it won't stop"
-	next "running until it"
-	next "falls asleep"
-	dex
+	page "charger, il ne"
+	next "s'arrêtera qu'à"
+	next "l'épuisement.@"
+	text_end
 
 _RhydonDexEntry::
-	text "Walks on its hind"
-	next "legs. Shows signs"
-	next "of intelligence."
+	text "Il peut se tenir"
+	next "debout. Il"
+	next "semble un peu"
 
-	page "Its armor-like"
-	next "hide even repels"
-	next "molten lava"
-	dex
+	page "intelligent. Son"
+	next "épiderme résiste"
+	next "même à la lave.@"
+	text_end
 
 _ChanseyDexEntry::
-	text "A gentle and kind-"
-	next "hearted #MON"
-	next "that shares its"
+	text "Il est gentil et"
+	next "aimable, et il"
+	next "partage ses oeufs"
 
-	page "nutritious eggs"
-	next "if it sees an"
-	next "injured #MON"
-	dex
+	page "nourrissants avec"
+	next "les #MON"
+	next "blessés.@"
+	text_end
 
 _TangelaDexEntry::
-	text "Its identity is"
-	next "obscured by masses"
-	next "of thick, blue"
+	text "Son corps est"
+	next "masqué par une"
+	next "masse épaisse de"
 
-	page "vines. The vines"
-	next "are said to never"
-	next "stop growing"
-	dex
+	page "lianes bleues qui"
+	next "poussent en"
+	next "permanence.@"
+	text_end
 
 _KangaskhanDexEntry::
-	text "Raises its young"
-	next "in its belly"
-	next "pouch. Won't run"
+	text "Il élève son"
+	next "petit dans sa"
+	next "poche ventrale."
 
-	page "from any fight"
-	next "to keep its young"
-	next "protected"
-	dex
+	page "Il ne l'abandonne"
+	next "jamais dans un"
+	next "combat.@"
+	text_end
 
 _HorseaDexEntry::
-	text "If it senses any"
-	next "danger, it will"
-	next "vigorously spray"
+	text "Menacé, il crache"
+	next "un jet d'encre"
+	next "ou d'eau de sa"
 
-	page "water or a special"
-	next "type of ink from"
-	next "its mouth"
-	dex
+	page "bouche pour se"
+	next "défendre.@"
+	text_end
 
 _SeadraDexEntry::
-	text "Touching the back"
-	next "fin causes numb-"
-	next "ness. It hooks"
+	text "Le contact de sa"
+	next "nageoire provoque"
+	next "une irritation."
 
-	page "its tail to coral"
-	next "to stay in place"
-	next "while sleeping"
-	dex
+	page "Il ancre sa queue"
+	next "au corail pour"
+	next "dormir.@"
+	text_end
 
 _GoldeenDexEntry::
-	text "When it is time"
-	next "for them to lay"
-	next "eggs, they can be"
+	text "Quand survient la"
+	next "saison de ponte,"
+	next "on peut en voir"
 
-	page "seen swimming up"
-	next "rivers and falls"
-	next "in large groups"
-	dex
+	page "dans les rivières"
+	next "et les cascades"
+	next "en larges groupes.@"
+	text_end
 
 _SeakingDexEntry::
-	text "It is the male's"
-	next "job to make a"
-	next "nest by carving"
+	text "Le mâle utilise"
+	next "la corne placée"
+	next "sur son front"
 
-	page "out boulders in a"
-	next "stream using the"
-	next "horn on its head"
-	dex
+	page "pour creuser un"
+	next "nid dans la"
+	next "rivière.@"
+	text_end
 
 _StaryuDexEntry::
-	text "As long as the"
-	next "center section is"
-	next "unharmed, it can"
+	text "Tant que sa"
+	next "partie centrale"
+	next "est indemne, il"
 
-	page "grow back fully"
-	next "even if it is"
-	next "chopped to bits"
-	dex
+	page "peut régénérer"
+	next "les parties de"
+	next "son corps.@"
+	text_end
 
 _StarmieDexEntry::
-	text "The center section"
-	next "is named the core."
-	next "People think it"
+	text "Quand le centre"
+	next "de son corps,"
+	next "appelé le coeur,"
 
-	page "is communicating"
-	next "when it glows in"
-	next "7 colors"
-	dex
+	page "brille de 7"
+	next "couleurs, il"
+	next "essaie de parler.@"
+	text_end
 
 _MrMimeDexEntry::
-	text "Always practices"
-	next "its pantomime act."
-	next "It makes enemies"
+	text "Il est toujours"
+	next "en train de mimer."
+	next "Il leurre ses"
 
-	page "believe something"
-	next "exists that"
-	next "really doesn't"
-	dex
+	page "ennemis en"
+	next "mimant des"
+	next "actions irréelles.@"
+	text_end
 
 _ScytherDexEntry::
-	text "Leaps out of tall"
-	next "grass and slices"
-	next "prey with its"
+	text "Bondissant hors"
+	next "de l'herbe comme"
+	next "un ninja, il"
 
-	page "scythes. The move-"
-	next "ment looks like"
-	next "that of a ninja"
-	dex
+	page "lacère sa proie"
+	next "de ses griffes"
+	next "acérées.@"
+	text_end
 
 _JynxDexEntry::
-	text "Appears to move"
-	next "to a rhythm of"
-	next "its own, as if it"
+	text "Il bouge en"
+	next "rythme comme s'il"
+	next "dansait."
 
-	page "were dancing. It"
-	next "wiggles its hips"
-	next "as it walks"
-	dex
+	page "Il ondule du"
+	next "popotin quand"
+	next "il marche.@"
+	text_end
 
 _ElectabuzzDexEntry::
-	text "If a major power"
-	next "outage occurs, it"
-	next "is certain that"
+	text "Il provoque des"
+	next "pannes de courant"
+	next "dans les"
 
-	page "this #MON has"
-	next "eaten electricity"
-	next "at a power plant"
-	dex
+	page "centrales en"
+	next "mangeant de"
+	next "l'électricité.@"
+	text_end
 
 _MagmarDexEntry::
-	text "Born in an active"
-	next "volcano. Its body"
-	next "is always cloaked"
+	text "Né dans un"
+	next "volcan en fusion,"
+	next "son corps est"
 
-	page "in flames, so it"
-	next "looks like a big"
-	next "ball of fire"
-	dex
+	page "recouvert de"
+	next "flammes, comme"
+	next "une boule de feu.@"
+	text_end
 
 _PinsirDexEntry::
-	text "Grips its prey in"
-	next "its pincers and"
-	next "squeezes hard! It"
+	text "Il enserre sa"
+	next "proie de sa"
+	next "puissante pince."
 
-	page "can't move if it's"
-	next "cold, so it lives"
-	next "in warm places"
-	dex
+	page "Il ne peut se"
+	next "déplacer dans les"
+	next "milieux froids.@"
+	text_end
 
 _TaurosDexEntry::
-	text "A rowdy #MON"
-	next "with a lot of"
-	next "stamina. Once"
+	text "C'est un #MON"
+	next "très endurant."
+	next "Il n'achève sa"
 
-	page "running, it won't"
-	next "stop until it hits"
-	next "something"
-	dex
+	page "charge qu'une"
+	next "fois sa cible"
+	next "pulvérisée.@"
+	text_end
 
 _MagikarpDexEntry::
-	text "Famous for being"
-	next "very unreliable."
-	next "It can be found"
+	text "Célèbre pour son"
+	next "inutilité, on en"
+	next "trouve beaucoup"
 
-	page "swimming in seas,"
-	next "lakes, rivers and"
-	next "shallow puddles"
-	dex
+	page "dans les océans,"
+	next "les étangs et les"
+	next "rivières.@"
+	text_end
 
 _GyaradosDexEntry::
-	text "Brutally vicious"
-	next "and enormously"
-	next "destructive."
+	text "Brutal, vicieux"
+	next "et dangereux, il"
+	next "est connu pour"
 
-	page "Known for totally"
-	next "destroying cities"
-	next "in ancient times"
-	dex
+	page "avoir rasé des"
+	next "villes entières"
+	next "par le passé.@"
+	text_end
 
 _LaprasDexEntry::
-	text "A gentle soul that"
-	next "can read the minds"
-	next "of people. It can"
+	text "D'une âme noble,"
+	next "il peut lire dans"
+	next "les esprits. Il"
 
-	page "ferry people"
-	next "across the sea on"
-	next "its back"
-	dex
+	page "transporte les"
+	next "humains sur son"
+	next "dos.@"
+	text_end
 
 _DittoDexEntry::
-	text "When it spots an"
-	next "enemy, its body"
-	next "transfigures into"
+	text "Quand il repère"
+	next "un ennemi, il"
+	next "adapte sa forme"
 
-	page "an almost perfect"
-	next "copy of its oppo-"
-	next "nent"
-	dex
+	page "pour en faire une"
+	next "copie parfaite.@"
+	text_end
 
 _EeveeDexEntry::
-	text "Its genetic code"
-	next "is unstable, so it"
-	next "could evolve in"
+	text "Sa génétique"
+	next "instable lui"
+	next "permet d'évoluer"
 
-	page "a variety of ways."
-	next "There are only a"
-	next "few alive"
-	dex
+	page "de plusieurs"
+	next "façons. Très peu"
+	next "sont en vie.@"
+	text_end
 
 _VaporeonDexEntry::
-	text "Its cell structure"
-	next "is similar to"
-	next "water molecules."
+	text "Sa structure"
+	next "cellulaire est"
+	next "semblable à celle"
 
-	page "It will melt away"
-	next "and become invis-"
-	next "ible in water"
-	dex
+	page "de l'eau. Il est"
+	next "invisible en"
+	next "milieu aquatique.@"
+	text_end
 
 _JolteonDexEntry::
-	text "A sensitive #-"
-	next "MON that easily"
-	next "becomes sad or"
+	text "Un #MON"
+	next "très sensible et"
+	next "lunatique."
 
-	page "angry. Every time"
-	next "its mood changes,"
-	next "it charges power"
-	dex
+	page "Il se charge en"
+	next "énergie selon son"
+	next "humeur.@"
+	text_end
 
 _FlareonDexEntry::
-	text "It has a flame"
-	next "chamber inside its"
-	next "body. It inhales,"
+	text "Une flamme brûle"
+	next "en permanence"
+	next "dans son corps."
 
-	page "then blows out"
-	next "fire that is over"
-	next "3,000F degrees"
-	dex
+	page "Il crache un feu"
+	next "de plus de 1000"
+	next "degrés.@"
+	text_end
 
 _PorygonDexEntry::
-	text "The only #MON"
-	next "people anticipate"
-	next "can fly into"
+	text "Conçu pour voler"
+	next "dans l'espace, on"
+	next "ne lui a toujours"
 
-	page "space. None has"
-	next "managed the feat"
-	next "yet, however"
-	dex
+	page "pas trouvé une"
+	next "autre utilité.@"
+	text_end
 
 _OmanyteDexEntry::
-	text "An ancient #MON"
-	next "that was recovered"
-	next "from a fossil. It"
+	text "Un ancien #MON"
+	next "régénéré à"
+	next "partir d'un"
 
-	page "swims by cleverly"
-	next "twisting its 10"
-	next "tentacles about"
-	dex
+	page "fossile. Il nage"
+	next "grâce à ses 10"
+	next "tentacules.@"
+	text_end
 
 _OmastarDexEntry::
-	text "Sharp beaks ring"
-	next "its mouth. Its"
-	next "shell was too big"
+	text "Sa bouche est"
+	next "formée de becs"
+	next "aiguisés. Sa"
 
-	page "for it to move"
-	next "freely, so it"
-	next "became extinct"
-	dex
+	page "coquille trop"
+	next "lourde l'empêche"
+	next "de se déplacer.@"
+	text_end
 
 _KabutoDexEntry::
-	text "A #MON that was"
-	next "recovered from a"
-	next "fossil. It uses"
+	text "Créé à partir"
+	next "d'un fossile, il"
+	next "se sert des yeux"
 
-	page "the eyes on its"
-	next "back while hiding"
-	next "on the sea floor"
-	dex
+	page "dans son dos"
+	next "quand il se cache"
+	next "au fond de l'eau.@"
+	text_end
 
 _KabutopsDexEntry::
-	text "A slim and fast"
-	next "swimmer. It slices"
-	next "its prey with its"
+	text "C'est un très bon"
+	next "nageur. Il lacère"
+	next "sa proie de ses"
 
-	page "sharp sickles and"
-	next "drinks the body"
-	next "fluids"
-	dex
+	page "longues griffes"
+	next "et en absorbe les"
+	next "fluides corporels.@"
+	text_end
 
 _AerodactylDexEntry::
-	text "A savage #MON"
-	next "that died out in"
-	next "ancient times. It"
+	text "Un #MON sauvage"
+	next "disparu il y a"
+	next "longtemps. Il est"
 
-	page "was resurrected"
-	next "using DNA taken"
-	next "from amber"
-	dex
+	page "créé à partir"
+	next "d'ADN fossilisé"
+	next "dans de l'ambre.@"
+	text_end
 
 _SnorlaxDexEntry::
-	text "Will eat anything,"
-	next "even if the food"
-	next "happens to be a"
+	text "Il peut tout"
+	next "manger, même de"
+	next "la nourriture"
 
-	page "little moldy. It"
-	next "never gets an"
-	next "upset stomach"
-	dex
+	page "avariée. Il"
+	next "n'a jamais mal au"
+	next "ventre.@"
+	text_end
 
 _ArticunoDexEntry::
-	text "A legendary bird"
-	next "#MON. It"
-	next "freezes water"
+	text "Un #MON"
+	next "légendaire. Il"
+	next "glace la vapeur"
 
-	page "that is contained"
-	next "in winter air and"
-	next "makes it snow"
-	dex
+	page "d'eau contenue"
+	next "dans l'air pour"
+	next "faire de la neige.@"
+	text_end
 
 _ZapdosDexEntry::
-	text "This legendary"
-	next "bird #MON is"
-	next "said to appear"
+	text "Ce #MON"
+	next "légendaire"
+	next "annonce l'arrivée"
 
-	page "when the sky turns"
-	next "dark and lightning"
-	next "showers down"
-	dex
+	page "de nuages noirs,"
+	next "d'éclairs et"
+	next "d'averses.@"
+	text_end
 
 _MoltresDexEntry::
-	text "A legendary bird"
-	next "#MON. As it"
-	next "flaps its flaming"
+	text "Quand ce #MON"
+	next "légendaire agite"
+	next "ses ailes de feu,"
 
-	page "wings, even the"
-	next "night sky will"
-	next "turn red"
-	dex
+	page "même la nuit"
+	next "noire s'embrase"
+	next "et rougeoie.@"
+	text_end
 
 _DratiniDexEntry::
-	text "The existence of"
-	next "this mythical"
-	next "#MON was only"
+	text "L'existence de ce"
+	next "#MON mythique"
+	next "ne fut confirmée"
 
-	page "recently confirmed"
-	next "by a fisherman"
-	next "who caught one"
-	dex
+	page "que récemment par"
+	next "un pêcheur.@"
+	text_end
 
 _DragonairDexEntry::
-	text "According to a"
-	next "witness, its body"
-	next "was surrounded by"
+	text "Selon certains,"
+	next "son corps est"
+	next "baigné d'une"
 
-	page "a strange aura"
-	next "that gave it a"
-	next "mystical look"
-	dex
+	page "étrange aura, lui"
+	next "donnant un air"
+	next "mystique.@"
+	text_end
 
 _DragoniteDexEntry::
-	text "It is said that"
-	next "this #MON lives"
-	next "somewhere in the"
+	text "On raconte que ce"
+	next "#MON vit"
+	next "quelque part dans"
 
-	page "sea and that it"
-	next "flies. However, it"
-	next "is only a rumor"
-	dex
+	page "la mer et qu'il"
+	next "peut voler. Rien"
+	next "n'est moins sûr.@"
+	text_end
 
 _MewtwoDexEntry::
-	text "Its DNA is almost"
-	next "the same as MEW's."
-	next "However, its size"
+	text "Son ADN est le"
+	next "même que celui de"
+	next "MEW mais sa"
 
-	page "and disposition"
-	next "are vastly dif-"
-	next "ferent"
-	dex
+	page "taille et son"
+	next "aspect sont très"
+	next "différents.@"
+	text_end
 
 _MewDexEntry::
-	text "When viewed"
-	next "through a micro-"
-	next "scope, this"
+	text "Vu au microscope,"
+	next "le pelage de ce"
+	next "#MON est fin,"
 
-	page "#MON's short,"
-	next "fine, delicate"
-	next "hair can be seen"
-	dex
+	page "soyeux et très"
+	next "délicat.@"
+	text_end

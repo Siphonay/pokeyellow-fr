@@ -5,11 +5,11 @@ rom_obj := \
 	audio.o \
 	home.o \
 	ram.o \
+	text.o \
 	wip.o \
 	gfx/pics.o
 # 	main.o \
 # 	maps.o \
-# 	text.o \
 # 	gfx/pikachu.o \
 # 	gfx/sprites.o \
 # 	gfx/surfing_pikachu.o \

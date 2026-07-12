@@ -1,41 +1,46 @@
 _EnemyAppearedText::
+	text "Un @"
 	text_ram wEnemyMonNick
 	text_start
-	line "appeared!"
+	line "apparaît!"
 	prompt
 
 _TrainerWantsToFightText::
 	text_ram wTrainerName
-	text " wants"
-	line "to fight!"
+	text " veut"
+	line "se battre!"
 	prompt
 
 _UnveiledGhostText::
-	text "SILPH SCOPE"
-	line "unveiled the"
-	cont "GHOST's identity!"
+	text "Le SCOPE SYLPHE"
+	line "révèle l'identité"
+	cont "du SPECTRE!"
 	prompt
 
 _GhostCantBeIDdText::
-	text "Darn! The GHOST"
-	line "can't be ID'd!"
+	text "Fichtre! Le"
+	line "SPECTRE ne peut"
+	cont "être identifié!"
 	prompt
 
 _GoText::
-	text "Go! @"
+	text "En avant!"
+	line "@"
 	text_end
 
 _DoItText::
-	text "Do it! @"
+	text "Attaque,"
+	line "@"
 	text_end
 
 _GetmText::
-	text "Get'm! @"
+	text "A toi,"
+	line "@"
 	text_end
 
 _EnemysWeakText::
-	text "The enemy's weak!"
-	line "Get'm! @"
+	text "Il est à toi,"
+	line "@"
 	text_end
 
 _PlayerMon1Text::
@@ -45,586 +50,615 @@ _PlayerMon1Text::
 
 _PlayerMon2Text::
 	text_ram wBattleMonNick
-	text " @"
+	text "!@"
 	text_end
 
 _EnoughText::
-	text "enough!@"
+	text "!@"
 	text_end
 
 _OKExclamationText::
-	text "OK!@"
+	text "!@"
 	text_end
 
 _GoodText::
-	text "good!@"
+	text "!@"
 	text_end
 
 _ComeBackText::
 	text_start
-	line "Come back!"
-	done
+	line "Reviens!@"
+	text_end
 
 ; money related
 _PickUpPayDayMoneyText::
-	text "<PLAYER> picked up"
+	text "<PLAYER> ramasse:"
 	line "¥@"
 	text_bcd wTotalPayDayMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
 	text "!"
 	prompt
 
 _ClearSaveDataText::
-	text "Clear all saved"
-	line "data?"
+	text "Effacer toutes"
+	line "les données?"
 	done
 
 _WhichFloorText::
-	text "Which floor do"
-	line "you want? "
+	text "Quel étage?"
 	done
 
 _SleepingPikachuText1::
-	text "There isn't any"
-	line "response..."
+	text "Pas de réponse..."
 	prompt
 
 _PartyMenuNormalText::
-	text "Choose a #MON."
+	text "Sélectionnez un"
+	line "#MON."
 	done
 
 _PartyMenuItemUseText::
-	text "Use item on which"
-	line "#MON?"
+	text "Sur quel #MON?"
 	done
 
 _PartyMenuBattleText::
-	text "Bring out which"
-	line "#MON?"
+	text "Faire combattre"
+	line "quel #MON?"
 	done
 
 _PartyMenuUseTMText::
-	text "Teach to which"
+	text "Capsule sur quel"
 	line "#MON?"
 	done
 
 _PartyMenuSwapMonText::
-	text "Move #MON"
-	line "where?"
+	text "Nouvelle position"
+	line "du #MON..."
 	done
 
 _PotionText::
 	text_ram wNameBuffer
 	text_start
-	line "recovered by @"
+	line "gagne @"
 	text_decimal wHPBarHPDifference, 2, 3
-	text "!"
+	text " PV!"
 	done
 
 _AntidoteText::
 	text_ram wNameBuffer
-	text " was"
-	line "cured of poison!"
+	text " est"
+	line "guéri du poison!"
 	done
 
 _ParlyzHealText::
 	text_ram wNameBuffer
-	text "'s"
-	line "rid of paralysis!"
+	text_start
+	line "peut bouger!"
 	done
 
 _BurnHealText::
 	text_ram wNameBuffer
-	text "'s"
-	line "burn was healed!"
+	text_start
+	line "ne brûle plus!"
 	done
 
 _IceHealText::
 	text_ram wNameBuffer
-	text " was"
-	line "defrosted!"
+	text_start
+	line "est dégelé!"
 	done
 
 _AwakeningText::
 	text_ram wNameBuffer
 	text_start
-	line "woke up!"
+	line "se réveille!"
 	done
 
 _FullHealText::
 	text_ram wNameBuffer
-	text "'s"
-	line "health returned!"
+	text_start
+	line "est soigné!"
 	done
 
 _ReviveText::
 	text_ram wNameBuffer
 	text_start
-	line "is revitalized!"
+	line "revient à lui!"
 	done
 
 _RareCandyText::
 	text_ram wNameBuffer
-	text " grew"
-	line "to level @"
+	text " monte"
+	line "au niveau @"
 	text_decimal wCurEnemyLevel, 1, 3
 	text "!@"
 	text_end
 
 _TurnedOnPC1Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> allume"
+	line "le PC."
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
-	line "PC."
+	text "Connexion au PC"
+	line "de LEO."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "Accès au système"
+	line "de stockage des"
+	cont "#MON."
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Accessed someone's"
-	line "PC."
+	text "Connexion au PC"
+	line "inconnu."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "Accès au système"
+	line "de stockage des"
+	cont "#MON."
 	prompt
 
 _AccessedMyPCText::
-	text "Accessed my PC."
+	text "PC personnel"
+	line "connecté."
 
-	para "Accessed Item"
-	line "Storage System."
+	para "Accès au système"
+	line "de stockage des"
+	cont "objets."
 	prompt
 
 _TurnedOnPC2Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> allume"
+	line "le PC."
 	prompt
 
 _WhatDoYouWantText::
-	text "What do you want"
-	line "to do?"
+	text "Exécuter quelle"
+	line "application?"
 	done
 
 _WhatToDepositText::
-	text "What do you want"
-	line "to deposit?"
+	text "Que désirez-vous"
+	line "stocker?"
 	done
 
 _DepositHowManyText::
-	text "How many?"
+	text "Combien?"
 	done
 
 _ItemWasStoredText::
+	text "L'objet"
+	line "@"
 	text_ram wNameBuffer
-	text " was"
-	line "stored via PC."
+	text " a"
+	cont "été stocké."
 	prompt
 
 _NothingToDepositText::
-	text "You have nothing"
-	line "to deposit."
+	text "Vous n'avez rien"
+	line "à stocker."
 	prompt
 
 _NoRoomToStoreText::
-	text "No room left to"
-	line "store items."
+	text "Plus de place"
+	line "pour stocker."
 	prompt
 
 _WhatToWithdrawText::
-	text "What do you want"
-	line "to withdraw?"
+	text "Que voulez-vous"
+	line "retirer?"
 	done
 
 _WithdrawHowManyText::
-	text "How many?"
+	text "Combien?"
 	done
 
 _WithdrewItemText::
-	text "Withdrew"
+	text "Retrait de:"
 	line "@"
 	text_ram wNameBuffer
 	text "."
 	prompt
 
 _NothingStoredText::
-	text "There is nothing"
-	line "stored."
+	text "Rien n'est"
+	line "stocké."
 	prompt
 
 _CantCarryMoreText::
-	text "You can't carry"
-	line "any more items."
+	text "Votre inventaire"
+	line "est plein."
 	prompt
 
 _WhatToTossText::
-	text "What do you want"
-	line "to toss away?"
+	text "Que désirez-vous"
+	line "jeter?"
 	done
 
 _TossHowManyText::
-	text "How many?"
+	text "Combien?"
 	done
 
 _AccessedHoFPCText::
-	text "Accessed #MON"
-	line "LEAGUE's site."
+	text "Connexion au site"
+	line "de la LIGUE"
+	cont "#MON."
 
-	para "Accessed the HALL"
-	line "OF FAME List."
+	para "Accès à la liste"
+	line "des CELEBRITES."
 	prompt
 
 _SleepingPikachuText2::
-	text "There isn't any"
-	line "response..."
+	text "Pas de réponse..."
 	prompt
 
 _SwitchOnText::
-	text "Switch on!"
+	text "Branché!"
 	prompt
 
 _WhatText::
-	text "What?"
+	text "Que faire?"
 	done
 
 _DepositWhichMonText::
-	text "Deposit which"
+	text "Stocker quel"
 	line "#MON?"
 	done
 
 _MonWasStoredText::
 	text_ram wStringBuffer
-	text " was"
-	line "stored in Box @"
+	text " est"
+	line "stocké dans la"
+	cont "boîte @"
 	text_ram wBoxNumString
 	text "."
 	prompt
 
 _CantDepositLastMonText::
-	text "You can't deposit"
-	line "the last #MON!"
+	text "Vous ne pouvez"
+	line "stocker votre"
+	cont "dernier #MON!"
 	prompt
 
 _BoxFullText::
-	text "Oops! This Box is"
-	line "full of #MON."
+	text "Oups! Cette boîte"
+	line "est pleine!"
 	prompt
 
 _MonIsTakenOutText::
+	text "Retrait de"
+	line "@"
 	text_ram wStringBuffer
-	text " is"
-	line "taken out."
-	cont "Got @"
-	text_ram wStringBuffer
-	text "."
+	text_start
+	cont "terminé."
 	prompt
 
 _NoMonText::
-	text "What? There are"
-	line "no #MON here!"
+	text "Hein? Il n'y a"
+	line "aucun #MON!"
 	prompt
 
 _CantTakeMonText::
-	text "You can't take"
-	line "any more #MON."
+	text "Vous ne pouvez"
+	line "retirer un"
+	cont "#MON."
 
-	para "Deposit #MON"
-	line "first."
+	para "Stockez d'abord"
+	line "un #MON."
 	prompt
 
 _PikachuUnhappyText::
 	text_ram wNameBuffer
-	text " looks"
-	line "unhappy about it!"
+	text " n'est"
+	line "pas content!"
 	prompt
 
 _ReleaseWhichMonText::
-	text "Release which"
+	text "Relâcher quel"
 	line "#MON?"
 	done
 
 _OnceReleasedText::
-	text "Once released,"
-	line "@"
 	text_ram wStringBuffer
-	text " is"
-	cont "gone forever. OK?"
+	text " sera"
+	line "à jamais perdu."
+	cont "Continuer?"
 	done
 
 _MonWasReleasedText::
 	text_ram wStringBuffer
-	text " was"
-	line "released outside."
-	cont "Bye @"
+	text " est"
+	line "relâché. Adieu,"
+	cont "@"
 	text_ram wStringBuffer
 	text "!"
 	prompt
 
 _RequireCoinCaseText::
-	text "A COIN CASE is"
-	line "required!@"
+	text "Vous n'avez pas"
+	line "de BOITE JETON!@"
 	text_end
 
 _ExchangeCoinsForPrizesText::
-	text "We exchange your"
-	line "coins for prizes."
+	text "Nous échangeons"
+	line "des prix contre"
+	cont "des jetons."
 	prompt
 
 _WhichPrizeText::
-	text "Which prize do"
-	line "you want?"
+	text "Quel prix"
+	line "désirez-vous?"
 	done
 
 _HereYouGoText::
-	text "Here you go!@"
+	text "Et voilà!@"
 	text_end
 
 _SoYouWantPrizeText::
-	text "So, you want"
-	line "@"
 	text_ram wNameBuffer
 	text "?"
 	done
 
 _SorryNeedMoreCoinsText::
-	text "Sorry, you need"
-	line "more coins.@"
+	text "Vous n'avez pas"
+	line "assez de jetons.@"
 	text_end
 
 _OopsYouDontHaveEnoughRoomText::
-	text "Oops! You don't"
-	line "have enough room.@"
+	text "Votre inventaire"
+	line "est plein.@"
 	text_end
 
 _OhFineThenText::
-	text "Oh, fine then.@"
+	text "Bon. Très bien.@"
 	text_end
 
 _GetDexRatedText::
-	text "Want to get your"
-	line "#DEX rated?"
+	text "Voulez-vous faire"
+	line "évaluer votre"
+	cont "#DEX?"
 	done
 
 _ClosedOaksPCText::
-	text "Closed link to"
-	line "PROF.OAK's PC.@"
+	text "PC du PROF. CHEN,"
+	line "Déconnexion...@"
 	text_end
 
 _AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
+	text "Connexion au PC"
+	line "du PROF. CHEN."
 
-	para "Accessed #DEX"
-	line "Rating System."
+	para "Accès au système"
+	line "d'évaluation du"
+	cont "#DEX."
 	prompt
 
 _ExpressionText::
-	text "This expression is"
+	text "Expression"
 	line "No. @"
 	text_decimal wExpressionNumber, 1, 2
 	text "."
 	prompt
 
 _NotEnoughMemoryText::
-	text "Not enough Yellow"
-	line "Version memory."
+	text "Mémoire Version"
+	line "Jaune manquante!"
 	done
 
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "Bien le bonjour!"
+	line "Bienvenue dans le"
+	cont "monde magique des"
+	cont "#MON!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "Mon nom est CHEN!"
+	line "Les gens souvent"
+	cont "m'appellent le"
+	cont "PROF #MON!"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
+	text "Ce monde est"
+	line "peuplé de"
+	cont "créatures du nom"
+	cont "de #MON!@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
-	para "For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	para "Pour certains,"
+	line "les #MON sont"
+	cont "des animaux"
+	cont "domestiques, pour"
+	cont "d'autres, ils"
+	cont "sont un moyen de"
+	cont "combattre."
 
-	para "Myself..."
+	para "Pour ma part..."
 
-	para "I study #MON"
-	line "as a profession."
+	para "L'étude des"
+	line "#MON est"
+	cont "ma profession."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "Tout d'abord,"
+	line "quel est ton nom?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "Voici mon petit-"
+	line "fils. Il est ton"
+	cont "rival depuis sa"
+	cont "toute jeunesse."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "...Heu..."
+	line "C'est quoi donc"
+	cont "son nom déjà?"
 	prompt
 
 _OakSpeechText3::
 	text "<PLAYER>!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "Ta quête des"
+	line "#MON est sur"
+	cont "le point de"
+	cont "commencer!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "Un tout nouveau"
+	line "monde de rêves,"
+	cont "d'aventures et"
+	cont "de #MON"
+	cont "t'attend! Dingue!"
 	done
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "Voulez-vous"
+	line "donner un surnom"
+	cont "à @"
 	text_ram wNameBuffer
 	text "?"
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	text "OK! Ton nom est"
+	line "donc <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "Ah oui! Je me"
+	line "souviens! Son nom"
+	cont "est <RIVAL>!"
 	prompt
 
 _WillBeTradedText::
 	text_ram wNameOfPlayerMonToBeTraded
-	text " and"
+	text " et"
 	line "@"
 	text_ram wNameBuffer
-	text " will"
-	cont "be traded."
+	text " seront"
+	cont "échangés."
 	done
 
 _Colosseum3MonsText::
-	text "You need 3 #MON"
-	line "to fight!"
+	text "Il vous faut 3"
+	line "#MON pour"
+	cont "combattre!"
 	prompt
 
 _ColosseumMewText::
-	text "Sorry, MEW can't"
-	line "attend!"
+	text "Désolé! MEW ne"
+	line "peut participer!"
 	prompt
 
 _ColosseumDifferentMonsText::
-	text "Your #MON must"
-	line "all be different!"
+	text "Vos #MON"
+	line "doivent être tous"
+	cont "différents!"
 	prompt
 
 _ColosseumMaxL55Text::
-	text "No #MON can"
-	line "exceed L55!"
+	text "Aucun #MON ne"
+	line "peut dépasser le"
+	cont "niveau 55!"
 	prompt
 
 _ColosseumMinL50Text::
-	text "All #MON must"
-	line "be at least L50!"
+	text "Tous les #MON"
+	line "doivent être"
+	cont "au-dessus du"
+	cont "niveau 50!"
 	prompt
 
 _ColosseumTotalL155Text::
-	text "Your total levels"
-	line "exceed 155!"
+	text "Le total des"
+	line "niveaux dépasse"
+	cont "155!"
 	prompt
 
 _ColosseumMaxL30Text::
-	text "No #MON can"
-	line "exceed L30!"
+	text "Aucun #MON ne"
+	line "peut dépasser le"
+	cont "niveau 30!"
 	prompt
 
 _ColosseumMinL25Text::
-	text "All #MON must"
-	line "be at least L25!"
+	text "Tous les #MON"
+	line "doivent être"
+	cont "au-dessus du"
+	cont "niveau 25!"
 	prompt
 
 _ColosseumTotalL80Text::
-	text "Your total levels"
-	line "exceed 80!"
+	text "Le total des"
+	line "niveaux dépasse"
+	cont "80!"
 	prompt
 
 _ColosseumMaxL20Text::
-	text "No #MON can"
-	line "exceed L20!"
+	text "Aucun #MON ne"
+	line "peut dépasser le"
+	cont "niveau 20!"
 	prompt
 
 _ColosseumMinL15Text::
-	text "All #MON must"
-	line "be at least L15!"
+	text "Tous les #MON"
+	line "doivent être"
+	cont "au-dessus du"
+	cont "niveau 15!"
 	prompt
 
 _ColosseumTotalL50Text::
-	text "Your total levels"
-	line "exceed 50!"
+	text "Le total des"
+	line "niveaux dépasse"
+	cont "50!"
 	prompt
 
 _ColosseumHeightText::
 	text_ram wNameBuffer
-	text " is over"
-	line "6’8” tall!"
+	text " fait"
+	line "plus de 2m!"
 	prompt
 
 _ColosseumWeightText::
 	text_ram wNameBuffer
-	text " weighs"
-	line "over 44 pounds!"
+	text " pèse"
+	line "plus de 20kg!"
 	prompt
 
 _ColosseumEvolvedText::
 	text_ram wNameBuffer
-	text " is an"
-	line "evolved #MON!"
+	text " est un"
+	line "#MON évolué!"
 	prompt
 
 _ColosseumIneligibleText::
-	text "Your opponent is"
-	line "ineligible."
+	text "Votre adversaire"
+	line "n'est pas valide!"
 	prompt
 
 _ColosseumWhereToText::
-	text "Where would you"
-	line "like to go?"
+	text "Où désirez-vous "
+	line "aller?"
 	done
 
 _ColosseumPleaseWaitText::
-	text "OK, please wait"
-	line "just a moment."
+	text "OK! Un moment"
+	line "s'il vous plaît."
 	done
 
 _ColosseumCanceledText::
-	text "The link was"
-	line "canceled."
+	text "Le lien a été "
+	line "rompu."
 	done
 
 _ColosseumVersionText::
-	text "The game versions"
-	line "don't match."
+	text "Les versions sont"
+	line "incompatibles!"
 	prompt
 
 _TextIDErrorText::
 	text_decimal hTextID, 1, 2
-	text " error."
+	text " ERREUR."
 	done
 
 _ContCharText::
@@ -632,6 +666,6 @@ _ContCharText::
 	text_end
 
 _NoPokemonText::
-	text "There are no"
-	line "#MON here!"
+	text "Aucun #MON"
+	line "ici!"
 	prompt

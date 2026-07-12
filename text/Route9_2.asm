@@ -1,21 +1,22 @@
 _Route9Youngster2BattleText::
-	text "Go, my super bug"
-	line "#MON!"
+	text "Super-cafards,"
+	line "en avant!"
 	done
 
 _Route9Youngster2EndBattleText::
-	text "My"
-	line "bugs..."
+	text "Super-"
+	line "cafards! Houhou!"
+	cont "Réveillez-vous!"
 	prompt
 
 _Route9Youngster2AfterBattleText::
-	text "If you don't like"
-	line "bug #MON, you"
-	cont "bug me!"
+	text "T'aimes pas les"
+	line "insectes #MON?"
+	cont "T'es infect!"
 	done
 
 _Route9SignText::
 	text "ROUTE 9"
-	line "CERULEAN CITY-"
-	cont "ROCK TUNNEL"
+	line "AZURIA-"
+	cont "GROTTE"
 	done

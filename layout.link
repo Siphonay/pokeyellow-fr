@@ -166,31 +166,31 @@ ROMX $24
 	"Pikachu Cries 4"
 ROMX $25
 	"Pikachu Cries 5"
-; ROMX $26
-; 	"Text 1"
-; ROMX $27
-; 	"Text 2"
-; ROMX $28
-; 	"Text 3"
-; ROMX $29
-; 	"Text 4"
-; ROMX $2A
-; 	"Text 5"
-; ROMX $2B
-; 	"Text 6"
-; ROMX $2C
-; 	"Text 7"
-; ROMX $2D
-; 	"Text 8"
-; ROMX $2E
-; 	"Pokédex Text"
-; ROMX $2f
-; 	"Move Names"
+ROMX $26
+	"Text 1"
+ROMX $27
+	"Text 2"
+ROMX $28
+	"Text 3"
+ROMX $29
+	"Text 4"
+ROMX $2A
+	"Text 5"
+ROMX $2B
+	"Text 6"
+ROMX $2C
+	"Text 7"
+ROMX $2D
+	"Text 8"
+ROMX $2E
+	"Pokédex Text"
+ROMX $2f
+	"Move Names"
 ; 	"BG Map Attributes (Debug)"
 ; 	org $5000
 ; 	"BG Map Attributes"
-; ROMX $30
-; 	"bank30"
+ROMX $30
+	"Text 9"
 ROMX $31
 	"Pikachu Cries 6"
 ROMX $32
@@ -211,7 +211,8 @@ ROMX $38
 ; 	"Pikachu Graphics 1"
 ; ROMX $3A
 ; 	"bank3A"
-; ; bank $3B is empty
+ROMX $3B
+	"Text 10"
 ; ROMX $3C
 ; 	"Pikachu PCM"
 ; 	"Tilesets 4"

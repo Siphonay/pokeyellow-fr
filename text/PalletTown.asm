@@ -1,68 +1,75 @@
 _PalletTownOakHeyWaitDontGoOutText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@"
+	text "CHEN: Hé toi, là!"
+	line "Ne pars pas!@"
 	text_end
 
 _PalletTownOakThatWasCloseText::
-	text "OAK: That was"
-	line "close!"
+	text "PROF. CHEN:"
+	line "De justesse!"
 
-	para "Wild #MON live"
-	line "in tall grass!"
+	para "Des #MON"
+	line "sauvages vivent"
+	cont "dans les hautes"
+	cont "herbes!"
 	done
 
 _PalletTownOakWhewText::
-	text "OAK: Whew..."
+	text "PROF. CHEN: Pfou!"
 	done
 
 _PalletTownOakComeWithMe::
-	text "OAK: A #MON can"
-	line "appear anytime in"
-	cont "tall grass."
+	text "PROF. CHEN: Des"
+	line "#MON sauvages"
+	cont "peuvent surgir à"
+	cont "tout instant!"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "Tu as besoin d'un"
+	line "#MON pour te"
+	cont "protéger!"
 
-	para "Here, come with"
-	line "me!"
+	para "Allez, suis-moi!"
+	line "Viens par là!"
 	done
 
 _PalletTownGirlText::
-	text "I'm raising"
-	line "#MON too!"
+	text "J'élève des"
+	line "#MON, moi"
+	cont "aussi!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Une fois forts,"
+	line "ils pourront me"
+	cont "protéger!"
 	done
 
 _PalletTownFisherText::
-	text "Technology is"
-	line "incredible!"
+	text "Le progrès..."
+	line "C'est dément!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "On peut désormais"
+	line "stocker et même"
+	cont "retirer des"
+	cont "objets ou des"
+	cont "#MON via PC!"
 	done
 
 _PalletTownOaksLabSignText::
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "LABO #MON"
+	line "DU PROF. CHEN"
 	done
 
 _PalletTownSignText::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "BOURG PALETTE"
+	line "Un monde de"
+	cont "couleurs s'ouvre"
+	cont "à vous!"
 	done
 
 _PalletTownPlayersHouseSignText::
-	text "<PLAYER>'s house "
+	text "Maison de"
+	line "<PLAYER>"
 	done
 
 _PalletTownRivalsHouseSignText::
-	text "<RIVAL>'s house "
+	text "Maison de"
+	line "<RIVAL>"
 	done

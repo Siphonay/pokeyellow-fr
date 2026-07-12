@@ -1,68 +1,74 @@
 _CeladonMansion1FMeowthText::
-	text "MEOWTH: Meow!@"
+	text "MIAOUSS: Miaou!@"
 	text_end
 
 _CeladonMansion1FClefairyText::
-	text "CLEFAIRY: Pi"
-	line "pippippi!@"
+	text "MELOFEE: Féé!"
+	line "Fééééféééé!@"
 	text_end
 
 _CeladonMansion1FNidoranFText::
-	text "NIDORAN: Kya"
-	line "kyaoo!@"
+	text "NIDORAN: Nido!"
+	line "Nidoodoo!@"
 	text_end
 
 _CeladonMansion1FManagersSuiteSignText::
-	text "CELADON MANSION"
-	line "Manager's Suite"
+	text "MANOIR CELADON"
+	line "La suite"
+	cont "présidentielle"
 	done
 
 _CeladonMansion1Text2::
-	text "My dear #MON"
-	line "keep me company."
+	text "Mes chers #MON"
+	line "me tiennent"
+	cont "compagnie."
 
-	para "MEOWTH even brings"
-	line "money home!"
+	para "MIAOUSS rapporte"
+	line "même de l'argent!"
 	done
 
 _CeladonMansion1Text6::
-	text "Oh, you have an"
-	line "adorable PIKACHU"
-	cont "with you.@"
+	text "Oh, ton PIKACHU,"
+	line "il est si mignon!@"
 	text_end
 
 _CeladonMansion1Text7::
-	text "It seems like it"
-	line "hasn't been tamed"
-	cont "at all."
+	text "On dirait qu'il"
+	line "n'est pas encore"
+	cont "bien dressé."
 	done
 
 _CeladonMansion1Text8::
-	text "Why don't you"
-	line "take more care"
-	cont "with PIKACHU?"
+	text "Tu ne prends pas"
+	line "suffisamment soin"
+	cont "de ton PIKACHU."
+	cont "Bah pourquoi?"
 	done
 
 _CeladonMansion1Text9::
-	text "You must be happy"
-	line "to have a #MON"
-	cont "that cute."
+	text "Tu dois être"
+	line "heureux d'avoir"
+	cont "un #MON si"
+	cont "mignon!"
 	done
 
 _CeladonMansion1Text10::
-	text "Your PIKACHU seems"
-	line "tamed."
+	text "Ton PIKACHU"
+	line "semble dressé."
 	done
 
 _CeladonMansion1Text11::
-	text "Your PIKACHU looks"
-	line "happy with you."
+	text "Ton PIKACHU à"
+	line "l'air heureux"
+	cont "avec toi."
 	done
 
 _CeladonMansion1Text12::
-	text "You look like a"
-	line "fantastic duo."
+	text "Vous formez un"
+	line "magnifique duo,"
+	cont "toi et ton"
+	cont "PIKACHU!"
 
-	para "You're making me"
-	line "jealous!"
+	para "Je vous envie"
+	line "beaucoup!"
 	done

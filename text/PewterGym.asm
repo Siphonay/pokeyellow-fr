@@ -1,186 +1,204 @@
 _PewterGymBrockPreBattleText::
-	text "I'm BROCK!"
-	line "I'm PEWTER's GYM"
-	cont "LEADER!"
+	text "Je suis PIERRE!"
+	line "Je suis le"
+	cont "CHAMPION"
+	cont "d'ARGENTA!"
 
-	para "I believe in rock"
-	line "hard defense and"
-	cont "determination!"
+	para "Je crois en la"
+	line "grande résistance"
+	cont "de la pierre!"
 
-	para "That's why my"
-	line "#MON are all"
-	cont "the rock-type!"
+	para "C'est pourquoi"
+	line "mes #MON sont"
+	cont "des élémentaires"
+	cont "de pierre!"
 
-	para "Do you still want"
-	line "to challenge me?"
-	cont "Fine then! Show"
-	cont "me your best!"
+	para "Tu veux toujours"
+	line "te battre avec"
+	cont "moi? Très bien."
+	cont "En garde!"
 	done
 
 _PewterGymBrockPostBattleAdviceText::
-	text "There are all"
-	line "kinds of trainers"
-	cont "in the world!"
+	text "Il existe une"
+	line "multitude de"
+	cont "dresseurs!"
 
-	para "Some raise #MON"
-	line "for fights. Some"
-	cont "see them as pets."
+	para "Certains élèvent"
+	line "les #MON pour"
+	cont "combattre et"
+	cont "d'autres en tant"
+	cont "qu'animaux domes-"
+	cont "tiques."
 
-	para "I'm in training to"
-	line "become a #MON"
-	cont "breeder."
+	para "Moi, j'veux être"
+	line "un éleveur de"
+	cont "#MON."
 
-	para "If you take your"
-	line "#MON training"
-	cont "seriously, go"
-	cont "visit the GYM in"
-	cont "CERULEAN and test"
-	cont "your abilities!"
+	para "Si tu es un bon"
+	line "entraîneur, va"
+	cont "faire un tour à"
+	cont "l'arène d'AZURIA!"
 	done
 
 _PewterGymBrockWaitTakeThisText::
-	text "Wait! Take this"
-	line "with you!"
+	text "Il y a plusieurs"
+	line "types de"
+	cont "dresseurs dans le"
+	cont "monde!"
+
+	para "Tu sembles être"
+	line "un dresseur"
+	cont "d'exception!"
+
+	para "Va à l'ARENE"
+	line "d'AZURIA pour"
+	cont "tester tes"
+	cont "capacités."
 	done
 
 _PewterGymReceivedTM34Text::
-	text "<PLAYER> received"
-	line "TM34!@"
+	text "<PLAYER> reçoit"
+	line "la CT34!@"
 	text_end
 
 _TM34ExplanationText::
 	text_start
 
-	para "A TM contains a"
-	line "technique that"
-	cont "can be taught to"
+	para "Une CT (Capsule"
+	line "Tech.) contient"
+	cont "une attaque à"
+	cont "enseigner à un"
 	cont "#MON!"
 
-	para "A TM is good only"
-	line "once! So when you"
-	cont "use one to teach"
-	cont "a new technique,"
-	cont "pick the #MON"
-	cont "carefully!"
+	para "Une CT ne marche"
+	line "qu'une fois!"
+	cont "Alors choisis"
+	cont "bien le #MON"
+	cont "à qui la donner!"
 
-	para "TM34 contains"
-	line "BIDE!"
+	para "CT34 contient"
+	line "PATIENCE!"
 
-	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	para "Ton #MON"
+	line "absorbera les"
+	cont "dégâts pour"
+	cont "ensuite infliger"
+	cont "le double!"
 	done
 
 _PewterGymTM34NoRoomText::
-	text "You don't have"
-	line "room for this!"
+	text "Votre inventaire"
+	line "est plein!"
 	done
 
 _PewterGymBrockReceivedBoulderBadgeText::
-	text "I took"
-	line "you for granted."
+	text "Hmm..."
+	line "Beau combat."
 
-	para "As proof of your"
-	line "victory, here's"
-	cont "the BOULDERBADGE!"
+	para "En reconnaissance"
+	line "de ta victoire,"
+	cont "voici le BADGE"
+	cont "ROCHE!"
 
-	para "<PLAYER> received"
-	line "the BOULDERBADGE!@"
+	para "<PLAYER> reçoit"
+	line "le BADGE ROCHE!@"
 	text_end
 
 _PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
-	para "That's an official"
-	line "#MON LEAGUE"
-	cont "BADGE!"
+	para "C'est un BADGE"
+	line "officiel de la"
+	cont "LIGUE #MON!"
 
-	para "Its bearer's"
-	line "#MON become"
-	cont "more powerful!"
+	para "Les #MON de"
+	line "son détenteur"
+	cont "deviennent plus"
+	cont "puissants!"
 
-	para "The technique"
-	line "FLASH can now be"
-	cont "used anytime!"
+	para "La technique"
+	line "FLASH peut être"
+	cont "utilisée!"
 	prompt
 
 _PewterGymCooltrainerMBattleText::
-	text "Stop right there,"
-	line "kid!"
+	text "Une minute,"
+	line "gamin!"
 
-	para "You're still light"
-	line "years from facing"
-	cont "BROCK!"
+	para "Tu es encore loin"
+	line "de PIERRE, tu"
+	cont "vas devoir"
+	cont "m'affronter!"
 	done
 
 _PewterGymCooltrainerMEndBattleText::
-	text "Darn!"
+	text "Zut!"
 
-	para "Light years isn't"
-	line "time! It measures"
-	cont "distance!"
+	para "J'aurais dû te"
+	line "laisser passer!"
 	prompt
 
 _PewterGymCooltrainerMAfterBattleText::
-	text "You're pretty hot,"
-	line "but not as hot"
-	cont "as BROCK!"
+	text "Tu es fort..."
+	line "Mais pas autant"
+	cont "que PIERRE!"
 	done
 
 _PewterGymGuidePreAdviceText::
-	text "Hiya! I can tell"
-	line "you have what it"
-	cont "takes to become a"
-	cont "#MON champ!"
+	text "Salut graine de"
+	line "CHAMPION!"
 
-	para "I'm no trainer,"
-	line "but I can tell"
-	cont "you how to win!"
+	para "Je ne suis pas"
+	line "dresseur mais mes"
+	cont "conseils sont"
+	cont "avisés!"
 
-	para "Let me take you"
-	line "to the top!"
+	para "Laisse-moi te"
+	line "mener à la"
+	cont "victoire!"
 	done
 
 _PewterGymGuideBeginAdviceText::
-	text "All right! Let's"
-	line "get happening!"
+	text "OK! C'est"
+	line "parti!"
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
+	text "Le 1er #MON"
+	line "apparaissant dans"
+	cont "un combat est"
+	cont "celui en tête de"
+	cont "la LISTE #MON!"
 
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+	para "En changeant"
+	line "l'ordre des"
+	cont "#MON, tu"
+	cont "peux changer de"
+	cont "stratégie!"
 	done
 
 _PewterGymGuideFreeServiceText::
-	text "It's a free"
-	line "service! Let's"
-	cont "get happening!"
+	text "C'est gratuit,"
+	line "profites-en! "
 	prompt
 
 _PewterGymGuidePostBattleText::
-	text "Just as I thought!"
-	line "You're #MON"
-	cont "champ material!"
+	text "Je le savais!"
+	line "Tu as l'âme d'un"
+	cont "champion!"
 	done
 
 _PewterGymGuyText::
-	text "All right! Let's"
-	line "get happening!"
+	text "Allez! En"
+	line "voiture Simone!"
 
-	para "It will be tough"
-	line "for your PIKACHU"
-	cont "at this GYM!"
+	para "Ca va être dur"
+	line "pour ton p'tit"
+	cont "PIKACHU ici!"
 
-	para "Electric attacks"
-	line "are harmless to"
-	cont "BROCK's ground-"
-	cont "type #MON."
+	para "L'électricité est"
+	line "sans effet sur"
+	cont "les #MON du"
+	cont "sol."
 	done

@@ -1,51 +1,55 @@
 _PokemonTowerJessieJamesText1::
-	text "Stop right there!@"
+	text "Pas bouger!@"
 	text_end
 
 _PokemonTowerJessieJamesText2::
-	text "Grampa here wanted"
-	line "to complain, so"
-	cont "we're setting him"
-	cont "straight."
+	text "Le vieux s'est"
+	line "plaint alors on"
+	cont "l'a enfermé!"
 
-	para "So render yourself"
-	line "invisible, or"
-	cont "prepare to fight!"
+	para "Alors toi, fais"
+	line "cou-couche panier"
+	cont "ou bobo la tête!"
 	done
 
 _PokemonTowerJessieJamesText3::
-	text "You"
-	line "will regret this!"
+	text "..."
+	line "Tu vas voir!"
 	prompt
 
 _PokemonTowerJessieJamesText4::
-	text "Looks like TEAM"
-	line "ROCKET's blasting"
-	cont "off again!@"
+	text "TEAM ROCKET..."
+	line "A la vitesse d'un"
+	cont "gros vélo...@"
 	text_end
 
 _PokemonTower7FMrFujiRescueText::
-	text "MR.FUJI: Heh? You"
-	line "came to save me?"
+	text "MR.FUJI: Hé? Tu"
+	line "es venu me"
+	cont "sauver?"
 
-	para "Thank you. But, I"
-	line "came here of my"
-	cont "own free will."
+	para "Merci! Mais je"
+	line "suis venu ici de"
+	cont "mon plein gré."
 
-	para "I came to calm"
-	line "the soul of"
-	cont "CUBONE's mother."
+	para "Je voulais"
+	line "apaiser l'esprit"
+	cont "de la mère de"
+	cont "OSSELAIT."
 
-	para "I think MAROWAK's"
-	line "spirit has gone"
-	cont "to the afterlife."
+	para "Je pense que"
+	line "l'esprit de"
+	cont "OSSATUEUR s'en"
+	cont "est allé vers"
+	cont "les cieux."
 
-	para "I must thank you"
-	line "for your kind"
-	cont "concern!"
+	para "Je dois te"
+	line "remercier pour"
+	cont "cet acte noble!"
 
-	para "Follow me to my"
-	line "home, #MON"
-	cont "HOUSE at the foot"
-	cont "of this tower."
+	para "Viens avec moi"
+	line "dans ma maison,"
+	cont "la MAISON #MON"
+	cont "au pied de cette"
+	cont "tour."
 	done

@@ -1,67 +1,70 @@
 _RocketHideoutJessieJamesText1::
-	text "Not another step,"
-	line "brat!@"
+	text "Pas bouger,"
+	line "morveux!@"
 	text_end
 
 _RocketHideoutJessieJamesText2::
-	text "How dare you"
-	line "humiliate us at"
-	cont "MT.MOON!"
+	text "Comment as-tu osé"
+	line "nous humilier au"
+	cont "MONT SELENITE?"
 
-	para "It's payback time,"
-	line "you brat!"
+	para "Cette fois tu vas"
+	line "prendre cher!"
 	done
 
 _RocketHideoutJessieJamesText3::
-	text "Such"
-	line "a dreadful twerp!"
+	text "..."
+	line "T'es terrible!"
 	prompt
 
 _RocketHideoutJessieJamesText4::
-	text "Looks like TEAM"
-	line "ROCKET's blasting"
-	cont "off again!@"
+	text "La TEAM ROCKET..."
+	line "A la vitesse du"
+	cont "son...@"
 	text_end
 
 _RocketHideoutB4FGiovanniImpressedYouGotHereText::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+	text "Hmm! Tu me"
+	line "surprends. T'es"
+	cont "dans le genre"
+	cont "PENIBLE!"
 	done
 
 _RocketHideoutB4FGiovanniWhatCannotBeText::
-	text "WHAT!"
-	line "This cannot be!"
+	text "QUOI!"
+	line "Damnation!"
 	prompt
 
 _RocketHideoutB4FGiovanniHopeWeMeetAgainText::
-	text "I see that you"
-	line "raise #MON"
-	cont "with utmost care."
+	text "Tu élèves tes"
+	line "#MON trop"
+	cont "soigneusement."
 
-	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
+	para "Un gosse comme"
+	line "toi ne peut"
+	cont "comprendre mes"
+	cont "plans!"
 
-	para "I shall step"
-	line "aside this time!"
+	para "Tu as gagné cette"
+	line "bataille, mais"
+	cont "pas la guerre..."
 
-	para "I hope we meet"
-	line "again..."
+	para "On se retrouvera,"
+	line "et cette fois..."
 	done
 
 _RocketHideoutB4FRocketBattleText::
-	text "The elevator"
-	line "doesn't work? Who"
-	cont "has the LIFT KEY?"
+	text "L'ascenseur ne"
+	line "marche pas? Il"
+	cont "faut la CLE ASC.!"
 	done
 
 _RocketHideoutB4FRocketEndBattleText::
-	text "No!"
+	text "Argh!"
 	prompt
 
 _RocketHideoutB4FRocketAfterBattleText::
-	text "Oh no! I dropped"
-	line "the LIFT KEY!"
+	text "Mince! J'ai"
+	line "perdu la "
+	cont "CLE ASC.!"
 	done

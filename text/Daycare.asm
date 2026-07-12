@@ -1,97 +1,100 @@
 _DaycareGentlemanIntroText::
-	text "I run a DAYCARE."
-	line "Would you like me"
-	cont "to raise one of"
-	cont "your #MON?"
+	text "Je m'occupe de la"
+	line "PENSION. Veux-tu"
+	cont "que j'élève un de"
+	cont "tes #MON?"
 	done
 
 _DaycareGentlemanWhichMonText::
-	text "Which #MON"
-	line "should I raise?"
+	text "Quel #MON"
+	line "veux-tu me"
+	cont "confier?"
 	prompt
 
 _DaycareGentlemanWillLookAfterMonText::
-	text "Fine, I'll look"
-	line "after @"
+	text "Très bien, je"
+	line "vais m'occuper de"
+	cont "@"
 	text_ram wNameBuffer
-	text_start
-	cont "for a while."
+	text "."
 	prompt
 
 _DaycareGentlemanComeSeeMeInAWhileText::
-	text "Come see me in"
-	line "a while."
+	text "Reviens un peu"
+	line "plus tard."
 	done
 
 _DaycareGentlemanMonHasGrownText::
-	text "Your @"
+	text "Ton @"
 	text_ram wNameBuffer
 	text_start
-	line "has grown a lot!"
+	line "a bien évolué!"
 
-	para "By level, it's"
-	line "grown by @"
+	para "Ses niveaux ont"
+	line "augmenté de @"
 	text_decimal wDayCareNumLevelsGrown, 1, 3
 	text "!"
 
-	para "Aren't I great?"
+	para "Merci qui? Hein?"
 	prompt
 
 _DaycareGentlemanOweMoneyText::
-	text "You owe me ¥@"
+	text "Donne-moi ¥@"
 	text_bcd wDayCareTotalCost, 2 | LEADING_ZEROES | LEFT_ALIGN
 	text_start
-	line "for the return"
-	cont "of this #MON."
+	line "et je te rends"
+	cont "ton #MON."
 	done
 
 _DaycareGentlemanGotMonBackText::
-	text "<PLAYER> got"
+	text "<PLAYER> récupère"
 	line "@"
 	text_ram wDayCareMonName
-	text " back!"
+	text "!"
 	done
 
 _DaycareGentlemanMonNeedsMoreTimeText::
-	text "Back already?"
-	line "Your @"
+	text "Déjà de retour?"
+	line "Ton @"
 	text_ram wNameBuffer
 	text_start
-	cont "needs some more"
-	cont "time with me."
+	cont "doit rester"
+	cont "encore un peu."
 	prompt
 
 _DaycareGentlemanAllRightThenText::
-	text "All right then,"
+	text "Parfait!"
 	line "@"
 	text_end
 
 _DaycareGentlemanComeAgainText::
-	text "Come again."
+	text "A plus tard."
 	done
 
 _DaycareGentlemanNoRoomForMonText::
-	text "You have no room"
-	line "for this #MON!"
+	text "Tu n'as plus de"
+	line "place pour ce"
+	cont "#MON!"
 	done
 
 _DaycareGentlemanOnlyHaveOneMonText::
-	text "You only have one"
-	line "#MON with you."
+	text "Tu n'as qu'un"
+	line "#MON sur toi."
 	done
 
 _DaycareGentlemanCantAcceptMonWithHMText::
-	text "I can't accept a"
-	line "#MON that"
-	cont "knows an HM move."
+	text "Je ne peux pas"
+	line "m'occuper d'un"
+	cont "#MON qui a"
+	cont "appris une CS."
 	done
 
 _DaycareGentlemanHeresYourMonText::
-	text "Thank you! Here's"
-	line "your #MON!"
+	text "Merci! Voilà ton"
+	line "p'tit #MON!"
 	prompt
 
 _DaycareGentlemanNotEnoughMoneyText::
-	text "Hey, you don't"
-	line "have enough ¥!"
+	text "Hé! Tu n'as pas"
+	line "assez d'argent!"
 	done

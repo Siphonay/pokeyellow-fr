@@ -1,29 +1,29 @@
 _SummerBeachHouseSurfinDudeText1::
-	text "Whoa!"
+	text "Woah!"
 
-	para "Your PIKACHU knows"
-	line "how to SURF! So,"
-	cont "I'm not alone..."
+	para "Ton PIKACHU aussi"
+	line "sait surfer!"
 
-	para "Great! You earned"
-	line "the right to SURF"
-	cont "with the DUDE!"
+	para "Cool! Tu as donc"
+	line "le droit de"
+	cont "surfer avec le"
+	cont "DAVE!"
 
-	para "Give it a go?"
+	para "Ca te tente?"
 	done
 
 _SummerBeachHouseSurfinDudeText2::
-	text "Come SURF anytime,"
-	line "my friend!"
+	text "Viens surfer"
+	line "quand tu veux!"
 	done
 
 _SummerBeachHouseSurfinDudeText3::
-	text "Wanna go SURF?"
+	text "Tu veux surfer?"
 	done
 
 _SummerBeachHouseSurfinDudeText4::
-	text "Dogs and burgers"
-	line "on special today!"
+	text "Hot Dogs et"
+	line "Burgers à gogo!"
 	done
 
 _SummerBeachHousePikachuText::
@@ -31,77 +31,74 @@ _SummerBeachHousePikachuText::
 	done
 
 _SummerBeachHousePoster1Text1::
-	text "SURFIN' DUDE's"
-	line "scribbles..."
+	text "Le DAVE est le"
+	line "Boss des surfers!"
 
-	para "When I shoot the"
-	line "tube, the tunes"
-	cont "hit the groove!"
+	para "Quand j'suis dans"
+	line "le tube, c'est du"
+	cont "total adrénaline!"
 	done
 
 _SummerBeachHousePoster1Text2::
-	text "30 years of waves!"
-	line "SURFIN' DUDE"
+	text "DAVE le SURFER"
+	line "30 ans de vagues!"
 	done
 
 _SummerBeachHousePoster2Text1::
-	text "SURFING TIP 1!"
+	text "SURF-ASTUCE 1!"
 
-	para "After flips, line"
-	line "the board up with"
-	cont "a wave for a cool"
-	cont "effect!"
+	para "Après un flip,"
+	line "aligner le surf"
+	cont "avec la vague!"
 	done
 
 _SummerBeachHousePoster2Text2::
-	text "SUMMER BEACH HOUSE"
-	line "#MON welcome!"
+	text "BUNGALOW D'ETE"
+	line "Bienvenue aux"
+	cont "#MON!"
 	done
 
 _SummerBeachHousePoster3Text1::
-	text "SURFING TIP 2!"
+	text "SURF-ASTUCE 2!"
 
-	para "Pulling flips in"
-	line "a jump is totally"
-	cont "rad!"
+	para "Les flips pendant"
+	line "un saut c'est"
+	cont "d'la balle!"
 	done
 
 _SummerBeachHousePoster3Text2::
-	text "The sea unites"
-	line "all in surfdom!"
+	text "Le surf, la mer:"
+	line "c'est la vie!"
 	done
 
 _SummerBeachHousePrinterText1::
-	text "It's some sort of"
-	line "a machine...@"
+	text "On dirait une"
+	line "machine...@"
 	text_end
 
 _SummerBeachHousePrinterText2::
-	text "SUMMER BEACH HOUSE"
-	line "PRINTER, it says.@"
+	text "PRINTER du"
+	line "BUNGALOW D'ETE!@"
 	text_end
 
 _SummerBeachHousePrinterText3::
-	text "The Hi-Score is"
-	line "shown."
+	text "Le meilleur score"
+	line "est affiché."
 
-	para "PRINT it out?"
+	para "On l'imprime?"
 	done
 
 _SummerBeachHousePrinterText4::
-	text "SUMMER BEACH HOUSE"
-	line "PRINTER, it says."
+	text "Le meilleur score"
+	line "est affiché."
 
-	para "The Hi-Score is"
-	line "shown."
-
-	para "PRINT it out?"
+	para "On l'imprime?"
 	done
 
 _SummerBeachHousePrinterText5::
-	text "PRINT completed.@"
+	text "Impression: OK!@"
 	text_end
 
 _SummerBeachHousePrinterText6::
-	text "PRINT error!@"
+	text "ERREUR IMPRESSION@"
 	text_end

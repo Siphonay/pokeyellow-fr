@@ -25,11 +25,6 @@ INCLUDE "text/SilphCo2F.asm"
 INCLUDE "text/SilphCo3F.asm"
 INCLUDE "text/SilphCo4F.asm"
 INCLUDE "text/SilphCo5F.asm"
-INCLUDE "text/SilphCo6F.asm"
-INCLUDE "text/SilphCo7F.asm"
-INCLUDE "text/SilphCo8F.asm"
-INCLUDE "text/SilphCo9F.asm"
-INCLUDE "text/SilphCo10F.asm"
 
 
 SECTION "Text 2", ROMX
@@ -100,12 +95,6 @@ INCLUDE "text/BillsHouse.asm"
 INCLUDE "text/Route1.asm"
 INCLUDE "text/Route2.asm"
 INCLUDE "text/Route3.asm"
-INCLUDE "text/Route4.asm"
-INCLUDE "text/Route5.asm"
-INCLUDE "text/Route6.asm"
-INCLUDE "text/Route7.asm"
-INCLUDE "text/Route8.asm"
-INCLUDE "text/Route9.asm"
 
 
 SECTION "Text 4", ROMX
@@ -124,11 +113,6 @@ INCLUDE "text/Route19.asm"
 INCLUDE "text/Route20.asm"
 INCLUDE "text/Route21.asm"
 INCLUDE "text/Route22.asm"
-INCLUDE "text/Route23.asm"
-INCLUDE "text/Route24.asm"
-INCLUDE "text/Route25.asm"
-
-INCLUDE "data/text/text_4.asm"
 
 
 SECTION "Text 5", ROMX
@@ -151,13 +135,6 @@ INCLUDE "text/PewterNidoranHouse.asm"
 INCLUDE "text/PewterMart.asm"
 INCLUDE "text/PewterSpeechHouse.asm"
 INCLUDE "text/PewterPokecenter.asm"
-INCLUDE "text/CeruleanTrashedHouse.asm"
-INCLUDE "text/CeruleanMelaniesHouse.asm"
-INCLUDE "text/CeruleanPokecenter.asm"
-INCLUDE "text/CeruleanGym.asm"
-INCLUDE "text/BikeShop.asm"
-INCLUDE "text/CeruleanMart.asm"
-INCLUDE "text/CeruleanBadgeHouse.asm"
 
 
 SECTION "Text 6", ROMX
@@ -197,7 +174,6 @@ INCLUDE "text/CeladonMansionRoof.asm"
 INCLUDE "text/CeladonMansionRoofHouse.asm"
 INCLUDE "text/CeladonPokecenter.asm"
 INCLUDE "text/CeladonGym.asm"
-INCLUDE "text/GameCorner.asm"
 
 
 SECTION "Text 7", ROMX
@@ -229,13 +205,6 @@ INCLUDE "text/CopycatsHouse1F.asm"
 INCLUDE "text/CopycatsHouse2F.asm"
 INCLUDE "text/FightingDojo.asm"
 INCLUDE "text/SaffronGym.asm"
-INCLUDE "text/SaffronPidgeyHouse.asm"
-INCLUDE "text/SaffronMart.asm"
-INCLUDE "text/SilphCo1F.asm"
-INCLUDE "text/SaffronPokecenter.asm"
-INCLUDE "text/MrPsychicsHouse.asm"
-
-INCLUDE "data/text/text_7.asm"
 
 
 SECTION "Text 8", ROMX
@@ -264,3 +233,50 @@ INCLUDE "data/pokemon/dex_text.asm"
 SECTION "Move Names", ROMX
 
 INCLUDE "data/moves/names.asm"
+
+
+SECTION "Text 9", ROMX
+
+INCLUDE "text/SilphCo6F.asm"
+INCLUDE "text/SilphCo7F.asm"
+INCLUDE "text/SilphCo8F.asm"
+INCLUDE "text/SilphCo9F.asm"
+INCLUDE "text/SilphCo10F.asm"
+
+INCLUDE "data/text/text_10.asm"
+
+INCLUDE "text/Route3_2.asm"
+INCLUDE "text/Route4.asm"
+INCLUDE "text/Route5.asm"
+INCLUDE "text/Route6.asm"
+INCLUDE "text/Route7.asm"
+INCLUDE "text/Route8.asm"
+INCLUDE "text/Route9.asm"
+
+
+SECTION "Text 10", ROMX
+
+INCLUDE "text/Route22_2.asm"
+INCLUDE "text/Route23.asm"
+INCLUDE "text/Route24.asm"
+INCLUDE "text/Route25.asm"
+
+INCLUDE "data/text/text_4.asm"
+
+INCLUDE "text/CeruleanTrashedHouse.asm"
+INCLUDE "text/CeruleanMelaniesHouse.asm"
+INCLUDE "text/CeruleanPokecenter.asm"
+INCLUDE "text/CeruleanGym.asm"
+INCLUDE "text/BikeShop.asm"
+INCLUDE "text/CeruleanMart.asm"
+INCLUDE "text/CeruleanBadgeHouse.asm"
+INCLUDE "text/CeladonGym_2.asm"
+INCLUDE "text/GameCorner.asm"
+INCLUDE "text/SaffronGym_2.asm"
+INCLUDE "text/SaffronPidgeyHouse.asm"
+INCLUDE "text/SaffronMart.asm"
+INCLUDE "text/SilphCo1F.asm"
+INCLUDE "text/SaffronPokecenter.asm"
+INCLUDE "text/MrPsychicsHouse.asm"
+
+INCLUDE "data/text/text_7.asm"
