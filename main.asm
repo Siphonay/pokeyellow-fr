@@ -34,7 +34,7 @@ INCLUDE "engine/menus/players_pc.asm"
 INCLUDE "engine/pokemon/remove_mon.asm"
 INCLUDE "engine/events/display_pokedex.asm"
 
-
+/*
 SECTION "bank3", ROMX
 
 INCLUDE "engine/joypad.asm"
@@ -65,18 +65,18 @@ INCLUDE "engine/events/hidden_events/book_or_sculpture.asm"
 INCLUDE "engine/events/hidden_events/elevator.asm"
 INCLUDE "engine/events/hidden_events/town_map.asm"
 INCLUDE "engine/events/hidden_events/pokemon_stuff.asm"
-
+*/
 
 SECTION "bank4", ROMX
 
 INCLUDE "gfx/font.asm"
-INCLUDE "engine/pokemon/status_screen.asm"
-INCLUDE "engine/menus/party_menu.asm"
-INCLUDE "gfx/player.asm"
-INCLUDE "engine/menus/start_sub_menus.asm"
-INCLUDE "engine/items/tms.asm"
+;INCLUDE "engine/pokemon/status_screen.asm"
+;INCLUDE "engine/menus/party_menu.asm"
+;INCLUDE "gfx/player.asm"
+;INCLUDE "engine/menus/start_sub_menus.asm"
+;INCLUDE "engine/items/tms.asm"
 
-
+/*
 SECTION "Battle Engine 1", ROMX
 
 INCLUDE "engine/battle/end_of_battle.asm"
@@ -332,16 +332,16 @@ INCLUDE "engine/printer/printer.asm"
 INCLUDE "engine/events/diploma2.asm"
 INCLUDE "engine/printer/printer2.asm"
 INCLUDE "engine/overworld/npc_movement_2.asm"
-
+*/
 
 SECTION "Pikachu PCM", ROMX
 
 INCLUDE "engine/pikachu/pikachu_pcm.asm"
-INCLUDE "engine/overworld/advance_player_sprite.asm"
-INCLUDE "engine/events/black_out.asm"
-INCLUDE "engine/overworld/specific_script_flags.asm"
+;INCLUDE "engine/overworld/advance_player_sprite.asm"
+;INCLUDE "engine/events/black_out.asm"
+;INCLUDE "engine/overworld/specific_script_flags.asm"
 
-
+/*
 SECTION "Try Pikachu Movement", ROMX
 
 INCLUDE "engine/overworld/unused_load_toggleable_object_data.asm"
@@ -416,3 +416,4 @@ INCLUDE "engine/pikachu/pikachu_emotions.asm"
 INCLUDE "engine/pikachu/pikachu_movement.asm"
 INCLUDE "engine/pikachu/pikachu_pic_animation.asm"
 INCLUDE "engine/debug/debug_menu.asm"
+*/

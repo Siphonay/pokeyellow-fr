@@ -23,8 +23,6 @@ MACRO drp
 ENDM
 
 
-EXPORT DEF hDMARoutine EQU $ff80
-
 EXPORT DEF CardKeySuccessText EQU $6653
 EXPORT DEF CardKeyFailText EQU $665d
 EXPORT DEF RedBedroomPCText EQU $5bb7
@@ -94,33 +92,7 @@ EXPORT DEF BookOrSculptureText EQU $7a66
 EXPORT DEF ElevatorText EQU $7a8b
 EXPORT DEF PokemonStuffText EQU $7ac3
 
-
-SECTION "rom1", ROMX[$4000], BANK[1]
-; ROM $01 : $4000 - $7FFF
-
-	dr PrepareTitleScreen, $414b
-	dr LoadMonData_, $442c
-	dr ItemPrices, $4495
-	dr ItemNames, $45b8
-	dr UnusedBadgeNames, $499a
-	dr PrepareOAMData, $4a17
-	dr WriteDMACodeToHRAM, $4b0e
-	dr _IsTilePassable, $4b26
-	dr PrintWaitingText, $4c05
-	dr _UpdateSprites, $4c32
-	dr SpecialEnterMap, $5d60
-	dr PrepareForSpecialWarp, $60cb
-	dr SubtractAmountPaidFromMoney_, $691f
-	dr HandleItemListSwapping, $6942
-	dr DisplayPokemartDialogue_, $6a1e
-	dr DisplayPokemonCenterDialogue_, $6e10
-	dr DisplayTextIDInit, $6f87
-	dr DrawStartMenu, $6ff9
-	dr CableClubNPC, $70b2
-	dr DisplayTextBoxID_, $723c
-	dr PlayerPC, $77e1
-	dr _RemovePokemon, $7a69
-	dr _DisplayPokedex, $7b19
+INCLUDE "main.asm"
 
 
 SECTION "rom3", ROMX[$4000], BANK[3]
@@ -149,18 +121,14 @@ SECTION "rom3", ROMX[$4000], BANK[3]
 	dr PrintBookshelfText, $79ce
 
 
-SECTION "rom4", ROMX[$4000], BANK[4]
+SECTION "rom4", ROMX[$5883], BANK[4]
 ; ROM $04 : $10000 - $13FFF
 
-	dr FontGraphics, $4600
-	dr FontGraphicsEnd, $4a00
-	dr HpBarAndStatusGraphics, $4a20
-	dr HpBarAndStatusGraphicsEnd, $4c00
-	dr TextBoxGraphics, $4e28
-	dr TextBoxGraphicsEnd, $5028
 	dr DrawPartyMenu_, $5883
 	dr RedrawPartyMenu_, $5894
 	dr RedPicFront, $5aa5
+	dr ShrinkPic1, $5ba4
+	dr ShrinkPic2, $5bfe
 	dr StartMenu_Pokedex, $5c30
 	dr StartMenu_Pokemon, $5c44
 	dr ErasePartyMenuCursors, $5ea6
@@ -175,6 +143,7 @@ SECTION "rom5", ROMX[$4000], BANK[5]
 ; ROM $05 : $14000 - $17FFF
 
 	dr _InitMapSprites, $401b
+	dr ReloadWalkingTilePatterns, $40d2
 	dr RedBikeSprite, $43f1
 	dr RedSprite, $4571
 	dr SeelSprite, $7ab1
@@ -195,6 +164,7 @@ SECTION "rom6", ROMX[$4000], BANK[6]
 SECTION "rom7", ROMX[$4000], BANK[7]
 ; ROM $07 : $1C000 - $1FFFF
 
+	dr DoClearSaveDialogue, $421e
 	dr SafariZoneCheck, $6324
 	dr SafariZoneCheckSteps, $6333
 	dr PrintSafariGameOverText, $6388
@@ -232,10 +202,14 @@ SECTION "rom9", ROMX[$7dfc], BANK[9]
 SECTION "rom14", ROMX[$4000], BANK[14]
 ; ROM $0e : $38000 - $3BFFF
 
+	dr Moves, $4000
 	dr BaseStats, $43de
 	dr CryData, $5462
 	dr TrainerPicAndMoneyPointers, $5893
 	dr TrainerNames, $597e
+	dr FormatMovesString, $5b09
+	dr InitList, $5b57
+	dr TryEvolvingMon, $6dbb
 
 
 SECTION "rom15", ROMX[$4000], BANK[15]
@@ -243,10 +217,14 @@ SECTION "rom15", ROMX[$4000], BANK[15]
 DisplayBattleMenu::
 
 	dr AnyPartyAlive, $4ae8
+	dr ReadPlayerMonCurHPAndStatus, $4e08
+	dr LoadHudTilePatterns, $6ffd
 
 
-;SECTION "rom16", ROMX[$4000], BANK[16]
+SECTION "rom16", ROMX[$4000], BANK[16]
 ; ROM $10 : $40000 - $43FFF
+
+	dr DisplayOptionMenu_, $5bf5
 
 
 SECTION "rom17", ROMX[$4000], BANK[17]
@@ -302,22 +280,29 @@ SECTION "rom22", ROMX[$4000], BANK[22]
 ; ROM $1a : $68000 - $6BFFF
 
 
-;SECTION "rom27", ROMX[$4000], BANK[27]
+SECTION "rom27", ROMX[$4000], BANK[27]
 ; ROM $1b : $6C000 - $6FFFF
+
+	dr Club_GFX, $7670
 
 
 SECTION "rom28", ROMX[$4000], BANK[28]
 ; ROM $1c : $70000 - $73FFF
 
+	dr AnimateHealingMachine, $448c
 	dr EnterMapAnim, $4568
 	dr _LeaveMapAnim, $4616
 	dr IsPlayerStandingOnWarpPadOrHole, $47e8
 	dr _HandleMidJump, $48e0
 	dr LoadTownMap_Fly, $5017
 	dr TownMapSpriteBlinkingAnimation, $5724
+	dr AnimatePartyMon_ForceSpeed1, $5755
 	dr AnimatePartyMon, $575d
+	dr LoadMonPartySpriteGfx, $57ca
+	dr WriteMonPartySpriteOAMBySpecies, $5900
 	dr _UpdateCGBPal_BGP, $64f5
 	dr _UpdateCGBPal_OBP, $653d
+	dr SaveGameData, $7b62
 
 
 SECTION "rom29", ROMX[$4000], BANK[29]
@@ -347,10 +332,11 @@ SECTION "rom58", ROMX[$4000], BANK[58]
 
 	dr MonsterNames, $4000
 	dr PrinterSerial_, $4a5e
+	dr PrinterDebug, $4e79
 	dr SetEnemyTrainerToStayAndFaceAnyDirection, $69d5
 
 
-SECTION "rom60", ROMX[$4000], BANK[60]
+SECTION "rom60", ROMX[$410c], BANK[60]
 ; ROM $3c : $F0000 - $F3FFF
 
 	dr _AdvancePlayerSprite, $410c
@@ -360,11 +346,23 @@ SECTION "rom60", ROMX[$4000], BANK[60]
 	dr CheckForHiddenEvent, $653a
 
 
-SECTION "rom61", ROMX[$5b6b], BANK[61]
+SECTION "rom61", ROMX[$4000], BANK[61]
 ; ROM $3d : $F4000 - $F7FFF
 
+	dr ModifyPikachuHappiness, $4316
+
+
+SECTION "rom61_2", ROMX[$454b], BANK[61]
+
+	dr LoadYellowTitleScreenGFX, $454b
+	dr TitleScreen_PlacePokemonLogo, $4584
+	dr TitleScreen_PlacePikaSpeechBubble, $4591
+	dr TitleScreen_PlacePikachu, $45a6
+	dr LinkMenu, $580b
 	dr AddItemToInventory_, $5b6b
 	dr RemoveItemFromInventory_, $5bdb
+	dr TrainerInfoTextBoxTileGraphics, $5c1e
+	dr TrainerInfoTextBoxTileGraphicsEnd, $5cae
 	dr InitBattle, $5fec
 	dr CopyUncompressedPicToHL, $6203
 	dr GetMachinePrice, $65d4
@@ -375,21 +373,38 @@ SECTION "rom61", ROMX[$5b6b], BANK[61]
 	dr Random_, $67dc
 	dr GetPredefPointer, $67ed
 	dr PredefPointers, $681d
+	drp DrawPlayerHUDAndHPBar, 0
+	drp CopyUncompressedPicToTilemap, 1
+	drp HealParty, 7
 	drp AddBCDPredef, $b
+	drp SubBCDPredef, $c
 	drp DivideBCDPredef3, $d
 	drp FlagActionPredef, $10
 	drp HideObject, $11
+	drp IsObjectHidden, $12
 	drp ApplyOutOfBattlePoisonDamage, $13
+	drp InitPlayerData2, $18
 	drp LoadTilesetHeader, $19
 	drp GetQuantityOfItemInBag, $1c
+	drp InitOpponent, $2c
 	drp CableClub_Run, $2d
+	drp ExternalClockTradeAnim, $2f
 	drp PlayIntro, $32
 	drp GetTileAndCoordsInFrontOfPlayer, $35
+	drp StatusScreen, $36
+	drp StatusScreen2, $37
+	drp InternalClockTradeAnim, $38
 	drp TrainerEngage, $39
 	drp IndexToPokedex, $3a
+	drp ShowPokedexData, $3d
 	drp LoadSGB, $40
 	drp _RunPaletteCommand, $45
+	drp UpdateHPBar2, $48
+	drp DrawEnemyHUDAndHPBar, $49
 	drp EmotionBubble, $4c
+	drp EmptyFunc, $4d
+	drp SavePartyAndDexData, $50
+	drp TryLoadSaveFile, $52
 	drp PickUpItem, $5c
 
 
@@ -413,5 +428,6 @@ SECTION "rom63", ROMX[$4000], BANK[63]
 	dr IsThisPartyMonStarterPikachu, $4e18
 	dr IsPlayerTalkingToPikachu, $4f0c
 	dr TalkToPikachu, $5004
+	dr PikachuWalksToNurseJoy, $5252
 	dr ApplyPikachuMovementData_, $52a1
 	dr SurfingPikachuSprite, $6def

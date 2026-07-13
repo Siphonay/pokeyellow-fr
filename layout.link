@@ -33,8 +33,8 @@ ROM0
 	"Header"
 	org $150
 	"Home"
-; ROMX $1
-; 	"bank1"
+ROMX $1
+	"bank1"
 ROMX $2
 	"Sound Effect Headers 1"
 	"Music Headers 1"
@@ -43,8 +43,8 @@ ROMX $2
 	"Music 1"
 ; ROMX $3
 ; 	"bank3"
-; ROMX $4
-; 	"bank4"
+ROMX $4
+	"bank4"
 ; 	"NPC Sprites 1"
 ; 	"Battle Engine 1"
 ; ROMX $5
@@ -213,8 +213,8 @@ ROMX $38
 ; 	"bank3A"
 ROMX $3B
 	"Text 10"
-; ROMX $3C
-; 	"Pikachu PCM"
+ROMX $3C
+	"Pikachu PCM"
 ; 	"Tilesets 4"
 ; 	"Try Pikachu Movement"
 ; 	"Pikachu Graphics 2"
@@ -257,6 +257,5 @@ SRAM $2
 SRAM $3
 	"Saved Boxes 2"
 HRAM
-; 	"OAM DMA"
-	org $ff8a
+	"OAM DMA"
 	"HRAM"
