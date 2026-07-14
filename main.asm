@@ -295,7 +295,7 @@ SECTION "Itemfinder 2", ROMX
 INCLUDE "engine/menus/league_pc.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/events/hidden_items.asm"
-
+*/
 
 SECTION "bank1E", ROMX
 
@@ -307,7 +307,7 @@ INCLUDE "data/moves/animations.asm"
 INCLUDE "data/battle_anims/subanimations.asm"
 INCLUDE "data/battle_anims/frame_blocks.asm"
 
-
+/*
 SECTION "BG Map Attributes (Debug)", ROMX
 
 IF DEF(_DEBUG)

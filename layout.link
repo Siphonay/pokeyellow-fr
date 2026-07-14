@@ -140,8 +140,8 @@ ROMX $1B
 ; 	"Vending Machine"
 ; 	"Maps 21"
 ; 	"Itemfinder 2"
-; ROMX $1E
-; 	"bank1E"
+ROMX $1E
+	"bank1E"
 ROMX $1F
 	"Sound Effect Headers 3"
 	"Music Headers 3"

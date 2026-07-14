@@ -114,6 +114,7 @@ SECTION "rom3", ROMX[$4000], BANK[3]
 	dr IsKeyItem_, $6698
 	dr IsNextTileShoreOrWater, $67f8
 	dr GymLeaderFaceAndBadgeTileGraphics, $690b
+	dr WriteCutOrBoulderDustAnimationOAMBlock, $6ec5
 	dr MarkTownVisitedAndLoadToggleableObjects, $6f83
 	dr TryPushingBoulder, $7091
 	dr DoBoulderDustAnimation, $7121
@@ -284,16 +285,13 @@ SECTION "rom29", ROMX[$4000], BANK[29]
 	dr VendingMachineMenu, $4721
 
 
-;SECTION "rom30", ROMX[$4000], BANK[30]
-; ROM $1e : $78000 - $7BFFF
-
-
 ;SECTION "rom32", ROMX[$4000], BANK[32]
 ; ROM $20 : $80000 - $83FFF
 
 
-;SECTION "rom47", ROMX[$4000], BANK[47]
+SECTION "rom47", ROMX[$7450], BANK[47]
 ; ROM $2f : $BC000 - $BFFFF
+    dr LoadBGMapAttributes, $7450
 
 
 SECTION "rom58", ROMX[$4000], BANK[58]
@@ -345,6 +343,7 @@ SECTION "rom61_2", ROMX[$454b], BANK[61]
 	dr PredefPointers, $681d
 	drp DrawPlayerHUDAndHPBar, 0
 	drp CopyUncompressedPicToTilemap, 1
+	drp LoadMonBackPic, 4
 	drp HealParty, 7
 	drp AddBCDPredef, $b
 	drp SubBCDPredef, $c
@@ -356,6 +355,8 @@ SECTION "rom61_2", ROMX[$454b], BANK[61]
 	drp InitPlayerData2, $18
 	drp LoadTilesetHeader, $19
 	drp GetQuantityOfItemInBag, $1c
+	drp PredefShakeScreenVertically, $21
+	drp PredefShakeScreenHorizontally, $24
 	drp HPBarLength, $26
 	drp ShowPokedexMenu, $29
 	drp EvolutionAfterBattle, $2a
