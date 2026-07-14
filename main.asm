@@ -358,7 +358,7 @@ SECTION "Hidden Events Core", ROMX
 
 INCLUDE "engine/overworld/hidden_events.asm"
 INCLUDE "engine/events/hidden_events/vermilion_gym_trash2.asm"
-
+*/
 
 SECTION "Battle Engine 8", ROMX
 
@@ -397,7 +397,7 @@ INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
 INCLUDE "engine/predefs.asm"
 
-
+/*
 SECTION "Surfing Minigame", ROMX
 
 INCLUDE "engine/minigame/surfing_pikachu.asm"

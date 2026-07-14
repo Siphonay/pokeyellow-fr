@@ -75,8 +75,8 @@ InitWildBattle:
 	ld a, c
 	ld [hli], a   ; write front sprite pointer
 	ld [hl], b
-	ld hl, wEnemyMonNick  ; set name to "GHOST"
-	ld_hli_a_string "GHOST@"
+	ld hl, wEnemyMonNick  ; set name to "SPECTRE"
+	ld_hli_a_string "SPECTRE@"
 	ld a, [wCurPartySpecies]
 	push af
 	ld a, MON_GHOST

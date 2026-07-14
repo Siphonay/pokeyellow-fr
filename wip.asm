@@ -17,11 +17,6 @@ MACRO? dr
 	\1::
 ENDM
 
-; Predefs
-MACRO drp
-	dr \1Predef, (\2) * 3 + $681d
-ENDM
-
 
 EXPORT DEF CardKeySuccessText EQU $6653
 EXPORT DEF CardKeyFailText EQU $665d
@@ -107,20 +102,51 @@ SECTION "rom3", ROMX[$4000], BANK[3]
 	dr IsWarpTileInFrontOfPlayer, $4197
 	dr IsPlayerStandingOnDoorTileOrWarpTile, $41e6
 	dr PrintSafariZoneSteps, $427b
+	dr GetTileAndCoordsInFrontOfPlayer, $42d1
+	dr GetTileTwoStepsInFrontOfPlayer, $4309
+	dr CheckForCollisionWhenPushingBoulder, $4356
+	dr ApplyOutOfBattlePoisonDamage, $43de
+	dr LoadTilesetHeader, $44f4
 	dr LoadWildData, $4b62
 	dr UseItem_, $52ed
 	dr GetMaxPP, $65ab
 	dr TossItem_, $6625
 	dr IsKeyItem_, $6698
+	dr SendNewMonToBox, $66d8
 	dr IsNextTileShoreOrWater, $67f8
+	dr DrawBadges, $6870
 	dr GymLeaderFaceAndBadgeTileGraphics, $690b
+	dr ReplaceTileBlock, $6d0b
+	dr UsedCut, $6dc1
 	dr WriteCutOrBoulderDustAnimationOAMBlock, $6ec5
 	dr MarkTownVisitedAndLoadToggleableObjects, $6f83
+	dr IsObjectHidden, $7012
+	dr ShowObject, $7034
+ShowObject2::
+	dr HideObject, $7043
 	dr TryPushingBoulder, $7091
 	dr DoBoulderDustAnimation, $7121
 	dr _AddPartyMon, $7151
+	dr LoadMovePPs, $72e9
 	dr _AddEnemyMonToPlayerParty, $7313
 	dr _MoveMon, $7394
+	dr FlagActionPredef, $74dc
+	dr HealParty, $751b
+	dr DivideBCDPredef, $7594
+DivideBCDPredef2::
+DivideBCDPredef3::
+DivideBCDPredef4::
+	dr AddBCDPredef, $7693
+	dr SubBCDPredef, $76ac
+	dr InitPlayerData, $76c6
+InitPlayerData2::
+	dr GetQuantityOfItemInBag, $7725
+	dr FindPathToPlayer, $773a
+	dr CalcPositionOfPlayerRelativeToNPC, $77a9
+	dr ConvertNPCMovementDirectionsToJoypadMasks, $7820
+	dr HPBarLength, $785c
+	dr UpdateHPBar, $789d
+UpdateHPBar2::
 	dr PrintBookshelfText, $79ce
 
 
@@ -138,6 +164,7 @@ SECTION "rom6", ROMX[$4000], BANK[6]
 	dr PalletMovementScriptPointerTable, $654c
 	dr PewterMuseumGuyMovementScriptPointerTable, $6622
 	dr PewterGymGuyMovementScriptPointerTable, $6685
+	dr PewterGuys, $66e5
 	dr HandleLedges, $67f4
 
 
@@ -145,6 +172,7 @@ SECTION "rom7", ROMX[$4000], BANK[7]
 ; ROM $07 : $1C000 - $1FFFF
 
 	dr DoClearSaveDialogue, $421e
+	dr DisplayElevatorFloorMenu, $4264
 	dr SafariZoneCheck, $6324
 	dr SafariZoneCheckSteps, $6333
 	dr PrintSafariGameOverText, $6388
@@ -157,18 +185,26 @@ SECTION "rom8", ROMX[$5472], BANK[8]
 	dr BillsPC_, $5472
 
 
-SECTION "rom9", ROMX[$7dfc], BANK[9]
+SECTION "rom9", ROMX[$7d20], BANK[9]
 ; ROM $09 : $24000 - $27FFF
 
+	dr PrintMonType, $7d20
+	dr PrintMoveType, $7d4d
 	dr SaveTrainerName, $7dfc
 
 
-;SECTION "rom10", ROMX[$4000], BANK[10]
+SECTION "rom10", ROMX[$7d4c], BANK[10]
 ; ROM $0a : $28000 - $2BFFF
 
+	dr ChangeBGPalColor0_4Frames, $7d4c
+	dr PredefShakeScreenVertically, $7d67
+	dr PredefShakeScreenHorizontally, $7d8d
 
-;SECTION "rom11", ROMX[$4000], BANK[11]
+
+SECTION "rom11", ROMX[$7d79], BANK[11]
 ; ROM $0b : $2C000 - $2FFFF
+
+	dr ScaleSpriteByTwo, $7d79
 
 
 ;SECTION "rom12", ROMX[$4000], BANK[12]
@@ -189,31 +225,63 @@ SECTION "rom14", ROMX[$4000], BANK[14]
 	dr TrainerNames, $597e
 	dr FormatMovesString, $5b09
 	dr InitList, $5b57
+	dr ReadTrainer, $5bb9
+	dr DrawAllPokeballs, $68e2
+	dr SetupPlayerAndEnemyPokeballs, $69ec
 	dr PokeballTileGraphics, $6a2b
 	dr TryEvolvingMon, $6dbb
+	dr EvolutionAfterBattle, $6dc9
+	dr LearnMoveFromLevelUp, $700f
+	dr Func_3b10f, $7112
+	dr WriteMonMoves, $7142
 	dr EvosMovesPointerTable, $71e8
 
 
 SECTION "rom15", ROMX[$4000], BANK[15]
 ; ROM $0f : $3C000 - $3FFFF
+BattleCore::
 DisplayBattleMenu::
 
+	dr SlidePlayerAndEnemySilhouettesOnScreen, $404c
+	dr StartBattle, $4127
 	dr AnyPartyAlive, $4ae8
 	dr ReadPlayerMonCurHPAndStatus, $4e08
+	dr DrawHUDsAndHPBars, $4e1f
+	dr DrawPlayerHUDAndHPBar, $4e25
+	dr DrawEnemyHUDAndHPBar, $4eb1
+	dr IsGhostBattle, $59c2
+	dr PrintDoesntAffectText, $5dd9
+	dr MoveHitTest, $6707
+	dr LoadEnemyMonData, $6c9d
+	dr DoBattleTransitionAndInitBattleVariables, $6dce
+	dr DoubleOrHalveSelectedStats, $6ea4
+	dr QuarterSpeedDueToParalysis, $6ec9
 	dr LoadHudTilePatterns, $6ffd
+	dr JumpMoveEffect, $70bd
 	dr PrintButItFailedText_, $7b30
+	dr PrintDidntAffectText, $7b3b
+	dr PrintMayNotAttackText, $7b4b
 	dr PlayCurrentMoveAnimation, $7b85
 
 
 SECTION "rom16", ROMX[$4000], BANK[16]
 ; ROM $10 : $40000 - $43FFF
 
+	dr ShowPokedexMenu, $4000
+	dr ShowPokedexData, $4310
+	dr PokedexEntryPointers, $4508
+	dr IndexToPokedex, $5022
+	dr EmotionBubble, $50f4
+	dr InternalClockTradeAnim, $536a
+	dr ExternalClockTradeAnim, $537b
+	dr PlayIntro, $591c
 	dr DisplayOptionMenu_, $5bf5
 
 
 SECTION "rom17", ROMX[$4000], BANK[17]
 ; ROM $11 : $44000 - $47FFF
 
+	dr DisplayDexRating, $4169
 	dr LoadSpinnerArrowTiles, $5077
 
 
@@ -240,6 +308,7 @@ SECTION "rom21", ROMX[$4000], BANK[21]
 	dr _SetSpritePosition1, $6789
 	dr _SetSpritePosition2, $67a9
 	dr TrainerWalkUpToPlayer, $67cd
+	dr TrainerEngage, $685b
 
 
 SECTION "rom22", ROMX[$4000], BANK[22]
@@ -247,10 +316,14 @@ SECTION "rom22", ROMX[$4000], BANK[22]
 
 	dr CalcExperience, $4dc0
 	dr PrintStatusAilment, $4e8b
+	dr OaksAideScript, $4ecc
 
 
-;SECTION "rom23", ROMX[$4000], BANK[23]
+SECTION "rom23", ROMX[$4000], BANK[23]
 ; ROM $17 : $5C000 - $5FFFF
+
+	dr StarterDex, $40d4
+	dr SetPartyMonTypes, $5b87
 
 
 ;SECTION "rom24", ROMX[$4000], BANK[24]
@@ -265,6 +338,10 @@ SECTION "rom28", ROMX[$4000], BANK[28]
 	dr _LeaveMapAnim, $4616
 	dr IsPlayerStandingOnWarpPadOrHole, $47e8
 	dr _HandleMidJump, $48e0
+	dr MarowakAnim, $492c
+	dr BattleTransition, $49d8
+	dr FlashScreen, $4bd1
+	dr LoadTownMap_Nest, $4fe5
 	dr LoadTownMap_Fly, $5017
 	dr TownMapSpriteBlinkingAnimation, $5724
 	dr AnimatePartyMon_ForceSpeed1, $5755
@@ -273,9 +350,18 @@ SECTION "rom28", ROMX[$4000], BANK[28]
 	dr LoadMonPartySpriteGfxWithLCDDisabled, $57ef
 	dr WriteMonPartySpriteOAMByPartyIndex, $58d2
 	dr WriteMonPartySpriteOAMBySpecies, $5900
+	dr DoInGameTradeDialogue, $5b57
+	dr _RunPaletteCommand, $5e84
 	dr InitPartyMenuBlkPacket, $6150
+	dr LoadSGB, $61c9
 	dr _UpdateCGBPal_BGP, $64f5
 	dr _UpdateCGBPal_OBP, $653d
+	dr TryLoadSaveFile, $792a
+	dr LoadPartyAndDexData, $79f5
+	dr SaveMenu, $7a38
+	dr SaveMainData, $7ab6
+	dr SaveCurrentBoxData, $7b03
+	dr SavePartyAndDexData, $7b27
 	dr SaveGameData, $7b62
 
 
@@ -291,6 +377,7 @@ SECTION "rom29", ROMX[$4000], BANK[29]
 
 SECTION "rom47", ROMX[$7450], BANK[47]
 ; ROM $2f : $BC000 - $BFFFF
+
     dr LoadBGMapAttributes, $7450
 
 
@@ -307,88 +394,8 @@ SECTION "rom58", ROMX[$4000], BANK[58]
 SECTION "rom60", ROMX[$4f12], BANK[60]
 ; ROM $3c : $F0000 - $F3FFF
 
+	dr HallOfFamePC, $4f26
 	dr CheckForHiddenEvent, $653a
-
-
-SECTION "rom61", ROMX[$4000], BANK[61]
-; ROM $3d : $F4000 - $F7FFF
-
-	dr DisplayLinkBattleVersusTextBox, $41cf
-	dr ModifyPikachuHappiness, $4316
-
-
-SECTION "rom61_2", ROMX[$454b], BANK[61]
-
-	dr LoadYellowTitleScreenGFX, $454b
-	dr TitleScreen_PlacePokemonLogo, $4584
-	dr TitleScreen_PlacePikaSpeechBubble, $4591
-	dr TitleScreen_PlacePikachu, $45a6
-	dr LinkMenu, $580b
-	dr IsSurfingAllowed, $5b27
-	dr AddItemToInventory_, $5b6b
-	dr RemoveItemFromInventory_, $5bdb
-	dr TrainerInfoTextBoxTileGraphics, $5c1e
-	dr TrainerInfoTextBoxTileGraphicsEnd, $5cae
-	dr BlankLeaderNames, $5cae
-	dr BadgeNumbersTileGraphics, $5e1e
-	dr InitBattle, $5fec
-	dr CopyUncompressedPicToHL, $6203
-	dr GetMachinePrice, $65d4
-	dr _Multiply, $660e
-	dr _Divide, $6672
-	dr _GivePokemon, $66fa
-	dr GetTrainerName_, $67a5
-	dr Random_, $67dc
-	dr GetPredefPointer, $67ed
-	dr PredefPointers, $681d
-	drp DrawPlayerHUDAndHPBar, 0
-	drp CopyUncompressedPicToTilemap, 1
-	drp LoadMonBackPic, 4
-	drp HealParty, 7
-	drp AddBCDPredef, $b
-	drp SubBCDPredef, $c
-	drp DivideBCDPredef3, $d
-	drp FlagActionPredef, $10
-	drp HideObject, $11
-	drp IsObjectHidden, $12
-	drp ApplyOutOfBattlePoisonDamage, $13
-	drp InitPlayerData2, $18
-	drp LoadTilesetHeader, $19
-	drp GetQuantityOfItemInBag, $1c
-	drp PredefShakeScreenVertically, $21
-	drp PredefShakeScreenHorizontally, $24
-	drp HPBarLength, $26
-	drp ShowPokedexMenu, $29
-	drp EvolutionAfterBattle, $2a
-	drp InitOpponent, $2c
-	drp CableClub_Run, $2d
-	drp DrawBadges, $2e
-	drp ExternalClockTradeAnim, $2f
-	drp PlayIntro, $32
-	drp GetTileAndCoordsInFrontOfPlayer, $35
-	drp StatusScreen, $36
-	drp StatusScreen2, $37
-	drp InternalClockTradeAnim, $38
-	drp TrainerEngage, $39
-	drp IndexToPokedex, $3a
-	drp DisplayPicCenteredOrUpperRight, $3b
-	drp UsedCut, $3c
-	drp ShowPokedexData, $3d
-	drp SaveMenu, $3f
-	drp LoadSGB, $40
-	drp CanLearnTM, $43
-	drp _RunPaletteCommand, $45
-	drp UpdateHPBar2, $48
-	drp DrawEnemyHUDAndHPBar, $49
-	drp PrintMonType, $4b
-	drp EmotionBubble, $4c
-	drp EmptyFunc, $4d
-	drp SavePartyAndDexData, $50
-	drp TryLoadSaveFile, $52
-	drp PrintStrengthText, $5b
-	drp PickUpItem, $5c
-	drp DrawHP, $5f
-	drp DrawHP2, $60
 
 
 ;SECTION "rom62", ROMX[$4000], BANK[62]
@@ -415,6 +422,7 @@ SECTION "rom63", ROMX[$4000], BANK[63]
 	dr UpdatePikachuMoodAfterBattle, $4e5a
 	dr IsPlayerTalkingToPikachu, $4f0c
 	dr TalkToPikachu, $5004
+	dr IsPlayerPikachuAsleepInParty, $50d0
 	dr PikachuWalksToNurseJoy, $5252
 	dr ApplyPikachuMovementData_, $52a1
 	dr LoadPikachuShadowIntoVRAM, $5831
