@@ -77,77 +77,251 @@ EXPORT DEF FightingDojoText EQU $698f
 EXPORT DEF EnemiesOnEverySideText EQU $6975
 EXPORT DEF WhatGoesAroundComesAroundText EQU $6982
 EXPORT DEF NewBicycleText EQU $62ef
-EXPORT DEF IndigoPlateauStatues EQU $7a3d
 EXPORT DEF VermilionGymTrashSuccessText1 EQU $5f01
 EXPORT DEF VermilionGymTrashSuccessText2 EQU $5f14
 EXPORT DEF VermilionGymTrashSuccessText3 EQU $5f28
 EXPORT DEF VermilionGymTrashFailText EQU $5f3b
-EXPORT DEF TownMapText EQU $7a90
-EXPORT DEF BookOrSculptureText EQU $7a66
-EXPORT DEF ElevatorText EQU $7a8b
-EXPORT DEF PokemonStuffText EQU $7ac3
+
+EXPORT DEF BILLSHOUSE_BILL_POKEMON                  EQU $01
+EXPORT DEF BILLSHOUSE_BILL1                         EQU $02
+EXPORT DEF BILLSHOUSE_BILL2                         EQU $03
+EXPORT DEF BLUESHOUSE_DAISY1                        EQU $01
+EXPORT DEF BLUESHOUSE_DAISY2                        EQU $02
+EXPORT DEF BLUESHOUSE_TOWN_MAP                      EQU $03
+EXPORT DEF CELADONMANSION_ROOF_HOUSE_EEVEE_POKEBALL EQU $02
+EXPORT DEF CERULEANCAVE1F_RARE_CANDY                EQU $01
+EXPORT DEF CERULEANCAVE1F_MAX_ELIXER                EQU $02
+EXPORT DEF CERULEANCAVE1F_MAX_REVIVE                EQU $03
+EXPORT DEF CERULEANCAVE1F_ULTRA_BALL                EQU $04
+EXPORT DEF CERULEANCAVE2F_RARE_CANDY                EQU $01
+EXPORT DEF CERULEANCAVE2F_ULTRA_BALL                EQU $02
+EXPORT DEF CERULEANCAVE2F_MAX_REVIVE                EQU $03
+EXPORT DEF CERULEANCAVE2F_FULL_RESTORE              EQU $04
+EXPORT DEF CERULEANCAVEB1F_MEWTWO                   EQU $01
+EXPORT DEF CERULEANCAVEB1F_ULTRA_BALL1              EQU $02
+EXPORT DEF CERULEANCAVEB1F_ULTRA_BALL2              EQU $03
+EXPORT DEF CERULEANCAVEB1F_MAX_REVIVE               EQU $04
+EXPORT DEF CERULEANCAVEB1F_MAX_ELIXER               EQU $05
+EXPORT DEF CERULEANCITY_RIVAL                       EQU $01
+EXPORT DEF CERULEANCITY_ROCKET                      EQU $02
+EXPORT DEF CERULEANCITY_GUARD1                      EQU $06
+EXPORT DEF CERULEANCITY_SUPER_NERD3                 EQU $0a
+EXPORT DEF CERULEANCITY_GUARD2                      EQU $0b
+EXPORT DEF CERULEANMELANIESHOUSE_BULBASAUR          EQU $02
+EXPORT DEF CHAMPIONSROOM_OAK                        EQU $02
+EXPORT DEF FIGHTINGDOJO_HITMONLEE_POKE_BALL         EQU $06
+EXPORT DEF FIGHTINGDOJO_HITMONCHAN_POKE_BALL        EQU $07
+EXPORT DEF GAMECORNER_ROCKET                        EQU $0b
+EXPORT DEF MRFUJISHOUSE_MR_FUJI                     EQU $05
+EXPORT DEF MTMOON1F_POTION1                         EQU $08
+EXPORT DEF MTMOON1F_MOON_STONE                      EQU $09
+EXPORT DEF MTMOON1F_RARE_CANDY                      EQU $0a
+EXPORT DEF MTMOON1F_ESCAPE_ROPE                     EQU $0b
+EXPORT DEF MTMOON1F_POTION2                         EQU $0c
+EXPORT DEF MTMOON1F_TM_WATER_GUN                    EQU $0d
+EXPORT DEF MTMOONB2F_JESSIE                         EQU $02
+EXPORT DEF MTMOONB2F_JAMES                          EQU $06
+EXPORT DEF MTMOONB2F_DOME_FOSSIL                    EQU $07
+EXPORT DEF MTMOONB2F_HELIX_FOSSIL                   EQU $08
+EXPORT DEF MTMOONB2F_HP_UP                          EQU $09
+EXPORT DEF MTMOONB2F_TM_MEGA_PUNCH                  EQU $0a
+EXPORT DEF MUSEUM1F_OLD_AMBER                       EQU $05
+EXPORT DEF OAKSLAB_RIVAL                            EQU $01
+EXPORT DEF OAKSLAB_EEVEE_POKE_BALL                  EQU $02
+EXPORT DEF OAKSLAB_OAK1                             EQU $03
+EXPORT DEF OAKSLAB_POKEDEX1                         EQU $04
+EXPORT DEF OAKSLAB_POKEDEX2                         EQU $05
+EXPORT DEF OAKSLAB_OAK2                             EQU $06
+EXPORT DEF PALLETTOWN_OAK                           EQU $01
+EXPORT DEF PEWTERCITY_SUPER_NERD1                   EQU $03
+EXPORT DEF PEWTERCITY_YOUNGSTER                     EQU $05
+EXPORT DEF POKEMONMANSION1F_ESCAPE_ROPE             EQU $02
+EXPORT DEF POKEMONMANSION1F_CARBOS                  EQU $03
+EXPORT DEF POKEMONMANSION2F_CALCIUM                 EQU $02
+EXPORT DEF POKEMONMANSION3F_MAX_POTION              EQU $03
+EXPORT DEF POKEMONMANSION3F_IRON                    EQU $04
+EXPORT DEF POKEMONMANSIONB1F_RARE_CANDY             EQU $03
+EXPORT DEF POKEMONMANSIONB1F_FULL_RESTORE           EQU $04
+EXPORT DEF POKEMONMANSIONB1F_TM_BLIZZARD            EQU $05
+EXPORT DEF POKEMONMANSIONB1F_TM_SOLARBEAM           EQU $06
+EXPORT DEF POKEMONMANSIONB1F_SECRET_KEY             EQU $08
+EXPORT DEF POKEMONTOWER2F_RIVAL                     EQU $01
+EXPORT DEF POKEMONTOWER3F_ESCAPE_ROPE               EQU $04
+EXPORT DEF POKEMONTOWER4F_ELIXER                    EQU $04
+EXPORT DEF POKEMONTOWER4F_AWAKENING                 EQU $05
+EXPORT DEF POKEMONTOWER4F_HP_UP                     EQU $06
+EXPORT DEF POKEMONTOWER5F_NUGGET                    EQU $06
+EXPORT DEF POKEMONTOWER6F_RARE_CANDY                EQU $04
+EXPORT DEF POKEMONTOWER6F_X_ACCURACY                EQU $05
+EXPORT DEF POKEMONTOWER7F_JESSIE                    EQU $01
+EXPORT DEF POKEMONTOWER7F_JAMES                     EQU $02
+EXPORT DEF POKEMONTOWER7F_MR_FUJI                   EQU $03
+EXPORT DEF POWERPLANT_VOLTORB1                      EQU $01
+EXPORT DEF POWERPLANT_VOLTORB2                      EQU $02
+EXPORT DEF POWERPLANT_VOLTORB3                      EQU $03
+EXPORT DEF POWERPLANT_ELECTRODE1                    EQU $04
+EXPORT DEF POWERPLANT_VOLTORB4                      EQU $05
+EXPORT DEF POWERPLANT_VOLTORB5                      EQU $06
+EXPORT DEF POWERPLANT_ELECTRODE2                    EQU $07
+EXPORT DEF POWERPLANT_VOLTORB6                      EQU $08
+EXPORT DEF POWERPLANT_ZAPDOS                        EQU $09
+EXPORT DEF POWERPLANT_CARBOS                        EQU $0a
+EXPORT DEF POWERPLANT_HP_UP                         EQU $0b
+EXPORT DEF POWERPLANT_RARE_CANDY                    EQU $0c
+EXPORT DEF POWERPLANT_TM_THUNDER                    EQU $0d
+EXPORT DEF POWERPLANT_TM_REFLECT                    EQU $0e
+EXPORT DEF ROCKETHIDEOUTB1F_ESCAPE_ROPE             EQU $06
+EXPORT DEF ROCKETHIDEOUTB1F_HYPER_POTION            EQU $07
+EXPORT DEF ROCKETHIDEOUTB2F_MOON_STONE              EQU $02
+EXPORT DEF ROCKETHIDEOUTB2F_NUGGET                  EQU $03
+EXPORT DEF ROCKETHIDEOUTB2F_TM_HORN_DRILL           EQU $04
+EXPORT DEF ROCKETHIDEOUTB2F_SUPER_POTION            EQU $05
+EXPORT DEF ROCKETHIDEOUTB3F_TM_DOUBLE_EDGE          EQU $03
+EXPORT DEF ROCKETHIDEOUTB3F_RARE_CANDY              EQU $04
+EXPORT DEF ROCKETHIDEOUTB4F_GIOVANNI                EQU $01
+EXPORT DEF ROCKETHIDEOUTB4F_JAMES                   EQU $02
+EXPORT DEF ROCKETHIDEOUTB4F_JESSIE                  EQU $03
+EXPORT DEF ROCKETHIDEOUTB4F_HP_UP                   EQU $05
+EXPORT DEF ROCKETHIDEOUTB4F_TM_RAZOR_WIND           EQU $06
+EXPORT DEF ROCKETHIDEOUTB4F_IRON                    EQU $07
+EXPORT DEF ROCKETHIDEOUTB4F_SILPH_SCOPE             EQU $08
+EXPORT DEF ROCKETHIDEOUTB4F_LIFT_KEY                EQU $09
+EXPORT DEF ROUTE12_SNORLAX                          EQU $01
+EXPORT DEF ROUTE12_TM_PAY_DAY                       EQU $09
+EXPORT DEF ROUTE12_IRON                             EQU $0a
+EXPORT DEF ROUTE15_TM_RAGE                          EQU $0b
+EXPORT DEF ROUTE16_SNORLAX                          EQU $07
+EXPORT DEF ROUTE2_MOON_STONE                        EQU $01
+EXPORT DEF ROUTE2_HP_UP                             EQU $02
+EXPORT DEF ROUTE22_RIVAL1                           EQU $01
+EXPORT DEF ROUTE22_RIVAL2                           EQU $02
+EXPORT DEF ROUTE24_COOLTRAINER_M1                   EQU $01
+EXPORT DEF ROUTE24_TM_THUNDER_WAVE                  EQU $08
+EXPORT DEF ROUTE25_TM_SEISMIC_TOSS                  EQU $0a
+EXPORT DEF ROUTE4_TM_WHIRLWIND                      EQU $03
+EXPORT DEF ROUTE9_TM_TELEPORT                       EQU $0a
+EXPORT DEF SAFARIZONECENTER_NUGGET                  EQU $01
+EXPORT DEF SAFARIZONEEAST_FULL_RESTORE              EQU $01
+EXPORT DEF SAFARIZONEEAST_MAX_RESTORE               EQU $02
+EXPORT DEF SAFARIZONEEAST_CARBOS                    EQU $03
+EXPORT DEF SAFARIZONEEAST_TM_EGG_BOMB               EQU $04
+EXPORT DEF SAFARIZONENORTH_PROTEIN                  EQU $01
+EXPORT DEF SAFARIZONENORTH_TM_SKULL_BASH            EQU $02
+EXPORT DEF SAFARIZONEWEST_MAX_POTION                EQU $01
+EXPORT DEF SAFARIZONEWEST_TM_DOUBLE_TEAM            EQU $02
+EXPORT DEF SAFARIZONEWEST_MAX_REVIVE                EQU $03
+EXPORT DEF SAFARIZONEWEST_GOLD_TEETH                EQU $04
+EXPORT DEF SAFFRONCITY_ROCKET1                      EQU $01
+EXPORT DEF SAFFRONCITY_ROCKET2                      EQU $02
+EXPORT DEF SAFFRONCITY_ROCKET3                      EQU $03
+EXPORT DEF SAFFRONCITY_ROCKET4                      EQU $04
+EXPORT DEF SAFFRONCITY_ROCKET5                      EQU $05
+EXPORT DEF SAFFRONCITY_ROCKET6                      EQU $06
+EXPORT DEF SAFFRONCITY_ROCKET7                      EQU $07
+EXPORT DEF SAFFRONCITY_SCIENTIST                    EQU $08
+EXPORT DEF SAFFRONCITY_SILPH_WORKER_M               EQU $09
+EXPORT DEF SAFFRONCITY_SILPH_WORKER_F               EQU $0a
+EXPORT DEF SAFFRONCITY_GENTLEMAN                    EQU $0b
+EXPORT DEF SAFFRONCITY_PIDGEOT                      EQU $0c
+EXPORT DEF SAFFRONCITY_ROCKER                       EQU $0d
+EXPORT DEF SAFFRONCITY_ROCKET8                      EQU $0e
+EXPORT DEF SAFFRONCITY_ROCKET9                      EQU $0f
+EXPORT DEF SEAFOAMISLANDS1F_BOULDER1                EQU $01
+EXPORT DEF SEAFOAMISLANDS1F_BOULDER2                EQU $02
+EXPORT DEF SEAFOAMISLANDSB1F_BOULDER1               EQU $01
+EXPORT DEF SEAFOAMISLANDSB1F_BOULDER2               EQU $02
+EXPORT DEF SEAFOAMISLANDSB2F_BOULDER1               EQU $01
+EXPORT DEF SEAFOAMISLANDSB2F_BOULDER2               EQU $02
+EXPORT DEF SEAFOAMISLANDSB3F_BOULDER2               EQU $02
+EXPORT DEF SEAFOAMISLANDSB3F_BOULDER3               EQU $03
+EXPORT DEF SEAFOAMISLANDSB3F_BOULDER5               EQU $05
+EXPORT DEF SEAFOAMISLANDSB3F_BOULDER6               EQU $06
+EXPORT DEF SEAFOAMISLANDSB4F_BOULDER1               EQU $01
+EXPORT DEF SEAFOAMISLANDSB4F_BOULDER2               EQU $02
+EXPORT DEF SEAFOAMISLANDSB4F_ARTICUNO               EQU $03
+EXPORT DEF SILPHCO10F_ROCKET                        EQU $01
+EXPORT DEF SILPHCO10F_SCIENTIST                     EQU $02
+EXPORT DEF SILPHCO10F_SILPH_WORKER_F                EQU $03
+EXPORT DEF SILPHCO10F_TM_EARTHQUAKE                 EQU $04
+EXPORT DEF SILPHCO10F_RARE_CANDY                    EQU $05
+EXPORT DEF SILPHCO10F_CARBOS                        EQU $06
+EXPORT DEF SILPHCO11F_GIOVANNI                      EQU $03
+EXPORT DEF SILPHCO11F_JAMES                         EQU $04
+EXPORT DEF SILPHCO11F_ROCKET                        EQU $05
+EXPORT DEF SILPHCO11F_JESSIE                        EQU $06
+EXPORT DEF SILPHCO1F_LINK_RECEPTIONIST              EQU $01
+EXPORT DEF SILPHCO2F_SILPH_WORKER_F                 EQU $01
+EXPORT DEF SILPHCO2F_SCIENTIST1                     EQU $02
+EXPORT DEF SILPHCO2F_SCIENTIST2                     EQU $03
+EXPORT DEF SILPHCO2F_ROCKET1                        EQU $04
+EXPORT DEF SILPHCO2F_ROCKET2                        EQU $05
+EXPORT DEF SILPHCO3F_ROCKET                         EQU $02
+EXPORT DEF SILPHCO3F_SCIENTIST                      EQU $03
+EXPORT DEF SILPHCO3F_HYPER_POTION                   EQU $04
+EXPORT DEF SILPHCO4F_ROCKET1                        EQU $02
+EXPORT DEF SILPHCO4F_SCIENTIST                      EQU $03
+EXPORT DEF SILPHCO4F_ROCKET2                        EQU $04
+EXPORT DEF SILPHCO4F_FULL_HEAL                      EQU $05
+EXPORT DEF SILPHCO4F_MAX_REVIVE                     EQU $06
+EXPORT DEF SILPHCO4F_ESCAPE_ROPE                    EQU $07
+EXPORT DEF SILPHCO5F_ROCKET1                        EQU $02
+EXPORT DEF SILPHCO5F_SCIENTIST                      EQU $03
+EXPORT DEF SILPHCO5F_ROCKER                         EQU $04
+EXPORT DEF SILPHCO5F_ROCKET2                        EQU $05
+EXPORT DEF SILPHCO5F_TM_TAKE_DOWN                   EQU $06
+EXPORT DEF SILPHCO5F_PROTEIN                        EQU $07
+EXPORT DEF SILPHCO5F_CARD_KEY                       EQU $08
+EXPORT DEF SILPHCO6F_ROCKET1                        EQU $06
+EXPORT DEF SILPHCO6F_SCIENTIST                      EQU $07
+EXPORT DEF SILPHCO6F_ROCKET2                        EQU $08
+EXPORT DEF SILPHCO6F_HP_UP                          EQU $09
+EXPORT DEF SILPHCO6F_X_ACCURACY                     EQU $0a
+EXPORT DEF SILPHCO7F_ROCKET1                        EQU $05
+EXPORT DEF SILPHCO7F_SCIENTIST                      EQU $06
+EXPORT DEF SILPHCO7F_ROCKET2                        EQU $07
+EXPORT DEF SILPHCO7F_ROCKET3                        EQU $08
+EXPORT DEF SILPHCO7F_RIVAL                          EQU $09
+EXPORT DEF SILPHCO7F_CALCIUM                        EQU $0a
+EXPORT DEF SILPHCO7F_TM_SWORDS_DANCE                EQU $0b
+EXPORT DEF SILPHCO7F_UNUSED                         EQU $0c
+EXPORT DEF SILPHCO8F_ROCKET1                        EQU $02
+EXPORT DEF SILPHCO8F_SCIENTIST                      EQU $03
+EXPORT DEF SILPHCO8F_ROCKET2                        EQU $04
+EXPORT DEF SILPHCO9F_ROCKET1                        EQU $02
+EXPORT DEF SILPHCO9F_SCIENTIST                      EQU $03
+EXPORT DEF SILPHCO9F_ROCKET2                        EQU $04
+EXPORT DEF SSANNE1FROOMS_TM_BODY_SLAM               EQU $0a
+EXPORT DEF SSANNE2F_RIVAL                           EQU $02
+EXPORT DEF SSANNE2FROOMS_MAX_ETHER                  EQU $06
+EXPORT DEF SSANNE2FROOMS_RARE_CANDY                 EQU $09
+EXPORT DEF SSANNEB1FROOMS_ETHER                     EQU $09
+EXPORT DEF SSANNEB1FROOMS_TM_REST                   EQU $0a
+EXPORT DEF SSANNEB1FROOMS_MAX_POTION                EQU $0b
+EXPORT DEF VICTORYROAD1F_TM_SKY_ATTACK              EQU $03
+EXPORT DEF VICTORYROAD1F_RARE_CANDY                 EQU $04
+EXPORT DEF VICTORYROAD2F_MOLTRES                    EQU $06
+EXPORT DEF VICTORYROAD2F_TM_SUBMISSION              EQU $07
+EXPORT DEF VICTORYROAD2F_FULL_HEAL                  EQU $08
+EXPORT DEF VICTORYROAD2F_TM_MEGA_KICK               EQU $09
+EXPORT DEF VICTORYROAD2F_GUARD_SPEC                 EQU $0a
+EXPORT DEF VICTORYROAD2F_BOULDER3                   EQU $0d
+EXPORT DEF VICTORYROAD3F_MAX_REVIVE                 EQU $05
+EXPORT DEF VICTORYROAD3F_TM_EXPLOSION               EQU $06
+EXPORT DEF VICTORYROAD3F_BOULDER4                   EQU $0a
+EXPORT DEF VIRIDIANCITY_OLD_MAN_SLEEPY              EQU $05
+EXPORT DEF VIRIDIANCITY_OLD_MAN                     EQU $07
+EXPORT DEF VIRIDIANCITY_OLD_MAN2                    EQU $08
+EXPORT DEF VIRIDIANFOREST_POTION1                   EQU $07
+EXPORT DEF VIRIDIANFOREST_POTION2                   EQU $08
+EXPORT DEF VIRIDIANFOREST_POKE_BALL                 EQU $09
+EXPORT DEF VIRIDIANGYM_GIOVANNI                     EQU $01
+EXPORT DEF VIRIDIANGYM_REVIVE                       EQU $0b
+EXPORT DEF WARDENSHOUSE_RARE_CANDY                  EQU $02
+
+EXPORT DEF SCRIPT_SEAFOAMISLANDSB3F_MOVE_OBJECT EQU 2
+EXPORT DEF SCRIPT_SEAFOAMISLANDSB4F_MOVE_OBJECT EQU 2
 
 INCLUDE "main.asm"
-
-
-SECTION "rom3", ROMX[$4000], BANK[3]
-; ROM $03 : $C000 - $FFFF
-
-	dr ReadJoypad_, $4000
-	dr _Joypad, $402d
-	dr ClearVariablesOnEnterMap, $407c
-	dr IsPlayerStandingOnWarp, $40a6
-	dr CheckForceBikeOrSurf, $40d2
-	dr IsPlayerFacingEdgeOfMap, $4148
-	dr IsWarpTileInFrontOfPlayer, $4197
-	dr IsPlayerStandingOnDoorTileOrWarpTile, $41e6
-	dr PrintSafariZoneSteps, $427b
-	dr GetTileAndCoordsInFrontOfPlayer, $42d1
-	dr GetTileTwoStepsInFrontOfPlayer, $4309
-	dr CheckForCollisionWhenPushingBoulder, $4356
-	dr ApplyOutOfBattlePoisonDamage, $43de
-	dr LoadTilesetHeader, $44f4
-	dr LoadWildData, $4b62
-	dr UseItem_, $52ed
-	dr GetMaxPP, $65ab
-	dr TossItem_, $6625
-	dr IsKeyItem_, $6698
-	dr SendNewMonToBox, $66d8
-	dr IsNextTileShoreOrWater, $67f8
-	dr DrawBadges, $6870
-	dr GymLeaderFaceAndBadgeTileGraphics, $690b
-	dr ReplaceTileBlock, $6d0b
-	dr UsedCut, $6dc1
-	dr WriteCutOrBoulderDustAnimationOAMBlock, $6ec5
-	dr MarkTownVisitedAndLoadToggleableObjects, $6f83
-	dr IsObjectHidden, $7012
-	dr ShowObject, $7034
-ShowObject2::
-	dr HideObject, $7043
-	dr TryPushingBoulder, $7091
-	dr DoBoulderDustAnimation, $7121
-	dr _AddPartyMon, $7151
-	dr LoadMovePPs, $72e9
-	dr _AddEnemyMonToPlayerParty, $7313
-	dr _MoveMon, $7394
-	dr FlagActionPredef, $74dc
-	dr HealParty, $751b
-	dr DivideBCDPredef, $7594
-DivideBCDPredef2::
-DivideBCDPredef3::
-DivideBCDPredef4::
-	dr AddBCDPredef, $7693
-	dr SubBCDPredef, $76ac
-	dr InitPlayerData, $76c6
-InitPlayerData2::
-	dr GetQuantityOfItemInBag, $7725
-	dr FindPathToPlayer, $773a
-	dr CalcPositionOfPlayerRelativeToNPC, $77a9
-	dr ConvertNPCMovementDirectionsToJoypadMasks, $7820
-	dr HPBarLength, $785c
-	dr UpdateHPBar, $789d
-UpdateHPBar2::
-	dr PrintBookshelfText, $79ce
 
 
 SECTION "rom5", ROMX[$7cb0], BANK[5]
@@ -165,6 +339,7 @@ SECTION "rom6", ROMX[$4000], BANK[6]
 	dr PewterMuseumGuyMovementScriptPointerTable, $6622
 	dr PewterGymGuyMovementScriptPointerTable, $6685
 	dr PewterGuys, $66e5
+	dr IsPlayerStandingOnDoorTile, $6785
 	dr HandleLedges, $67f4
 
 
@@ -201,9 +376,11 @@ SECTION "rom10", ROMX[$7d4c], BANK[10]
 	dr PredefShakeScreenHorizontally, $7d8d
 
 
-SECTION "rom11", ROMX[$7d79], BANK[11]
+SECTION "rom11", ROMX[$7d42], BANK[11]
 ; ROM $0b : $2C000 - $2FFFF
 
+	dr CheckIfMoveIsKnown, $7d42
+	dr RespawnOverworldPikachu, $7d6a
 	dr ScaleSpriteByTwo, $7d79
 
 
@@ -249,6 +426,7 @@ DisplayBattleMenu::
 	dr DrawHUDsAndHPBars, $4e1f
 	dr DrawPlayerHUDAndHPBar, $4e25
 	dr DrawEnemyHUDAndHPBar, $4eb1
+	dr MoveSelectionMenu, $5323
 	dr IsGhostBattle, $59c2
 	dr PrintDoesntAffectText, $5dd9
 	dr MoveHitTest, $6707
@@ -258,6 +436,7 @@ DisplayBattleMenu::
 	dr QuarterSpeedDueToParalysis, $6ec9
 	dr LoadHudTilePatterns, $6ffd
 	dr JumpMoveEffect, $70bd
+	dr StatModifierUpEffect, $73f4
 	dr PrintButItFailedText_, $7b30
 	dr PrintDidntAffectText, $7b3b
 	dr PrintMayNotAttackText, $7b4b
@@ -296,6 +475,7 @@ SECTION "rom17", ROMX[$4000], BANK[17]
 SECTION "rom20", ROMX[$4000], BANK[20]
 ; ROM $14 : $50000 - $53FFF
 
+	dr PrintCardKeyText, $65db
 	dr CeladonPrizeMenu, $6680
 
 
@@ -314,6 +494,7 @@ SECTION "rom21", ROMX[$4000], BANK[21]
 SECTION "rom22", ROMX[$4000], BANK[22]
 ; ROM $16 : $58000 - $5BFFF
 
+	dr CalcLevelFromExperience, $4d99
 	dr CalcExperience, $4dc0
 	dr PrintStatusAilment, $4e8b
 	dr OaksAideScript, $4ecc
@@ -337,10 +518,12 @@ SECTION "rom28", ROMX[$4000], BANK[28]
 	dr EnterMapAnim, $4568
 	dr _LeaveMapAnim, $4616
 	dr IsPlayerStandingOnWarpPadOrHole, $47e8
+	dr FishingAnim, $4817
 	dr _HandleMidJump, $48e0
 	dr MarowakAnim, $492c
 	dr BattleTransition, $49d8
 	dr FlashScreen, $4bd1
+	dr DisplayTownMap, $4eb5
 	dr LoadTownMap_Nest, $4fe5
 	dr LoadTownMap_Fly, $5017
 	dr TownMapSpriteBlinkingAnimation, $5724
@@ -368,6 +551,7 @@ SECTION "rom28", ROMX[$4000], BANK[28]
 SECTION "rom29", ROMX[$4000], BANK[29]
 ; ROM $1d : $74000 - $77FFF
 
+	dr HiddenItemNear, $405c
 	dr VendingMachineMenu, $4721
 
 
@@ -413,6 +597,7 @@ SECTION "rom63", ROMX[$4000], BANK[63]
 	dr SetPikachuSpawnWarpPad, $465b
 	dr SetPikachuSpawnBackOutside, $469a
 	dr SpawnPikachu_, $46d5
+	dr IsPikachuRightNextToPlayer, $4b01
 	dr GetPikachuFacingDirectionAndReturnToE, $4b4d
 	dr RefreshPikachuFollow, $4ba1
 	dr Func_fcc08, $4c08
@@ -421,7 +606,10 @@ SECTION "rom63", ROMX[$4000], BANK[63]
 	dr IsThisPartyMonStarterPikachu, $4e18
 	dr UpdatePikachuMoodAfterBattle, $4e5a
 	dr IsPlayerTalkingToPikachu, $4f0c
+	dr PlaySpecificPikachuEmotion, $5001
 	dr TalkToPikachu, $5004
+	dr PikachuEmotionTable, $5019
+	dr PikachuEmotion26_id, $504d
 	dr IsPlayerPikachuAsleepInParty, $50d0
 	dr PikachuWalksToNurseJoy, $5252
 	dr ApplyPikachuMovementData_, $52a1

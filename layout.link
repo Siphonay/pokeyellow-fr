@@ -41,8 +41,8 @@ ROMX $2
 	"Sound Effects 1"
 	"Audio Engine 1"
 	"Music 1"
-; ROMX $3
-; 	"bank3"
+ROMX $3
+	"bank3"
 ROMX $4
 	"bank4"
 	"NPC Sprites 1"

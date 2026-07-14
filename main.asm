@@ -34,7 +34,7 @@ INCLUDE "engine/menus/players_pc.asm"
 INCLUDE "engine/pokemon/remove_mon.asm"
 INCLUDE "engine/events/display_pokedex.asm"
 
-/*
+
 SECTION "bank3", ROMX
 
 INCLUDE "engine/joypad.asm"
@@ -65,7 +65,7 @@ INCLUDE "engine/events/hidden_events/book_or_sculpture.asm"
 INCLUDE "engine/events/hidden_events/elevator.asm"
 INCLUDE "engine/events/hidden_events/town_map.asm"
 INCLUDE "engine/events/hidden_events/pokemon_stuff.asm"
-*/
+
 
 SECTION "bank4", ROMX
 
