@@ -127,12 +127,6 @@ SECTION "rom3", ROMX[$4000], BANK[3]
 SECTION "rom5", ROMX[$7cb0], BANK[5]
 ; ROM $05 : $14000 - $17FFF
 
-	dr _InitMapSprites, $401b
-	dr ReloadWalkingTilePatterns, $40d2
-	dr RedBikeSprite, $43f1
-	dr RedSprite, $4571
-	dr MonsterSprite, $4b71
-	dr SeelSprite, $7ab1
 	dr ActivatePC, $7cb0
 
 
