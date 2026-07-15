@@ -320,6 +320,13 @@ INCLUDE "main.asm"
 SECTION "rom6", ROMX[$4000], BANK[6]
 ; ROM $06 : $18000 - $1BFFF
 
+	dr CeladonCity_Blocks, $40df
+	dr PalletTown_Blocks, $42fd
+	dr ViridianCity_Blocks, $43f2
+	dr PewterCity_Blocks, $45ec
+	dr CeruleanCity_Blocks, $4836
+	dr VermilionCity_Blocks, $4a4b
+	dr FuchsiaCity_Blocks, $4c92
 	dr PlayerStepOutFromDoor, $64ea
 	dr _EndNPCMovementScript, $6527
 	dr PalletMovementScriptPointerTable, $654c
@@ -333,6 +340,8 @@ SECTION "rom6", ROMX[$4000], BANK[6]
 SECTION "rom7", ROMX[$4000], BANK[7]
 ; ROM $07 : $1C000 - $1FFFF
 
+	dr CinnabarIsland_Blocks, $4069
+	dr Route1_Blocks, $40fc
 	dr DoClearSaveDialogue, $421e
 	dr DisplayElevatorFloorMenu, $4264
 	dr OpenOaksPC, $62b1
@@ -410,12 +419,15 @@ SECTION "rom16", ROMX[$4000], BANK[16]
 SECTION "rom17", ROMX[$4000], BANK[17]
 ; ROM $11 : $44000 - $47FFF
 
+	dr LavenderTown_Blocks, $4085
 	dr DisplayDexRating, $4169
 	dr LoadSpinnerArrowTiles, $5077
 
 
-;SECTION "rom18", ROMX[$4000], BANK[18]
+SECTION "rom18", ROMX[$4000], BANK[18]
 ; ROM $12 : $48000 - $4BFFF
+
+	dr Route7_Blocks, $4051
 
 
 ;SECTION "rom19", ROMX[$4000], BANK[19]
@@ -425,6 +437,13 @@ SECTION "rom17", ROMX[$4000], BANK[17]
 SECTION "rom20", ROMX[$4000], BANK[20]
 ; ROM $14 : $50000 - $53FFF
 
+	dr Route22_Blocks, $403d
+	dr Route20_Blocks, $417d
+	dr Route23_Blocks, $43b2
+	dr Route24_Blocks, $46ed
+	dr Route25_Blocks, $4816
+	dr IndigoPlateau_Blocks, $4950
+	dr SaffronCity_Blocks, $4a98
 	dr PrintCardKeyText, $65db
 	dr CeladonPrizeMenu, $6680
 
@@ -433,6 +452,16 @@ SECTION "Trainer Sight", ROMX[$4000], BANK[21]
 SECTION "rom21", ROMX[$4000], BANK[21]
 ; ROM $15 : $54000 - $57FFF
 
+	dr Route2_Blocks, $4086
+	dr Route3_Blocks, $425d
+	dr Route4_Blocks, $43f4
+	dr Route5_Blocks, $45da
+	dr Route9_Blocks, $4706
+	dr Route13_Blocks, $4893
+	dr Route14_Blocks, $4a1a
+	dr Route17_Blocks, $4bb0
+	dr Route19_Blocks, $4f01
+	dr Route21_Blocks, $507d
 	dr _GetSpritePosition1, $6745
 	dr _GetSpritePosition2, $6765
 	dr _SetSpritePosition1, $6789
@@ -444,6 +473,14 @@ SECTION "rom21", ROMX[$4000], BANK[21]
 SECTION "rom22", ROMX[$4000], BANK[22]
 ; ROM $16 : $58000 - $5BFFF
 
+	dr Route6_Blocks, $4079
+	dr Route8_Blocks, $41c6
+	dr Route10_Blocks, $4356
+	dr Route11_Blocks, $455f
+	dr Route12_Blocks, $4710
+	dr Route15_Blocks, $49cc
+	dr Route16_Blocks, $4b84
+	dr Route18_Blocks, $4c9c
 	dr CalcLevelFromExperience, $4d99
 	dr CalcExperience, $4dc0
 	dr PrintStatusAilment, $4e8b
