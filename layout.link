@@ -51,15 +51,15 @@ ROMX $5
 	"bank5"
 	"NPC Sprites 2"
 	"Battle Engine 2"
-; ROMX $6
-; 	"Maps 1"
-; 	"Maps 2"
-; 	"Doors and Ledges"
-; ROMX $7
-; 	"Maps 3"
-; 	"bank7"
-; 	"Maps 4"
-; 	"Hidden Events 1"
+ROMX $6
+	"Maps 1"
+	"Maps 2"
+	"Doors and Ledges"
+ROMX $7
+	"Maps 3"
+	"bank7"
+	"Maps 4"
+	"Hidden Events 1"
 ROMX $8
 	"Sound Effect Headers 2"
 	"Music Headers 2"
@@ -184,9 +184,8 @@ ROMX $2E
 	"Pokédex Text"
 ROMX $2f
 	"Move Names"
-; 	"BG Map Attributes (Debug)"
-; 	org $5000
-; 	"BG Map Attributes"
+	org $5000
+	"BG Map Attributes"
 ROMX $30
 	"Text 9"
 ROMX $31
@@ -217,7 +216,8 @@ ROMX $3C
 	"Try Pikachu Movement"
 	"Pikachu Graphics 2"
 ; 	"Credits"
-; 	"Maps 22"
+	org $57fd
+	"Maps 22"
 ; 	"Hidden Events Core"
 ROMX $3D
 	"Battle Engine 8"

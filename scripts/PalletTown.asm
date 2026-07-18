@@ -289,23 +289,8 @@ PalletTownOaksLabSignText:
 	text_end
 
 PalletTownSignText:
-IF DEF(_DEBUG)
-	text_asm
-	ld a, 239
-	inc a
-	ld [wWhichPewterGuy], a
-	ld hl, .Text
-	call PrintText
-	jp TextScriptEnd
-
-.Text:
-	text_decimal wWhichPewterGuy, 1, 3
-	text "bit"
-	done
-ELSE
 	text_far _PalletTownSignText
 	text_end
-ENDC
 
 PalletTownPlayersHouseSignText:
 	text_far _PalletTownPlayersHouseSignText

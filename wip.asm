@@ -22,10 +22,6 @@ EXPORT DEF CardKeySuccessText EQU $6653
 EXPORT DEF CardKeyFailText EQU $665d
 EXPORT DEF RedBedroomPCText EQU $5bb7
 EXPORT DEF RedBedroomSNESText EQU $5baa
-EXPORT DEF PushStartText EQU $62fc
-EXPORT DEF SaveOptionText EQU $631a
-EXPORT DEF StrengthsAndWeaknessesText EQU $631f
-EXPORT DEF OakLabEmailText EQU $6693
 EXPORT DEF AerodactylFossilText EQU $5beb
 EXPORT DEF Route15UpstairsBinocularsText EQU $5bd5
 EXPORT DEF KabutopsFossilText EQU $5c01
@@ -59,28 +55,16 @@ EXPORT DEF VermilionGymTrashText EQU $5e49
 EXPORT DEF IndigoPlateauHQText EQU $69a2
 EXPORT DEF FoundHiddenCoinsText EQU $6138
 EXPORT DEF DroppedHiddenCoinsText EQU $613e
-EXPORT DEF BillsHouseMonitorText EQU $65bb
-EXPORT DEF BillsHouseInitiatedText EQU $65c0
-EXPORT DEF BillsHousePokemonList EQU $65de
-EXPORT DEF MagazinesText EQU $6547
-EXPORT DEF CinnabarGymQuiz EQU $63c0
 EXPORT DEF LinkCableHelp EQU $5c82
 EXPORT DEF TMNotebook EQU $6909
 EXPORT DEF FightingDojoText EQU $698f
 EXPORT DEF EnemiesOnEverySideText EQU $6975
 EXPORT DEF WhatGoesAroundComesAroundText EQU $6982
-EXPORT DEF NewBicycleText EQU $62ef
 EXPORT DEF VermilionGymTrashSuccessText1 EQU $5f01
 EXPORT DEF VermilionGymTrashSuccessText2 EQU $5f14
 EXPORT DEF VermilionGymTrashSuccessText3 EQU $5f28
 EXPORT DEF VermilionGymTrashFailText EQU $5f3b
 
-EXPORT DEF BILLSHOUSE_BILL_POKEMON                  EQU $01
-EXPORT DEF BILLSHOUSE_BILL1                         EQU $02
-EXPORT DEF BILLSHOUSE_BILL2                         EQU $03
-EXPORT DEF BLUESHOUSE_DAISY1                        EQU $01
-EXPORT DEF BLUESHOUSE_DAISY2                        EQU $02
-EXPORT DEF BLUESHOUSE_TOWN_MAP                      EQU $03
 EXPORT DEF CELADONMANSION_ROOF_HOUSE_EEVEE_POKEBALL EQU $02
 EXPORT DEF CERULEANCAVE1F_RARE_CANDY                EQU $01
 EXPORT DEF CERULEANCAVE1F_MAX_ELIXER                EQU $02
@@ -95,17 +79,11 @@ EXPORT DEF CERULEANCAVEB1F_ULTRA_BALL1              EQU $02
 EXPORT DEF CERULEANCAVEB1F_ULTRA_BALL2              EQU $03
 EXPORT DEF CERULEANCAVEB1F_MAX_REVIVE               EQU $04
 EXPORT DEF CERULEANCAVEB1F_MAX_ELIXER               EQU $05
-EXPORT DEF CERULEANCITY_RIVAL                       EQU $01
-EXPORT DEF CERULEANCITY_ROCKET                      EQU $02
-EXPORT DEF CERULEANCITY_GUARD1                      EQU $06
-EXPORT DEF CERULEANCITY_SUPER_NERD3                 EQU $0a
-EXPORT DEF CERULEANCITY_GUARD2                      EQU $0b
 EXPORT DEF CERULEANMELANIESHOUSE_BULBASAUR          EQU $02
 EXPORT DEF CHAMPIONSROOM_OAK                        EQU $02
 EXPORT DEF FIGHTINGDOJO_HITMONLEE_POKE_BALL         EQU $06
 EXPORT DEF FIGHTINGDOJO_HITMONCHAN_POKE_BALL        EQU $07
 EXPORT DEF GAMECORNER_ROCKET                        EQU $0b
-EXPORT DEF MRFUJISHOUSE_MR_FUJI                     EQU $05
 EXPORT DEF MTMOON1F_POTION1                         EQU $08
 EXPORT DEF MTMOON1F_MOON_STONE                      EQU $09
 EXPORT DEF MTMOON1F_RARE_CANDY                      EQU $0a
@@ -119,15 +97,6 @@ EXPORT DEF MTMOONB2F_HELIX_FOSSIL                   EQU $08
 EXPORT DEF MTMOONB2F_HP_UP                          EQU $09
 EXPORT DEF MTMOONB2F_TM_MEGA_PUNCH                  EQU $0a
 EXPORT DEF MUSEUM1F_OLD_AMBER                       EQU $05
-EXPORT DEF OAKSLAB_RIVAL                            EQU $01
-EXPORT DEF OAKSLAB_EEVEE_POKE_BALL                  EQU $02
-EXPORT DEF OAKSLAB_OAK1                             EQU $03
-EXPORT DEF OAKSLAB_POKEDEX1                         EQU $04
-EXPORT DEF OAKSLAB_POKEDEX2                         EQU $05
-EXPORT DEF OAKSLAB_OAK2                             EQU $06
-EXPORT DEF PALLETTOWN_OAK                           EQU $01
-EXPORT DEF PEWTERCITY_SUPER_NERD1                   EQU $03
-EXPORT DEF PEWTERCITY_YOUNGSTER                     EQU $05
 EXPORT DEF POKEMONMANSION1F_ESCAPE_ROPE             EQU $02
 EXPORT DEF POKEMONMANSION1F_CARBOS                  EQU $03
 EXPORT DEF POKEMONMANSION2F_CALCIUM                 EQU $02
@@ -149,20 +118,6 @@ EXPORT DEF POKEMONTOWER6F_X_ACCURACY                EQU $05
 EXPORT DEF POKEMONTOWER7F_JESSIE                    EQU $01
 EXPORT DEF POKEMONTOWER7F_JAMES                     EQU $02
 EXPORT DEF POKEMONTOWER7F_MR_FUJI                   EQU $03
-EXPORT DEF POWERPLANT_VOLTORB1                      EQU $01
-EXPORT DEF POWERPLANT_VOLTORB2                      EQU $02
-EXPORT DEF POWERPLANT_VOLTORB3                      EQU $03
-EXPORT DEF POWERPLANT_ELECTRODE1                    EQU $04
-EXPORT DEF POWERPLANT_VOLTORB4                      EQU $05
-EXPORT DEF POWERPLANT_VOLTORB5                      EQU $06
-EXPORT DEF POWERPLANT_ELECTRODE2                    EQU $07
-EXPORT DEF POWERPLANT_VOLTORB6                      EQU $08
-EXPORT DEF POWERPLANT_ZAPDOS                        EQU $09
-EXPORT DEF POWERPLANT_CARBOS                        EQU $0a
-EXPORT DEF POWERPLANT_HP_UP                         EQU $0b
-EXPORT DEF POWERPLANT_RARE_CANDY                    EQU $0c
-EXPORT DEF POWERPLANT_TM_THUNDER                    EQU $0d
-EXPORT DEF POWERPLANT_TM_REFLECT                    EQU $0e
 EXPORT DEF ROCKETHIDEOUTB1F_ESCAPE_ROPE             EQU $06
 EXPORT DEF ROCKETHIDEOUTB1F_HYPER_POTION            EQU $07
 EXPORT DEF ROCKETHIDEOUTB2F_MOON_STONE              EQU $02
@@ -251,24 +206,6 @@ EXPORT DEF SILPHCO2F_ROCKET2                        EQU $05
 EXPORT DEF SILPHCO3F_ROCKET                         EQU $02
 EXPORT DEF SILPHCO3F_SCIENTIST                      EQU $03
 EXPORT DEF SILPHCO3F_HYPER_POTION                   EQU $04
-EXPORT DEF SILPHCO4F_ROCKET1                        EQU $02
-EXPORT DEF SILPHCO4F_SCIENTIST                      EQU $03
-EXPORT DEF SILPHCO4F_ROCKET2                        EQU $04
-EXPORT DEF SILPHCO4F_FULL_HEAL                      EQU $05
-EXPORT DEF SILPHCO4F_MAX_REVIVE                     EQU $06
-EXPORT DEF SILPHCO4F_ESCAPE_ROPE                    EQU $07
-EXPORT DEF SILPHCO5F_ROCKET1                        EQU $02
-EXPORT DEF SILPHCO5F_SCIENTIST                      EQU $03
-EXPORT DEF SILPHCO5F_ROCKER                         EQU $04
-EXPORT DEF SILPHCO5F_ROCKET2                        EQU $05
-EXPORT DEF SILPHCO5F_TM_TAKE_DOWN                   EQU $06
-EXPORT DEF SILPHCO5F_PROTEIN                        EQU $07
-EXPORT DEF SILPHCO5F_CARD_KEY                       EQU $08
-EXPORT DEF SILPHCO6F_ROCKET1                        EQU $06
-EXPORT DEF SILPHCO6F_SCIENTIST                      EQU $07
-EXPORT DEF SILPHCO6F_ROCKET2                        EQU $08
-EXPORT DEF SILPHCO6F_HP_UP                          EQU $09
-EXPORT DEF SILPHCO6F_X_ACCURACY                     EQU $0a
 EXPORT DEF SILPHCO7F_ROCKET1                        EQU $05
 EXPORT DEF SILPHCO7F_SCIENTIST                      EQU $06
 EXPORT DEF SILPHCO7F_ROCKET2                        EQU $07
@@ -301,9 +238,6 @@ EXPORT DEF VICTORYROAD2F_BOULDER3                   EQU $0d
 EXPORT DEF VICTORYROAD3F_MAX_REVIVE                 EQU $05
 EXPORT DEF VICTORYROAD3F_TM_EXPLOSION               EQU $06
 EXPORT DEF VICTORYROAD3F_BOULDER4                   EQU $0a
-EXPORT DEF VIRIDIANCITY_OLD_MAN_SLEEPY              EQU $05
-EXPORT DEF VIRIDIANCITY_OLD_MAN                     EQU $07
-EXPORT DEF VIRIDIANCITY_OLD_MAN2                    EQU $08
 EXPORT DEF VIRIDIANFOREST_POTION1                   EQU $07
 EXPORT DEF VIRIDIANFOREST_POTION2                   EQU $08
 EXPORT DEF VIRIDIANFOREST_POKE_BALL                 EQU $09
@@ -313,42 +247,9 @@ EXPORT DEF WARDENSHOUSE_RARE_CANDY                  EQU $02
 
 EXPORT DEF SCRIPT_SEAFOAMISLANDSB3F_MOVE_OBJECT EQU 2
 EXPORT DEF SCRIPT_SEAFOAMISLANDSB4F_MOVE_OBJECT EQU 2
+EXPORT DEF SCRIPT_SAFARIZONEGATE_LEAVING_SAFARI EQU 5
 
 INCLUDE "main.asm"
-
-
-SECTION "rom6", ROMX[$4000], BANK[6]
-; ROM $06 : $18000 - $1BFFF
-
-	dr CeladonCity_Blocks, $40df
-	dr PalletTown_Blocks, $42fd
-	dr ViridianCity_Blocks, $43f2
-	dr PewterCity_Blocks, $45ec
-	dr CeruleanCity_Blocks, $4836
-	dr VermilionCity_Blocks, $4a4b
-	dr FuchsiaCity_Blocks, $4c92
-	dr PlayerStepOutFromDoor, $64ea
-	dr _EndNPCMovementScript, $6527
-	dr PalletMovementScriptPointerTable, $654c
-	dr PewterMuseumGuyMovementScriptPointerTable, $6622
-	dr PewterGymGuyMovementScriptPointerTable, $6685
-	dr PewterGuys, $66e5
-	dr IsPlayerStandingOnDoorTile, $6785
-	dr HandleLedges, $67f4
-
-
-SECTION "rom7", ROMX[$4000], BANK[7]
-; ROM $07 : $1C000 - $1FFFF
-
-	dr CinnabarIsland_Blocks, $4069
-	dr Route1_Blocks, $40fc
-	dr DoClearSaveDialogue, $421e
-	dr DisplayElevatorFloorMenu, $4264
-	dr OpenOaksPC, $62b1
-	dr SafariZoneCheck, $6324
-	dr SafariZoneCheckSteps, $6333
-	dr PrintSafariGameOverText, $6388
-	dr UpdateCinnabarGymGateTileBlocks_, $64c2
 
 
 SECTION "rom14", ROMX[$4000], BANK[14]
@@ -485,6 +386,7 @@ SECTION "rom22", ROMX[$4000], BANK[22]
 	dr CalcExperience, $4dc0
 	dr PrintStatusAilment, $4e8b
 	dr OaksAideScript, $4ecc
+	dr RemoveGuardDrink, $653a
 
 
 SECTION "rom23", ROMX[$4000], BANK[23]
@@ -502,18 +404,13 @@ SECTION "rom29", ROMX[$4000], BANK[29]
 ; ROM $1d : $74000 - $77FFF
 
 	dr HiddenItemNear, $405c
+	dr CeruleanHideRocket, $40af
 	dr VendingMachineMenu, $4721
 	dr PKMNLeaguePC, $5df3
 
 
 ;SECTION "rom32", ROMX[$4000], BANK[32]
 ; ROM $20 : $80000 - $83FFF
-
-
-SECTION "rom47", ROMX[$7450], BANK[47]
-; ROM $2f : $BC000 - $BFFFF
-
-    dr LoadBGMapAttributes, $7450
 
 
 SECTION "rom58", ROMX[$4000], BANK[58]
@@ -530,7 +427,16 @@ SECTION "rom58", ROMX[$4000], BANK[58]
 SECTION "rom60", ROMX[$4f12], BANK[60]
 ; ROM $3c : $F0000 - $F3FFF
 
+	dr PokecenterChanseyText, $4f12
 	dr HallOfFamePC, $4f26
+
+SECTION "rom60_2", ROMX[$635a], BANK[60]
+
+	dr BillsHousePrintBillPokemonText, $635a
+	dr BillsHousePrintBillSSTicketText, $638c
+	dr BillsHousePrintBillCheckOutMyRarePokemonText, $63e4
+	dr BillsHousePikachuConfused, $6417
+	dr BillsHousePikachuWatchPlayer, $644d
 	dr CheckForHiddenEvent, $653a
 
 
@@ -557,7 +463,9 @@ SECTION "rom63", ROMX[$4000], BANK[63]
 	dr IsThisBoxMonStarterPikachu, $4e0d
 	dr IsThisPartyMonStarterPikachu, $4e18
 	dr UpdatePikachuMoodAfterBattle, $4e5a
+	dr CheckPikachuStatusCondition, $4e73
 	dr IsPlayerTalkingToPikachu, $4f0c
+	dr InitializePikachuTextID, $4f20
 	dr PlaySpecificPikachuEmotion, $5001
 	dr TalkToPikachu, $5004
 	dr PikachuEmotionTable, $5019

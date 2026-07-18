@@ -4,6 +4,7 @@ patches := pokeyellow.patch
 rom_obj := \
 	audio.o \
 	home.o \
+	maps.o \
 	ram.o \
 	text.o \
 	wip.o \
@@ -13,7 +14,6 @@ rom_obj := \
 	gfx/surfing_pikachu.o \
 	gfx/tilesets.o
 # 	main.o \
-# 	maps.o \
 
 pokeyellow_obj       := $(rom_obj)
 pokeyellow_vc_obj    := $(rom_obj:.o=_vc.o)

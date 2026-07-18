@@ -97,7 +97,7 @@ SECTION "Battle Engine 2", ROMX
 INCLUDE "engine/battle/move_effects/substitute.asm"
 INCLUDE "engine/menus/pc.asm"
 
-/*
+
 SECTION "Doors and Ledges", ROMX
 
 INCLUDE "engine/overworld/auto_movement.asm"
@@ -121,7 +121,7 @@ INCLUDE "engine/events/hidden_events/cinnabar_gym_quiz.asm"
 INCLUDE "engine/events/hidden_events/magazines.asm"
 INCLUDE "engine/events/hidden_events/bills_house_pc.asm"
 INCLUDE "engine/events/hidden_events/oaks_lab_email.asm"
-*/
+
 
 SECTION "Bill's PC", ROMX
 
@@ -307,22 +307,13 @@ INCLUDE "data/moves/animations.asm"
 INCLUDE "data/battle_anims/subanimations.asm"
 INCLUDE "data/battle_anims/frame_blocks.asm"
 
-/*
-SECTION "BG Map Attributes (Debug)", ROMX
-
-IF DEF(_DEBUG)
-	INCLUDE "engine/gfx/bg_map_attributes.asm"
-ENDC
-
 
 SECTION "BG Map Attributes", ROMX
 
 INCLUDE "data/cgb/bg_map_attributes.asm"
-IF !DEF(_DEBUG)
-	INCLUDE "engine/gfx/bg_map_attributes.asm"
-ENDC
+INCLUDE "engine/gfx/bg_map_attributes.asm"
 
-
+/*
 SECTION "bank3A", ROMX
 
 INCLUDE "data/pokemon/names.asm"

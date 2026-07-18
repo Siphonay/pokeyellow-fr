@@ -36,10 +36,6 @@ CeruleanCityRocketDefeatedScript:
 	ret
 
 CeruleanCityDefaultScript:
-IF DEF(_DEBUG)
-	call DebugPressedOrHeldB
-	ret nz
-ENDC
 	CheckEvent EVENT_BEAT_CERULEAN_ROCKET_THIEF
 	jr nz, .skipRocketThiefEncounter
 	ld hl, CeruleanCityCoords1
