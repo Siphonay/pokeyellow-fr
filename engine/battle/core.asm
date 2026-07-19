@@ -2120,12 +2120,12 @@ DisplayBattleMenu::
 	ld bc, NAME_LENGTH
 	call CopyData
 ; the following simulates the keystrokes by drawing menus on screen
-	hlcoord 9, 14
+	hlcoord 7, 14
 	ld [hl], '▶'
 	ld c, 20
 	call DelayFrames
 	ld [hl], ' '
-	hlcoord 9, 16
+	hlcoord 7, 16
 	ld [hl], '▶'
 	ld c, 20
 	call DelayFrames
@@ -2133,9 +2133,9 @@ DisplayBattleMenu::
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperLeftMenuItemWasNotSelected
 .oldManName
-	db "OLD MAN@"
+	db "VIEILLARD@"
 .profOakName
-	db "PROF.OAK@"
+	db "PROF.CHEN@"
 .handleBattleMenuInput
 	ld a, [wBattleAndStartSavedMenuItem]
 	ld [wCurrentMenuItem], a
@@ -2152,13 +2152,13 @@ DisplayBattleMenu::
 	ld a, ' '
 	jr z, .safariLeftColumn
 ; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
-	ldcoord_a 15, 14 ; clear upper cursor position in right column
-	ldcoord_a 15, 16 ; clear lower cursor position in right column
-	ld b, $9 ; top menu item X
+	ldcoord_a 13, 14 ; clear upper cursor position in right column
+	ldcoord_a 13, 16 ; clear lower cursor position in right column
+	ld b, $7 ; top menu item X
 	jr .leftColumn_WaitForInput
 .safariLeftColumn
-	ldcoord_a 13, 14
-	ldcoord_a 13, 16
+	ldcoord_a 12, 14
+	ldcoord_a 12, 16
 	hlcoord 7, 14
 	ld de, wNumSafariBalls
 	lb bc, 1, 2
@@ -2185,9 +2185,9 @@ DisplayBattleMenu::
 	ld a, ' '
 	jr z, .safariRightColumn
 ; put cursor in right column for normal battle menu (i.e. when it's not a Safari battle)
-	ldcoord_a 9, 14 ; clear upper cursor position in left column
-	ldcoord_a 9, 16 ; clear lower cursor position in left column
-	ld b, $f ; top menu item X
+	ldcoord_a 7, 14 ; clear upper cursor position in left column
+	ldcoord_a 7, 16 ; clear lower cursor position in left column
+	ld b, $d ; top menu item X
 	jr .rightColumn_WaitForInput
 .safariRightColumn
 	ldcoord_a 1, 14 ; clear upper cursor position in left column
@@ -2196,7 +2196,7 @@ DisplayBattleMenu::
 	ld de, wNumSafariBalls
 	lb bc, 1, 2
 	call PrintNumber
-	ld b, $d ; top menu item X
+	ld b, $c ; top menu item X
 .rightColumn_WaitForInput
 	ld hl, wTopMenuItemY
 	ld a, $e
@@ -2718,14 +2718,6 @@ SelectMenuItem:
 	jp nz, SelectMenuItem_CursorDown
 	bit B_PAD_SELECT, a
 	jp nz, SwapMovesInMenu
-IF DEF(_DEBUG)
-	bit B_PAD_START, a
-	jp nz, Func_3d4f5
-	bit B_PAD_RIGHT, a
-	jp nz, Func_3d529
-	bit B_PAD_LEFT, a
-	jp nz, Func_3d523
-ENDC
 	bit B_PAD_B, a
 	push af
 	xor a
@@ -2796,7 +2788,8 @@ MoveDisabledText:
 	text_end
 
 WhichTechniqueString:
-	db "WHICH TECHNIQUE?@"
+	db   "Quelle technique?"
+	next "                 @"
 
 SelectMenuItem_CursorUp:
 	ld a, [wCurrentMenuItem]
@@ -2822,9 +2815,6 @@ SelectMenuItem_CursorDown:
 	jp SelectMenuItem
 
 Func_3d4f5:
-IF DEF(_DEBUG)
-	ASSERT B_PAD_START == BIT_TRAINER_BATTLE
-ENDC
 	bit BIT_TRAINER_BATTLE, a
 	ld a, $0
 	jr nz, .asm_3d4fd
@@ -2924,11 +2914,6 @@ NoMovesLeftText:
 	text_end
 
 SwapMovesInMenu:
-IF DEF(_DEBUG)
-	ld a, [wStatusFlags7]
-	bit BIT_TEST_BATTLE, a
-	jp nz, Func_3d4f5
-ENDC
 	ld a, [wPlayerBattleStatus3]
 	bit TRANSFORMED, a
 	jp nz, MoveSelectionMenu
@@ -3078,7 +3063,7 @@ PrintMenuItem:
 	jp Delay3
 
 DisabledText:
-	db "Disabled!@"
+	db "NON DISP.@"
 
 TypeText:
 	db "TYPE@"

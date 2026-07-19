@@ -252,57 +252,6 @@ EXPORT DEF SCRIPT_SAFARIZONEGATE_LEAVING_SAFARI EQU 5
 INCLUDE "main.asm"
 
 
-SECTION "rom14", ROMX[$4000], BANK[14]
-; ROM $0e : $38000 - $3BFFF
-
-	dr Moves, $4000
-	dr BaseStats, $43de
-	dr CryData, $5462
-	dr TrainerPicAndMoneyPointers, $5893
-	dr TrainerNames, $597e
-	dr FormatMovesString, $5b09
-	dr InitList, $5b57
-	dr ReadTrainer, $5bb9
-	dr DrawAllPokeballs, $68e2
-	dr SetupPlayerAndEnemyPokeballs, $69ec
-	dr PokeballTileGraphics, $6a2b
-	dr TryEvolvingMon, $6dbb
-	dr EvolutionAfterBattle, $6dc9
-	dr LearnMoveFromLevelUp, $700f
-	dr Func_3b10f, $7112
-	dr WriteMonMoves, $7142
-	dr EvosMovesPointerTable, $71e8
-
-
-SECTION "rom15", ROMX[$4000], BANK[15]
-; ROM $0f : $3C000 - $3FFFF
-BattleCore::
-DisplayBattleMenu::
-
-	dr SlidePlayerAndEnemySilhouettesOnScreen, $404c
-	dr StartBattle, $4127
-	dr AnyPartyAlive, $4ae8
-	dr ReadPlayerMonCurHPAndStatus, $4e08
-	dr DrawHUDsAndHPBars, $4e1f
-	dr DrawPlayerHUDAndHPBar, $4e25
-	dr DrawEnemyHUDAndHPBar, $4eb1
-	dr MoveSelectionMenu, $5323
-	dr IsGhostBattle, $59c2
-	dr PrintDoesntAffectText, $5dd9
-	dr MoveHitTest, $6707
-	dr LoadEnemyMonData, $6c9d
-	dr DoBattleTransitionAndInitBattleVariables, $6dce
-	dr DoubleOrHalveSelectedStats, $6ea4
-	dr QuarterSpeedDueToParalysis, $6ec9
-	dr LoadHudTilePatterns, $6ffd
-	dr JumpMoveEffect, $70bd
-	dr StatModifierUpEffect, $73f4
-	dr PrintButItFailedText_, $7b30
-	dr PrintDidntAffectText, $7b3b
-	dr PrintMayNotAttackText, $7b4b
-	dr PlayCurrentMoveAnimation, $7b85
-
-
 SECTION "rom16", ROMX[$4000], BANK[16]
 ; ROM $10 : $40000 - $43FFF
 
@@ -363,6 +312,7 @@ SECTION "rom21", ROMX[$4000], BANK[21]
 	dr Route17_Blocks, $4bb0
 	dr Route19_Blocks, $4f01
 	dr Route21_Blocks, $507d
+	dr GainExperience, $525f
 	dr _GetSpritePosition1, $6745
 	dr _GetSpritePosition2, $6765
 	dr _SetSpritePosition1, $6789
@@ -393,6 +343,7 @@ SECTION "rom23", ROMX[$4000], BANK[23]
 ; ROM $17 : $5C000 - $5FFFF
 
 	dr StarterDex, $40d4
+	dr EvolveMon, $5a64
 	dr SetPartyMonTypes, $5b87
 
 

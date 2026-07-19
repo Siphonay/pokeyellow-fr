@@ -155,7 +155,7 @@ INCLUDE "engine/movie/title_rb.asm"
 INCLUDE "engine/slots/slot_machine.asm"
 INCLUDE "engine/slots/game_corner_slots.asm"
 
-/*
+
 SECTION "Battle Engine 6", ROMX
 
 INCLUDE "data/moves/moves.asm"
@@ -172,7 +172,7 @@ SECTION "Battle Core", ROMX
 INCLUDE "engine/battle/core.asm"
 INCLUDE "engine/battle/effects.asm"
 
-
+/*
 SECTION "bank10", ROMX
 
 INCLUDE "engine/menus/pokedex.asm"
