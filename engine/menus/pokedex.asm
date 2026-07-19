@@ -604,10 +604,10 @@ DrawDexEntryOnScreen:
 	call PrintNumber ; print decimetre (height)
 	hlcoord 14, 6
     pop af
-    cp $a
+    cp 10
     jr nc, .heightNext
-    ld [hl], '0'
-.heightNext:
+    ld [hl], '0' ; if the height is less than 1 m, put a 0 before the decimal point
+.heightNext
     inc hl
     ld a, [hli]
     ld [hld], a ; make space for the decimal point by moving the last digit forward one tile
