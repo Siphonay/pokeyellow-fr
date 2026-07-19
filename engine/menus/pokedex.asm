@@ -597,7 +597,7 @@ DrawDexEntryOnScreen:
 	ret z ; if the pokemon has not been owned, don't print the height, weight, or description
 
 	inc de ; de = address of decimetre (height)
-	ld a, [de] ; reads decimetre, but a is overwritten without being used
+	ld a, [de]
 	push af
 	hlcoord 13, 6
 	lb bc, 1, 3
