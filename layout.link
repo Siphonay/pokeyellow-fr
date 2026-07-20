@@ -215,8 +215,7 @@ ROMX $3C
 	"Tilesets 4"
 	"Try Pikachu Movement"
 	"Pikachu Graphics 2"
-; 	"Credits"
-	org $57fd
+	"Credits"
 	"Maps 22"
 ; 	"Hidden Events Core"
 ROMX $3D

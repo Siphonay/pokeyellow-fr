@@ -338,13 +338,13 @@ SECTION "Try Pikachu Movement", ROMX
 INCLUDE "engine/overworld/unused_load_toggleable_object_data.asm"
 INCLUDE "engine/events/try_pikachu_movement.asm"
 
-/*
+
 SECTION "Credits", ROMX
 
 INCLUDE "engine/events/pokecenter_chansey.asm"
 INCLUDE "engine/movie/credits.asm"
 
-
+/*
 SECTION "Hidden Events Core", ROMX
 
 INCLUDE "engine/overworld/hidden_events.asm"

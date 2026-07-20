@@ -253,20 +253,8 @@ SECTION "rom58", ROMX[$4000], BANK[58]
 	dr SetEnemyTrainerToStayAndFaceAnyDirection, $69d5
 
 
-SECTION "rom60", ROMX[$4f12], BANK[60]
-; ROM $3c : $F0000 - $F3FFF
+SECTION "rom60", ROMX[$653a], BANK[60]
 
-	dr PokecenterChanseyText, $4f12
-	dr HallOfFamePC, $4f26
-
-SECTION "rom60_2", ROMX[$635a], BANK[60]
-
-	dr BillsHousePrintBillPokemonText, $635a
-	dr BillsHousePrintBillSSTicketText, $638c
-	dr BillsHousePrintBillCheckOutMyRarePokemonText, $63e4
-	dr BillsHouse_CheckPikachuEmotion, $63f0
-	dr BillsHousePikachuConfused, $6417
-	dr BillsHousePikachuWatchPlayer, $644d
 	dr CheckForHiddenEvent, $653a
 
 

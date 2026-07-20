@@ -53,39 +53,31 @@
 	const CRED_SEKINE                ; 32
 	const CRED_SHIMAMURA             ; 33
 	const CRED_SHIMOYAMADA           ; 34
-	const CRED_SUPER_MARIO_CLUB      ; 35
-	const CRED_IZUSHI                ; 36
-	const CRED_NOMURA                ; 37
-	const CRED_HARADA                ; 38
-	const CRED_YAMAGAMI              ; 39
-	const CRED_NISHIMURA             ; 3a
-	const CRED_SAEKI                 ; 3b
-	const CRED_FUZII                 ; 3c
-	const CRED_SHOGAKUKAN            ; 3d
-	const CRED_OOTANI                ; 3e
-	const CRED_PIKACHU_VOICE         ; 3f
-	const CRED_U_S_STAFF             ; 40
-	const CRED_U_S_COORD             ; 41
-	const CRED_TILDEN                ; 42
-	const CRED_KAWAKAMI              ; 43
-	const CRED_NAKAMURA2             ; 44
-	const CRED_SHOEMAKE              ; 45
-	const CRED_OSBORNE               ; 46
-	const CRED_TRANSLATION           ; 47
-	const CRED_OGASAWARA             ; 48
-	const CRED_IWATA                 ; 49
-	const CRED_IZUSHI2               ; 4a
-	const CRED_HARADA2               ; 4b
-	const CRED_MURAKAWA              ; 4c
-	const CRED_FUKUI                 ; 4d
-	const CRED_SUPER_MARIO_CLUB2     ; 4e
-	const CRED_PAAD                  ; 4f
-	const CRED_PRODUCERS             ; 50
-	const CRED_HOSOKAWA              ; 51
-	const CRED_OKUBO                 ; 52
-	const CRED_NAKAMICHI             ; 53
-	const CRED_YOSHIMURA             ; 54
-	const CRED_YAMAZAKI              ; 55
+	const CRED_IZUSHI                ; 35
+	const CRED_HARADA                ; 36
+	const CRED_SHOGAKUKAN            ; 37
+	const CRED_OOTANI                ; 38
+	const CRED_PIKACHU_VOICE         ; 39
+	const CRED_EUROPE_STAFF          ; 3a
+	const CRED_EUROPE_COORD          ; 3b
+	const CRED_MOYSE                 ; 3c
+	const CRED_KRAFT                 ; 3d
+	const CRED_KAWAKAMI              ; 3e
+	const CRED_EDASAWA               ; 3f
+	const CRED_UESUGI                ; 40
+	const CRED_YOSHIMURA             ; 41
+	const CRED_TEXTES_ECRAN          ; 42
+	const CRED_MURAKAWA              ; 43
+	const CRED_FUKUI                 ; 44
+	const CRED_HOSOKAWA              ; 45
+	const CRED_SANO                  ; 46
+	const CRED_NAKAMICHI             ; 47
+	const CRED_NOE_TESTING           ; 48
+	const CRED_NOA_TESTING           ; 49
+	const CRED_HUDSON_BUECHELE       ; 4a
+	const CRED_BARDAKOFF             ; 4b
+	const CRED_FLEURY                ; 4c
+	const CRED_ZEH_HEPPT             ; 4d
 DEF NUM_CRED_STRINGS EQU const_value
 
 	const_def -1, -1
