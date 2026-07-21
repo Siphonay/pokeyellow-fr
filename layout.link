@@ -87,7 +87,7 @@ ROMX $E
 ROMX $F
 	"Battle Core"
 ROMX $10
- 	"bank10"
+	"bank10"
 ROMX $11
 	"Maps 5"
 	"Pokédex Rating"
@@ -131,7 +131,7 @@ ROMX $1A
 ROMX $1B
 	"Tilesets 3"
 ROMX $1C
- 	"bank1C"
+	"bank1C"
 ROMX $1D
 	"Maps 19"
 	"Itemfinder 1"
@@ -223,7 +223,7 @@ ROMX $3D
 	"Pics 7"
 	"Battle Engine 9"
 ROMX $3E
- 	"Surfing Minigame"
+	"Surfing Minigame"
 ROMX $3F
 	"Overworld Pikachu"
 	org $666f

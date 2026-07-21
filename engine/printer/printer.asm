@@ -625,7 +625,7 @@ GBPrinter_UpdateStatusMessage:
 	next "  Voir le manuel"
 	next "  du GB Printer.@"
 .WrongDevice:
-    db   "     Erreur 5"
+	db   "     Erreur 5"
 	next ""
 	next "  Ce n<'>est pas le"
 	next "  GB Printer !@"

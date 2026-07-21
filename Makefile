@@ -4,9 +4,9 @@ patches := pokeyellow.patch
 rom_obj := \
 	audio.o \
 	home.o \
+	main.o \
 	maps.o \
 	ram.o \
-	main.o \
 	text.o \
 	gfx/pics.o \
 	gfx/pikachu.o \
