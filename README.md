@@ -5,7 +5,7 @@ This is a WIP disassembly of Pokémon Version Jaune : Edition Spéciale Pikachu.
 It builds the following ROMs:
 
 - Pokemon - Version Jaune (F) [C][!].gbc  `sha1: 0aceec0ef7aa2ca5aa831554598d91f61a925591`
-- ~~DMGAPSF0.J16.patch `sha1: 5e60445d4df2b955d07cfd173c61b53b7494711d`~~
+- DMGAPSF0.J16.patch `sha1: 7a3e8cd4575edc6236bf679065b690374d513aed`
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
