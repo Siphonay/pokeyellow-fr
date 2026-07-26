@@ -203,9 +203,9 @@ PlayAnimation:
 	ld h, [hl]
 	ld l, a
 .animationLoop
-	vc_hook Stop_reducing_move_anim_flashing_Bubblebeam
+	vc_hook Stop_reducing_move_anim_flashing_Thunderbolt
 	ld a, [hli]
-	vc_hook Stop_reducing_move_anim_flashing_Mega_Punch
+	vc_hook Stop_reducing_move_anim_flashing_Reflect
 	cp -1
 	jr z, .AnimationOver
 	cp FIRST_SE_ID ; is this subanimation or a special effect?
@@ -276,51 +276,55 @@ PlayAnimation:
 	ldh [rOBP0], a
 	call UpdateCGBPal_OBP0
 	call LoadMoveAnimationTiles
+	vc_hook Reduce_move_anim_flashing_Mega_Punch_Explosion_Self_Destruct
 	call LoadSubanimation
 	call PlaySubanimation
+	vc_hook Stop_reducing_move_anim_flashing_Mega_Punch
 	pop af
-	vc_hook Stop_reducing_move_anim_flashing_Thunderbolt
+	vc_hook Stop_reducing_move_anim_flashing_Dream_Eater_Blizzard_Explosion_Spore_Self_Destruct
 	ldh [rOBP0], a
-	vc_hook Stop_reducing_move_anim_flashing_Explosion
+	vc_hook Stop_reducing_move_anim_flashing_Rock_Slide_Self_Destruct_Spore
 	call UpdateCGBPal_OBP0
 .nextAnimationCommand
-	vc_hook Stop_reducing_move_anim_flashing_Guillotine
+	vc_hook Stop_reducing_move_anim_flashing_Hyper_Beam
 	pop hl
-	vc_hook Stop_reducing_move_anim_flashing_Mega_Kick
+	vc_hook Stop_reducing_move_anim_flashing_Guillotine
 	jr .animationLoop
 .AnimationOver
-	vc_hook Stop_reducing_move_anim_flashing_Blizzard
+	vc_hook Stop_reducing_move_anim_flashing_Haze
 	ret
 
 LoadSubanimation:
-	ld a, [wSubAnimAddrPtr + 1]
-	ld h, a
-	ld a, [wSubAnimAddrPtr]
-	ld l, a
-	ld a, [hli]
-	ld e, a
-	ld a, [hl]
-	ld d, a ; de = address of subanimation
-	vc_hook Reduce_move_anim_flashing_Bubblebeam
-	ld a, [de]
-	vc_hook Reduce_move_anim_flashing_Mega_Kick
-	ld b, a
 	vc_hook Reduce_move_anim_flashing_Guillotine
-	and %00011111
-	vc_hook Reduce_move_anim_flashing_Mega_Punch_Explosion_Self_Destruct
-	ld [wSubAnimCounter], a ; number of frame blocks
+	ld a, [wSubAnimAddrPtr + 1]
+	vc_hook Reduce_move_anim_flashing_Mega_Kick
+	ld h, a
+	vc_hook Reduce_move_anim_flashing_Spore
+	ld a, [wSubAnimAddrPtr]
+	vc_hook Reduce_move_anim_flashing_Explosion
+	ld l, a
 	vc_hook Reduce_move_anim_flashing_Blizzard
-	ld a, b
+	ld a, [hli]
+	vc_hook Reduce_move_anim_flashing_Rock_Slide
+	ld e, a
+	vc_hook Reduce_move_anim_flashing_Self_Destruct
+	ld a, [hl]
 	vc_hook Reduce_move_anim_flashing_Thunderbolt
+	ld d, a ; de = address of subanimation
+	ld a, [de]
+	ld b, a
+	and %00011111
+	vc_hook Reduce_move_anim_flashing_Bubblebeam
+	ld [wSubAnimCounter], a ; number of frame blocks
+	ld a, b
 	and %11100000
 	cp SUBANIMTYPE_ENEMY << 5
-	vc_hook Reduce_move_anim_flashing_Reflect
 	jr nz, .isNotTypeEnemy
 ; subanim type enemy
 	call GetSubanimationTransform2
 	jr .saveTransformation
 .isNotTypeEnemy
-	vc_hook Reduce_move_anim_flashing_Self_Destruct
+	vc_hook Reduce_move_anim_flashing_Hyper_Beam
 	call GetSubanimationTransform1
 .saveTransformation
 ; place the upper 3 bits of a into bits 0-2 of a before storing
@@ -351,7 +355,7 @@ LoadSubanimation:
 ; sets the transform to SUBANIMTYPE_NORMAL if it's the player's turn
 ; sets the transform to the subanimation type if it's the enemy's turn
 GetSubanimationTransform1:
-	vc_hook Reduce_move_anim_flashing_Explosion
+	vc_hook Reduce_move_anim_flashing_Reflect
 	ld b, a
 	ldh a, [hWhoseTurn]
 	and a
@@ -440,17 +444,16 @@ MoveAnimation:
 	jr nz, .animationsDisabled
 	call ShareMoveAnimations
 	call PlayAnimation
+	vc_hook Stop_reducing_move_anim_flashing_Bubblebeam_Mega_Kick
 	jr .next
 .animationsDisabled
 	ld c, 30
 	call DelayFrames
 .next
-	vc_hook Stop_reducing_move_anim_flashing_Reflect
 	call PlayApplyingAttackAnimation ; shake the screen or flash the pic in and out (to show damage)
 .animationFinished
 	call WaitForSoundToFinish
 	xor a
-	vc_hook Stop_reducing_move_anim_flashing_Haze_Hyper_Beam
 	ld [wSubAnimSubEntryAddr], a
 	ld [wUnusedMoveAnimByte], a
 	ld [wSubAnimTransform], a
@@ -488,7 +491,6 @@ ShareMoveAnimations:
 PlayApplyingAttackAnimation:
 ; Generic animation that shows after the move's individual animation
 ; Different animation depending on whether the move has an additional effect and on whose turn it is
-	vc_hook Stop_reducing_move_anim_flashing_Self_Destruct
 	ld a, [wAnimationType]
 	and a
 	ret z
@@ -578,13 +580,13 @@ SetAnimationPalette:
 	ld b, $f0
 .next
 	ld a, b
-	vc_hook Reduce_move_anim_flashing_Hyper_Beam
 	ldh [rOBP0], a
 	ld a, $6c
-	vc_hook Reduce_move_anim_flashing_Haze
 	ldh [rOBP1], a
 	call UpdateCGBPal_OBP0
+	vc_hook Reduce_move_anim_flashing_Dream_Eater
 	call UpdateCGBPal_OBP1
+	vc_hook Reduce_move_anim_flashing_Haze
 	ret
 .notSGB
 	ld a, $e4
