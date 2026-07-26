@@ -286,7 +286,7 @@ PlayAnimation:
 	vc_hook Stop_reducing_move_anim_flashing_Rock_Slide_Self_Destruct_Spore
 	call UpdateCGBPal_OBP0
 .nextAnimationCommand
-    vc_hook Stop_reducing_move_anim_flashing_Hyper_Beam
+	vc_hook Stop_reducing_move_anim_flashing_Hyper_Beam
 	pop hl
 	vc_hook Stop_reducing_move_anim_flashing_Guillotine
 	jr .animationLoop
@@ -295,7 +295,7 @@ PlayAnimation:
 	ret
 
 LoadSubanimation:
-    vc_hook Reduce_move_anim_flashing_Guillotine
+	vc_hook Reduce_move_anim_flashing_Guillotine
 	ld a, [wSubAnimAddrPtr + 1]
 	vc_hook Reduce_move_anim_flashing_Mega_Kick
 	ld h, a
