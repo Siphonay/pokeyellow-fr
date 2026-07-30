@@ -1,6 +1,6 @@
 # Pokémon Version Jaune
 
-This is a WIP disassembly of Pokémon Version Jaune : Edition Spéciale Pikachu.
+This is a disassembly of Pokémon Version Jaune : Edition Spéciale Pikachu.
 
 It builds the following ROMs:
 
@@ -19,8 +19,10 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 ## See also
 
 - **Wiki** (WIP)
+- [**Symbols**][symbols]
 
 [emulicious]: https://www.emulicious.net
 [pokeyellow]: https://github.com/pret/pokeyellow
 [pokeyellow-de]: https://github.com/Brianum/pokeyellow-de
 [pokered-fr]: https://github.com/einstein95/pokered-fr
+[symbols]: https://github.com/Narishma-gb/pokeyellow-fr/tree/symbols
